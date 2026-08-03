@@ -1,0 +1,65 @@
+name: Publicar en Instagram
+
+on:
+  schedule:
+    # 16:00 UTC = 13:00 en Argentina. Cambiá la hora acá si querés otro horario.
+    - cron: "0 16 * * *"
+  workflow_dispatch:
+    inputs:
+      fecha:
+        description: "Fecha a generar (AAAA-MM-DD). Vacío = hoy."
+        required: false
+      solo_generar:
+        description: "true = genera la imagen pero NO publica"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: |
+          pip install playwright pillow
+          playwright install --with-deps chromium
+
+      - name: Generar imagen y caption
+        id: gen
+        env:
+          FECHA: ${{ github.event.inputs.fecha }}
+        run: python scripts/generar.py
+
+      - name: Guardar el post en el repo
+        run: |
+          git config user.name  "axioma-bot"
+          git config user.email "actions@github.com"
+          git add posts/
+          git diff --staged --quiet || git commit -m "post ${{ steps.gen.outputs.fecha }}"
+          git push
+
+      - name: Esperar a que la imagen quede accesible
+        run: sleep 25
+
+      - name: Publicar en Instagram
+        if: steps.gen.outputs.listo == 'true' && github.event.inputs.solo_generar != 'true'
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IMAGE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/posts/${{ steps.gen.outputs.archivo }}
+          CAPTION_FILE: posts/${{ steps.gen.outputs.fecha }}.txt
+        run: python scripts/publicar.py
+
+      - name: Subir la imagen como artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: post-${{ steps.gen.outputs.fecha }}
+          path: posts/${{ steps.gen.outputs.fecha }}.*

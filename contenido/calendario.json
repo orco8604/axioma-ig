@@ -1,0 +1,182 @@
+[
+ {
+  "pilar": "Axioma",
+  "gancho": "El software que nadie usa es un gasto, no una inversión.",
+  "copy": "Vi sistemas carísimos muriendo en una carpeta porque nadie preguntó quién los iba a abrir el lunes a la mañana.\n\nLa pregunta no es «¿qué puede hacer este sistema?». Es «¿quién lo va a usar todos los días y qué le hace más fácil?».",
+  "cta": "Guardalo para tu próxima reunión con un proveedor."
+ },
+ {
+  "pilar": "Tip técnico",
+  "gancho": "3 tareas que tu negocio ya puede automatizar",
+  "copy": "No hace falta un proyecto de 6 meses. Estas tres se resuelven en días:\n\n1. Consultas repetidas de WhatsApp con un bot que mira tu stock real.\n2. Carga de ventas en la planilla, sin copiar y pegar.\n3. Aviso automático cuando un cliente lleva 30 días sin comprar.",
+  "cta": "¿Cuál te haría más falta? Contame en comentarios."
+ },
+ {
+  "pilar": "Caso / servicio",
+  "gancho": "Le sacamos 11 horas de carga manual por semana",
+  "copy": "[COMPLETAR CON UN CASO REAL TUYO]\n\nEstructura: cómo era antes (el dolor concreto) → qué hicimos → el número que cambió. Si todavía no tenés casos, usá un proyecto propio o del dojo.",
+  "cta": "¿Tenés un proceso así? Escribime por DM."
+ },
+ {
+  "pilar": "Mini-guía",
+  "gancho": "5 preguntas para saber si un proceso se puede automatizar",
+  "copy": "Carrusel. Una pregunta por slide:\n1. ¿Se repite más de 10 veces por semana?\n2. ¿Las reglas se pueden escribir?\n3. ¿Los datos ya están en algún lado?\n4. ¿Un error cuesta plata o solo tiempo?\n5. ¿Alguien lo hace de mala gana?\n\nTres «sí» y ya conviene.",
+  "cta": "Guardalo y pasalo por tus procesos esta semana."
+ },
+ {
+  "pilar": "Para dueños",
+  "gancho": "Si tu sistema se cae un viernes a las 8 de la noche, ¿a quién llamás?",
+  "copy": "La mayoría de las PyMEs contesta con un nombre, no con un proceso. Y ese nombre a veces ya no trabaja más con ellos.\n\nTres cosas que deberías tener siempre: acceso a tu propio hosting, el código en tu poder, y backups que alguien probó restaurar.",
+  "cta": "¿Los tres tildados? Si dudás, hablemos."
+ },
+ {
+  "pilar": "Detrás de escena",
+  "gancho": "El stack con el que trabajo",
+  "copy": "n8n para orquestar, APIs de IA para la parte que piensa, Postgres para lo que tiene que persistir y WhatsApp Business API para la puerta de entrada.\n\nNada exótico. La gracia no está en la herramienta, está en el proceso que modelás.",
+  "cta": "¿Qué usás vos? Curioso de leer."
+ },
+ {
+  "pilar": "Conversación",
+  "gancho": "Mito: «la IA me va a reemplazar al equipo»",
+  "copy": "Realidad: en las PyMEs con las que trabajo, la IA reemplaza tareas, no personas. Lo que desaparece es la carga manual de datos y el copiar y pegar.\n\nEl equipo termina haciendo lo que nadie tenía tiempo de hacer: atender mejor.",
+  "cta": "¿De acuerdo o no? Te leo."
+ },
+ {
+  "pilar": "Axioma",
+  "gancho": "Automatizar un proceso roto es multiplicar el problema por 100.",
+  "copy": "Antes de automatizar, ordená. Si el proceso manual genera errores, el automático los va a generar más rápido y en silencio.\n\nPrimero se escribe. Después se ordena. Recién ahí se automatiza.",
+  "cta": "Guardalo antes de tu próxima automatización."
+ },
+ {
+  "pilar": "Tip técnico",
+  "gancho": "El error #1 al pedir un presupuesto de software",
+  "copy": "Pedir «una web» o «un sistema» sin decir qué problema resuelve.\n\nDecí en cambio: «hoy pierdo X horas haciendo Y, y quiero que Z pase solo». Vas a recibir presupuestos comparables y mucho más baratos.",
+  "cta": "Copiá esa frase para tu próximo pedido."
+ },
+ {
+  "pilar": "Caso / servicio",
+  "gancho": "De la consulta al presupuesto en 5 minutos",
+  "copy": "[COMPLETAR CON DATOS REALES]\n\nContá un flujo que armaste: el cliente completa un formulario, el sistema arma el presupuesto y lo manda por WhatsApp. Mostrá el antes (2 días) y el después (5 minutos).",
+  "cta": "¿Cuánto tardás vos hoy? Contame."
+ },
+ {
+  "pilar": "Mini-guía",
+  "gancho": "6 señales de que tu Excel ya no da más",
+  "copy": "Carrusel:\n1. Tiene una hoja llamada «NO TOCAR».\n2. Hay tres versiones dando vueltas por mail.\n3. Solo una persona sabe cómo funciona.\n4. Tarda en abrir.\n5. Copiás datos de otro lado todos los días.\n6. Ya rompiste una fórmula sin darte cuenta.",
+  "cta": "¿Cuántas tildaste? Guardalo."
+ },
+ {
+  "pilar": "Para dueños",
+  "gancho": "Cuánto cuesta NO automatizar: la cuenta que nadie hace",
+  "copy": "2 horas por día de carga manual × 22 días = 44 horas al mes.\n\nPoné el valor de esa hora en tu negocio y vas a tener el número exacto que estás pagando todos los meses por no resolverlo.",
+  "cta": "Hacé la cuenta y contame qué te dio."
+ },
+ {
+  "pilar": "Detrás de escena",
+  "gancho": "Cómo cotizo un proyecto (y por qué casi nunca cobro por hora)",
+  "copy": "Cobrar por hora premia la lentitud y castiga la experiencia. Cotizo por alcance y por el problema que resuelve.\n\nSi el sistema te ahorra 40 horas al mes, el precio se discute contra eso, no contra mi reloj.",
+  "cta": "¿Cómo lo ves desde tu lado?"
+ },
+ {
+  "pilar": "Conversación",
+  "gancho": "¿Cuál es la tarea repetitiva que más odiás de tu semana?",
+  "copy": "Contámela en comentarios y te digo, sin vueltas, si se puede automatizar y con qué.\n\nSin compromiso: si no conviene automatizarla, también te lo voy a decir.",
+  "cta": "Te leo abajo."
+ },
+ {
+  "pilar": "Axioma",
+  "gancho": "Si el proceso no está escrito, no existe: vive en la cabeza de alguien.",
+  "copy": "Y el día que esa persona se va de vacaciones, tu negocio se va con ella.\n\nEscribir el proceso es el paso más barato y el que más gente se saltea.",
+  "cta": "Guardalo y compartilo con tu socio."
+ },
+ {
+  "pilar": "Tip técnico",
+  "gancho": "Qué pedirle a tu programador antes de firmar",
+  "copy": "1. Acceso de administrador a todo, a tu nombre.\n2. El código en un repositorio tuyo.\n3. Backups automáticos y una prueba de restauración.\n4. Un documento de una carilla con cómo se despliega.\n\nNo es desconfianza: es continuidad.",
+  "cta": "Guardalo para tu próximo proyecto."
+ },
+ {
+  "pilar": "Caso / servicio",
+  "gancho": "Un bot que contesta a las 3 de la mañana",
+  "copy": "[COMPLETAR CON DATOS REALES]\n\nContá el caso: cuántas consultas entraban fuera de horario, cuántas se perdían, y qué pasó después. El dato que importa es cuántas se convirtieron en venta.",
+  "cta": "¿Cuántos mensajes se te pierden de noche?"
+ },
+ {
+  "pilar": "Mini-guía",
+  "gancho": "Tu primera automatización en n8n, paso a paso",
+  "copy": "Carrusel: formulario web → validación → carga en la planilla → aviso por WhatsApp.\n\nUna slide por nodo, con captura. Terminá con «esto son 40 minutos de trabajo, una vez».",
+  "cta": "Guardalo para cuando te sientes a probarlo."
+ },
+ {
+  "pilar": "Para dueños",
+  "gancho": "3 cosas que tu web debería hacer y no hace",
+  "copy": "1. Contestar en menos de 3 segundos desde el celular.\n2. Dejar el contacto a un toque de distancia, sin formularios de 9 campos.\n3. Avisarte a vos, no esperar que revises un mail que nunca abrís.",
+  "cta": "Pasame tu web por DM y te digo cuál falla."
+ },
+ {
+  "pilar": "Detrás de escena",
+  "gancho": "Un día de trabajo: de la reunión al deploy",
+  "copy": "Mostrá tu día real: la llamada donde entendés el problema, el rato de mapear el proceso en papel, el código, el deploy y el mensaje del cliente al final.\n\nLa gente contrata a la persona, no al stack.",
+  "cta": "¿Cómo es tu día? Contame."
+ },
+ {
+  "pilar": "Conversación",
+  "gancho": "Verdadero o falso: hoy una web se hace gratis",
+  "copy": "Verdadero: podés armar una en una tarde con un constructor.\nFalso: que esa web venda, cargue rápido, aparezca en Google y esté conectada a tu operación.\n\nLo gratis suele ser la parte fácil.",
+  "cta": "¿Vos qué opinás?"
+ },
+ {
+  "pilar": "Axioma",
+  "gancho": "El mejor sistema es el que tu equipo entiende sin manual.",
+  "copy": "Si necesitás capacitar tres días para que alguien cargue un pedido, el problema no es el equipo.\n\nLa complejidad tiene que estar adentro del software, no adelante del usuario.",
+  "cta": "Guardalo."
+ },
+ {
+  "pilar": "Tip técnico",
+  "gancho": "Cómo conectar tu formulario web con WhatsApp",
+  "copy": "El camino corto: formulario → webhook → n8n → API de WhatsApp Business.\n\nEl mensaje llega a tu celular con el nombre, el teléfono y qué pidió, en el momento. Cero revisar mails.",
+  "cta": "¿Querés el flujo armado? Escribime."
+ },
+ {
+  "pilar": "Mini-guía",
+  "gancho": "Checklist antes de lanzar tu web",
+  "copy": "Carrusel: velocidad en 4G, textos sin errores, botón de contacto visible sin scrollear, favicon, metadatos para compartir, formulario probado de verdad, y analítica instalada antes del lanzamiento (no después).",
+  "cta": "Guardalo para tu próximo lanzamiento."
+ },
+ {
+  "pilar": "Caso / servicio",
+  "gancho": "Turnos online: menos llamados, más reservas",
+  "copy": "[COMPLETAR CON DATOS REALES]\n\nCaso ideal para mostrar el dojo o un cliente de servicios. Antes: WhatsApp uno por uno. Después: agenda online, recordatorio automático y menos ausencias.",
+  "cta": "¿Tomás turnos a mano todavía?"
+ },
+ {
+  "pilar": "Para dueños",
+  "gancho": "¿Sistema a medida o solución enlatada?",
+  "copy": "Enlatado si tu proceso es común y podés adaptarte a él. A medida si tu forma de trabajar es justamente tu ventaja.\n\nEl error caro es pagar a medida para terminar haciendo lo mismo que hace el enlatado.",
+  "cta": "Contame tu caso y te doy mi opinión."
+ },
+ {
+  "pilar": "Detrás de escena",
+  "gancho": "Errores que cometí cobrando barato",
+  "copy": "Cobrar poco no te consigue mejores clientes: te consigue más clientes apurados.\n\nLo que cambió mi año fue aprender a decir «esto no lo hago» y a cotizar contra el valor, no contra el miedo.",
+  "cta": "¿Te pasó algo parecido?"
+ },
+ {
+  "pilar": "Conversación",
+  "gancho": "Contame en qué se te va el día y te digo qué automatizaría",
+  "copy": "En serio: escribí abajo las 3 tareas que más tiempo te comen esta semana.\n\nVoy a responder una por una con qué se puede resolver y con qué herramienta.",
+  "cta": "Te leo."
+ },
+ {
+  "pilar": "Axioma",
+  "gancho": "Medir mal es peor que no medir: te da confianza sin información.",
+  "copy": "Un tablero lleno de números que nadie usa para decidir no es un tablero, es decoración.\n\nElegí tres números que cambien lo que hacés el lunes. Los demás, ruido.",
+  "cta": "Guardalo."
+ },
+ {
+  "pilar": "Caso / servicio",
+  "gancho": "Diagnóstico de automatización: 30 minutos, sin costo",
+  "copy": "Nos sentamos, me contás cómo trabajás hoy y salís con un mapa de qué se puede automatizar, en qué orden y qué impacto tiene cada cosa.\n\nSin compromiso. Si no hay nada que valga la pena, te lo digo.",
+  "cta": "Escribime «DIAGNÓSTICO» por DM."
+ }
+]
