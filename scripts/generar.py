@@ -33,18 +33,33 @@ def post_de_hoy(hoy):
     return posts[idx], idx
 
 
-def cortar(texto, ancho=22):
-    """Corta el título en renglones parejos y resalta las palabras marcadas con *asteriscos*."""
-    palabras, lineas, actual = texto.split(), [], ""
+def _wrap(palabras, ancho):
+    lineas, actual = [], ""
     for p in palabras:
-        if len(actual) + len(p) + 1 > ancho and actual:
+        if actual and len(actual) + 1 + len(p) > ancho:
             lineas.append(actual); actual = p
         else:
             actual = f"{actual} {p}".strip()
     if actual:
         lineas.append(actual)
+    return lineas
+
+
+def cortar(texto, max_lineas=5, ancho_max=17):
+    """Corta el titulo en renglones parejos y resalta lo marcado con *asteriscos*."""
+    palabras = texto.split()
+    mejor = None
+    for ancho in range(10, ancho_max + 1):
+        lineas = _wrap(palabras, ancho)
+        if len(lineas) > max_lineas or max(len(l) for l in lineas) > ancho_max:
+            continue
+        desparejo = max(len(l) for l in lineas) - min(len(l) for l in lineas)
+        clave = (len(lineas), desparejo)
+        if mejor is None or clave < mejor[0]:
+            mejor = (clave, lineas)
+    lineas = mejor[1] if mejor else _wrap(palabras, ancho_max)
+
     if "*" not in texto:
-        # sin marcas explícitas, resaltamos el último renglón
         lineas[-1] = f"<em>{lineas[-1]}</em>"
     html = "<br>".join(lineas)
     while "*" in html:
@@ -113,7 +128,7 @@ async def render(html, destino_jpg):
 
 
 def main():
-    hoy = dt.date.fromisoformat(os.environ.get("FECHA", dt.date.today().isoformat()))
+    hoy = dt.date.fromisoformat(os.environ.get("FECHA") or dt.date.today().isoformat())
     post, idx = post_de_hoy(hoy)
     salida = RAIZ / "posts"
     salida.mkdir(exist_ok=True)
