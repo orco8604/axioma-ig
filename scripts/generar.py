@@ -14,11 +14,13 @@ import brand
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 INICIO = dt.date(2026, 8, 4)          # día 1 del ciclo
+# Cuatro hashtags bien elegidos rinden igual que diez y no ensucian el pie.
 HASHTAGS = [
- "#automatización #pymes #software #córdoba #emprendedores #tecnología #productividad #ia",
- "#desarrolloweb #automatizacion #negocios #argentina #pyme #inteligenciaartificial #n8n #digitalización",
- "#software #emprendedores #cordoba #negociosdigitales #automatización #whatsappbusiness #ia #tecnología",
+ "#automatizacion #pymes #cordoba #software",
+ "#desarrolloweb #pymes #argentina #ia",
+ "#software #automatizacion #negocios #cordoba",
 ]
+SEPARADOR = "\u00b7  \u00b7  \u00b7"
 
 
 def post_de_hoy(hoy):
@@ -105,8 +107,9 @@ def armar_html(post):
 
 
 def caption(post, idx):
-    return (f"{post['gancho']}\n\n{post['copy']}\n\n{post['cta']}\n\n"
-            f"{HASHTAGS[idx % len(HASHTAGS)]}\n")
+    """El gancho ya esta gritado en la imagen: el caption arranca donde ella termina."""
+    return (f"{post['copy']}\n\n{post['cta']}\n\n"
+            f"{SEPARADOR}\n\n{HASHTAGS[idx % len(HASHTAGS)]}\n")
 
 
 async def render(html, destino_jpg):
