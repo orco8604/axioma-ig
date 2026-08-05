@@ -16,9 +16,9 @@ RAIZ = pathlib.Path(__file__).resolve().parent.parent
 INICIO = dt.date(2026, 8, 4)          # día 1 del ciclo
 # Cuatro hashtags bien elegidos rinden igual que diez y no ensucian el pie.
 HASHTAGS = [
- "#automatizacion #pymes #cordoba #software",
- "#desarrolloweb #pymes #argentina #ia",
- "#software #automatizacion #negocios #cordoba",
+ "#consultorio #turnos #agendaonline #gestion",
+ "#psicologos #abogados #software #automatizacion",
+ "#medicos #consultorios #turnosonline #tecnologia",
 ]
 SEPARADOR = "\u00b7  \u00b7  \u00b7"
 
@@ -72,10 +72,10 @@ def cortar(texto, max_lineas=5, ancho_max=17):
 # La CTA del pie va corta: la larga va en el caption, no en la imagen.
 CTA_PIE = {
     "Axioma": "Guardalo",
-    "Tip técnico": "Seguime",
+    "Tip aplicable": "Seguime",
     "Caso / servicio": "Escribime por DM",
     "Mini-guía": "Guardalo",
-    "Para dueños": "Hablemos por DM",
+    "Para el profesional": "Hablemos por DM",
     "Detrás de escena": "Seguime",
     "Conversación": "Te leo abajo",
 }
