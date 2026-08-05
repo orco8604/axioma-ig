@@ -1,11 +1,11 @@
-3 tareas que tu negocio ya puede automatizar
+Cada una te devuelve horas por semana:
 
-No hace falta un proyecto de 6 meses. Estas tres se resuelven en días:
+1. Ver tus horarios o tu stock reales, sin preguntarte.
+2. Reservar o comprar sin negociarlo por chat.
+3. Recibir la confirmación y el recordatorio solos.
 
-1. Consultas repetidas de WhatsApp con un bot que mira tu stock real.
-2. Carga de ventas en la planilla, sin copiar y pegar.
-3. Aviso automático cuando un cliente lleva 30 días sin comprar.
+¿Cuál te sacaría más peso de encima?
 
-¿Cuál te haría más falta? Contame en comentarios.
+·  ·  ·
 
-#desarrolloweb #automatizacion #negocios #argentina #pyme #inteligenciaartificial #n8n #digitalización
+#desarrolloweb #sistemas #turnos #pymes
