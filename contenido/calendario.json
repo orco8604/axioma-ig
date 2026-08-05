@@ -1,182 +1,182 @@
 [
  {
   "pilar": "Axioma",
-  "gancho": "El software que nadie usa es un gasto, no una inversión.",
-  "copy": "Vi sistemas carísimos muriendo en una carpeta porque nadie preguntó quién los iba a abrir el lunes a la mañana.\n\nLa pregunta no es «¿qué puede hacer este sistema?». Es «¿quién lo va a usar todos los días y qué le hace más fácil?».",
-  "cta": "Guardalo para tu próxima reunión con un proveedor."
+  "gancho": "Tu agenda no es un cuaderno: es tu facturación.",
+  "copy": "Cada turno que se pierde entre mensajes sin responder es plata que ya no entra. Y no se nota, porque nadie factura lo que nunca llegó a agendarse.\n\nEl día que la agenda deja de vivir en tu cabeza y en el WhatsApp, aparece el primer número real de tu consulta.",
+  "cta": "Guardalo y mirá tu semana con esa lupa."
  },
  {
-  "pilar": "Tip técnico",
-  "gancho": "3 tareas que tu negocio ya puede automatizar",
-  "copy": "No hace falta un proyecto de 6 meses. Estas tres se resuelven en días:\n\n1. Consultas repetidas de WhatsApp con un bot que mira tu stock real.\n2. Carga de ventas en la planilla, sin copiar y pegar.\n3. Aviso automático cuando un cliente lleva 30 días sin comprar.",
-  "cta": "¿Cuál te haría más falta? Contame en comentarios."
- },
- {
-  "pilar": "Caso / servicio",
-  "gancho": "Le sacamos 11 horas de carga manual por semana",
-  "copy": "[COMPLETAR CON UN CASO REAL TUYO]\n\nEstructura: cómo era antes (el dolor concreto) → qué hicimos → el número que cambió. Si todavía no tenés casos, usá un proyecto propio o del dojo.",
-  "cta": "¿Tenés un proceso así? Escribime por DM."
- },
- {
-  "pilar": "Mini-guía",
-  "gancho": "5 preguntas para saber si un proceso se puede automatizar",
-  "copy": "Carrusel. Una pregunta por slide:\n1. ¿Se repite más de 10 veces por semana?\n2. ¿Las reglas se pueden escribir?\n3. ¿Los datos ya están en algún lado?\n4. ¿Un error cuesta plata o solo tiempo?\n5. ¿Alguien lo hace de mala gana?\n\nTres «sí» y ya conviene.",
-  "cta": "Guardalo y pasalo por tus procesos esta semana."
- },
- {
-  "pilar": "Para dueños",
-  "gancho": "Si tu sistema se cae un viernes a las 8 de la noche, ¿a quién llamás?",
-  "copy": "La mayoría de las PyMEs contesta con un nombre, no con un proceso. Y ese nombre a veces ya no trabaja más con ellos.\n\nTres cosas que deberías tener siempre: acceso a tu propio hosting, el código en tu poder, y backups que alguien probó restaurar.",
-  "cta": "¿Los tres tildados? Si dudás, hablemos."
- },
- {
-  "pilar": "Detrás de escena",
-  "gancho": "El stack con el que trabajo",
-  "copy": "n8n para orquestar, APIs de IA para la parte que piensa, Postgres para lo que tiene que persistir y WhatsApp Business API para la puerta de entrada.\n\nNada exótico. La gracia no está en la herramienta, está en el proceso que modelás.",
-  "cta": "¿Qué usás vos? Curioso de leer."
- },
- {
-  "pilar": "Conversación",
-  "gancho": "Mito: «la IA me va a reemplazar al equipo»",
-  "copy": "Realidad: en las PyMEs con las que trabajo, la IA reemplaza tareas, no personas. Lo que desaparece es la carga manual de datos y el copiar y pegar.\n\nEl equipo termina haciendo lo que nadie tenía tiempo de hacer: atender mejor.",
-  "cta": "¿De acuerdo o no? Te leo."
- },
- {
-  "pilar": "Axioma",
-  "gancho": "Automatizar un proceso roto es multiplicar el problema por 100.",
-  "copy": "Antes de automatizar, ordená. Si el proceso manual genera errores, el automático los va a generar más rápido y en silencio.\n\nPrimero se escribe. Después se ordena. Recién ahí se automatiza.",
-  "cta": "Guardalo antes de tu próxima automatización."
- },
- {
-  "pilar": "Tip técnico",
-  "gancho": "El error #1 al pedir un presupuesto de software",
-  "copy": "Pedir «una web» o «un sistema» sin decir qué problema resuelve.\n\nDecí en cambio: «hoy pierdo X horas haciendo Y, y quiero que Z pase solo». Vas a recibir presupuestos comparables y mucho más baratos.",
-  "cta": "Copiá esa frase para tu próximo pedido."
+  "pilar": "Tip aplicable",
+  "gancho": "3 cosas que tu paciente debería poder hacer sin escribirte",
+  "copy": "Cada una de estas te devuelve horas por semana:\n\n1. Ver tus horarios reales y reservar el que le sirve.\n2. Reprogramar su turno sin negociarlo por chat.\n3. Recibir el recordatorio solo, sin que vos te acuerdes.",
+  "cta": "¿Cuál te sacaría más peso de encima?"
  },
  {
   "pilar": "Caso / servicio",
-  "gancho": "De la consulta al presupuesto en 5 minutos",
-  "copy": "[COMPLETAR CON DATOS REALES]\n\nContá un flujo que armaste: el cliente completa un formulario, el sistema arma el presupuesto y lo manda por WhatsApp. Mostrá el antes (2 días) y el después (5 minutos).",
-  "cta": "¿Cuánto tardás vos hoy? Contame."
+  "gancho": "Le devolvimos 9 horas por semana a un consultorio",
+  "copy": "[COMPLETAR CON UN CASO REAL TUYO]\n\nContá uno de tus clientes profesionales: cómo llevaba la agenda antes, qué se automatizó, y el número que cambió. Si no querés dar el nombre, alcanza con «un estudio jurídico» o «una psicóloga».",
+  "cta": "¿Cómo llevás hoy tu agenda? Contame por DM."
  },
  {
   "pilar": "Mini-guía",
-  "gancho": "6 señales de que tu Excel ya no da más",
-  "copy": "Carrusel:\n1. Tiene una hoja llamada «NO TOCAR».\n2. Hay tres versiones dando vueltas por mail.\n3. Solo una persona sabe cómo funciona.\n4. Tarda en abrir.\n5. Copiás datos de otro lado todos los días.\n6. Ya rompiste una fórmula sin darte cuenta.",
+  "gancho": "5 señales de que tu agenda ya no da más",
+  "copy": "Carrusel, una por slide:\n1. Contestás turnos fuera de tu horario de atención.\n2. Anotás en dos lugares distintos y a veces no coinciden.\n3. Te enterás de un ausente cuando ya pasó la hora.\n4. No sabés cuántos turnos diste el mes pasado.\n5. Si te vas una semana, se frena todo.",
   "cta": "¿Cuántas tildaste? Guardalo."
  },
  {
-  "pilar": "Para dueños",
-  "gancho": "Cuánto cuesta NO automatizar: la cuenta que nadie hace",
-  "copy": "2 horas por día de carga manual × 22 días = 44 horas al mes.\n\nPoné el valor de esa hora en tu negocio y vas a tener el número exacto que estás pagando todos los meses por no resolverlo.",
+  "pilar": "Para el profesional",
+  "gancho": "El paciente que no avisa no es maleducado: se olvidó",
+  "copy": "Las ausencias casi nunca son falta de respeto. Son un turno que se sacó hace tres semanas y quedó tapado por la vida.\n\nUn recordatorio automático 24 horas antes resuelve la enorme mayoría. No hace falta ni enojarse ni perseguir a nadie.",
+  "cta": "¿Cuántos ausentes tuviste este mes?"
+ },
+ {
+  "pilar": "Detrás de escena",
+  "gancho": "Cómo trabajo con alguien que está a 3.000 km",
+  "copy": "Videollamada para entender el problema, un mapa del proceso que te mando por escrito, entregas parciales que podés ver funcionando, y un canal directo conmigo. No hay misterio ni intermediarios.\n\nLa distancia no es el riesgo. El riesgo es no saber en qué anda tu proyecto.",
+  "cta": "¿Trabajaste a distancia antes? Te leo."
+ },
+ {
+  "pilar": "Conversación",
+  "gancho": "Mito: «un sistema es para consultorios grandes»",
+  "copy": "Realidad: cuanto más chico es el equipo, más caro sale el desorden. Si sos vos solo, cada hora que perdés coordinando turnos es una hora que no atendés y no cobrás.\n\nEl consultorio grande tiene secretaria. Vos tenés que tener sistema.",
+  "cta": "¿De acuerdo o lo ves distinto?"
+ },
+ {
+  "pilar": "Axioma",
+  "gancho": "Automatizar un desorden es multiplicarlo.",
+  "copy": "Si tu forma de dar turnos cambia según el día y según quién pregunta, ningún sistema te va a salvar: te va a acelerar el problema.\n\nPrimero se escribe cómo atendés. Después se ordena. Recién ahí se automatiza.",
+  "cta": "Guardalo antes de contratar nada."
+ },
+ {
+  "pilar": "Tip aplicable",
+  "gancho": "Qué preguntar antes de contratar un sistema de turnos",
+  "copy": "Tres preguntas que te ahorran dolores de cabeza:\n\n1. ¿Los datos de mis pacientes son míos y me los puedo llevar?\n2. ¿Qué pasa si mañana quiero cambiar de proveedor?\n3. ¿Quién responde si se cae un lunes a la mañana?",
+  "cta": "Copiá las tres para tu próxima reunión."
+ },
+ {
+  "pilar": "Caso / servicio",
+  "gancho": "De WhatsApp a agenda online en dos semanas",
+  "copy": "[COMPLETAR CON DATOS REALES]\n\nMostrá el antes y el después de un cliente: cuántos mensajes por día manejaba, cuántos maneja ahora, y qué hace con el tiempo que recuperó.",
+  "cta": "¿Cuántos mensajes de turnos recibís por día?"
+ },
+ {
+  "pilar": "Mini-guía",
+  "gancho": "Lo mínimo que tiene que tener tu agenda online",
+  "copy": "Carrusel:\n1. Que muestre solo los horarios que vos querés dar.\n2. Que bloquee automáticamente cuando ya se ocupó.\n3. Que mande el recordatorio sin que lo pidas.\n4. Que te avise a vos en el momento.\n5. Que el paciente pueda cancelar sin escribirte.",
+  "cta": "Guardalo para comparar opciones."
+ },
+ {
+  "pilar": "Para el profesional",
+  "gancho": "La cuenta que casi nadie hace: cuánto te cuesta un ausente",
+  "copy": "Tomá el valor de tu consulta y multiplicalo por los turnos que se cayeron el mes pasado sin aviso.\n\nEse número es lo que estás pagando todos los meses por no tener recordatorios. Suele ser bastante más caro que el sistema.",
   "cta": "Hacé la cuenta y contame qué te dio."
  },
  {
   "pilar": "Detrás de escena",
-  "gancho": "Cómo cotizo un proyecto (y por qué casi nunca cobro por hora)",
-  "copy": "Cobrar por hora premia la lentitud y castiga la experiencia. Cotizo por alcance y por el problema que resuelve.\n\nSi el sistema te ahorra 40 horas al mes, el precio se discute contra eso, no contra mi reloj.",
+  "gancho": "Por qué no cobro por hora",
+  "copy": "Cobrar por hora premia la lentitud y castiga la experiencia. Cotizo por alcance: qué problema resolvemos y qué te queda funcionando.\n\nSi el sistema te devuelve ocho horas al mes, el precio se discute contra eso, no contra mi reloj.",
   "cta": "¿Cómo lo ves desde tu lado?"
  },
  {
   "pilar": "Conversación",
-  "gancho": "¿Cuál es la tarea repetitiva que más odiás de tu semana?",
-  "copy": "Contámela en comentarios y te digo, sin vueltas, si se puede automatizar y con qué.\n\nSin compromiso: si no conviene automatizarla, también te lo voy a decir.",
+  "gancho": "¿Cuál es la parte de tu semana que más te agota y no es atender?",
+  "copy": "Contámela en comentarios. Voy a responder una por una diciéndote si se puede resolver con software y con qué.\n\nSi en tu caso no conviene automatizarlo, también te lo voy a decir.",
   "cta": "Te leo abajo."
  },
  {
   "pilar": "Axioma",
-  "gancho": "Si el proceso no está escrito, no existe: vive en la cabeza de alguien.",
-  "copy": "Y el día que esa persona se va de vacaciones, tu negocio se va con ella.\n\nEscribir el proceso es el paso más barato y el que más gente se saltea.",
-  "cta": "Guardalo y compartilo con tu socio."
+  "gancho": "Si el proceso no está escrito, vive en la cabeza de alguien.",
+  "copy": "Y el día que esa persona se toma vacaciones, tu consultorio se toma vacaciones con ella.\n\nEscribir cómo se da un turno, cómo se cobra y cómo se archiva es el paso más barato y el que más gente se saltea.",
+  "cta": "Guardalo."
  },
  {
-  "pilar": "Tip técnico",
-  "gancho": "Qué pedirle a tu programador antes de firmar",
-  "copy": "1. Acceso de administrador a todo, a tu nombre.\n2. El código en un repositorio tuyo.\n3. Backups automáticos y una prueba de restauración.\n4. Un documento de una carilla con cómo se despliega.\n\nNo es desconfianza: es continuidad.",
-  "cta": "Guardalo para tu próximo proyecto."
+  "pilar": "Tip aplicable",
+  "gancho": "Cómo conectar tu web con WhatsApp sin escribir código",
+  "copy": "El camino corto:\n1. Un formulario de turno en tu web.\n2. Un enlace que dispara el aviso.\n3. El mensaje te llega al celular con nombre, motivo y horario.\n\nEs cuestión de horas, no de meses.",
+  "cta": "¿Querés el flujo armado? Escribime."
  },
  {
   "pilar": "Caso / servicio",
-  "gancho": "Un bot que contesta a las 3 de la mañana",
-  "copy": "[COMPLETAR CON DATOS REALES]\n\nContá el caso: cuántas consultas entraban fuera de horario, cuántas se perdían, y qué pasó después. El dato que importa es cuántas se convirtieron en venta.",
-  "cta": "¿Cuántos mensajes se te pierden de noche?"
+  "gancho": "Turnos que se reservan a las 3 de la mañana",
+  "copy": "[COMPLETAR CON DATOS REALES]\n\nContá el caso: cuántas reservas entran fuera del horario de atención desde que hay agenda online. Ese es el dato que más impresiona, porque son turnos que antes simplemente se perdían.",
+  "cta": "¿Cuántos turnos se te pierden de noche?"
  },
  {
   "pilar": "Mini-guía",
-  "gancho": "Tu primera automatización en n8n, paso a paso",
-  "copy": "Carrusel: formulario web → validación → carga en la planilla → aviso por WhatsApp.\n\nUna slide por nodo, con captura. Terminá con «esto son 40 minutos de trabajo, una vez».",
-  "cta": "Guardalo para cuando te sientes a probarlo."
+  "gancho": "Tu primera automatización, paso a paso",
+  "copy": "Carrusel: turno reservado → confirmación al paciente → recordatorio 24 h antes → aviso a vos si cancela.\n\nUna slide por paso, con captura real. Cerrá con «esto se configura una vez y funciona para siempre».",
+  "cta": "Guardalo para cuando te sientes a hacerlo."
  },
  {
-  "pilar": "Para dueños",
+  "pilar": "Para el profesional",
   "gancho": "3 cosas que tu web debería hacer y no hace",
-  "copy": "1. Contestar en menos de 3 segundos desde el celular.\n2. Dejar el contacto a un toque de distancia, sin formularios de 9 campos.\n3. Avisarte a vos, no esperar que revises un mail que nunca abrís.",
+  "copy": "1. Cargar en menos de 3 segundos desde el celular, que es donde te buscan.\n2. Dejar reservar un turno sin tener que escribirte.\n3. Avisarte a vos, en vez de esperar que revises un mail.",
   "cta": "Pasame tu web por DM y te digo cuál falla."
  },
  {
   "pilar": "Detrás de escena",
-  "gancho": "Un día de trabajo: de la reunión al deploy",
-  "copy": "Mostrá tu día real: la llamada donde entendés el problema, el rato de mapear el proceso en papel, el código, el deploy y el mensaje del cliente al final.\n\nLa gente contrata a la persona, no al stack.",
+  "gancho": "Un día de trabajo: de la reunión al sistema andando",
+  "copy": "Mostrá tu día real: la videollamada donde entendés el problema, el rato de mapear el proceso en papel, el código, la prueba con el cliente y el mensaje del final.\n\nA distancia, el cliente contrata a la persona antes que al stack.",
   "cta": "¿Cómo es tu día? Contame."
  },
  {
   "pilar": "Conversación",
-  "gancho": "Verdadero o falso: hoy una web se hace gratis",
-  "copy": "Verdadero: podés armar una en una tarde con un constructor.\nFalso: que esa web venda, cargue rápido, aparezca en Google y esté conectada a tu operación.\n\nLo gratis suele ser la parte fácil.",
+  "gancho": "¿Verdadero o falso? Una web hoy se hace gratis",
+  "copy": "Verdadero: podés armar una en una tarde con un constructor.\nFalso: que esa web te traiga turnos, cargue rápido, aparezca cuando te buscan y esté conectada a tu agenda.\n\nLo gratis suele ser la parte fácil.",
   "cta": "¿Vos qué opinás?"
  },
  {
   "pilar": "Axioma",
-  "gancho": "El mejor sistema es el que tu equipo entiende sin manual.",
-  "copy": "Si necesitás capacitar tres días para que alguien cargue un pedido, el problema no es el equipo.\n\nLa complejidad tiene que estar adentro del software, no adelante del usuario.",
+  "gancho": "El mejor sistema es el que usás sin manual.",
+  "copy": "Si necesitás tres capacitaciones para cargar un turno, el problema no sos vos.\n\nLa complejidad tiene que estar adentro del software, no adelante del que lo usa.",
   "cta": "Guardalo."
  },
  {
-  "pilar": "Tip técnico",
-  "gancho": "Cómo conectar tu formulario web con WhatsApp",
-  "copy": "El camino corto: formulario → webhook → n8n → API de WhatsApp Business.\n\nEl mensaje llega a tu celular con el nombre, el teléfono y qué pidió, en el momento. Cero revisar mails.",
-  "cta": "¿Querés el flujo armado? Escribime."
+  "pilar": "Tip aplicable",
+  "gancho": "Cómo cobrar la seña sin perseguir a nadie",
+  "copy": "1. Link de pago en el mismo mensaje de confirmación.\n2. El turno queda reservado recién cuando se paga.\n3. Aviso automático a vos cuando entra.\n\nLas ausencias bajan solas cuando hay algo puesto de por medio.",
+  "cta": "¿Cobrás seña hoy? Contame cómo."
  },
  {
   "pilar": "Mini-guía",
   "gancho": "Checklist antes de lanzar tu web",
-  "copy": "Carrusel: velocidad en 4G, textos sin errores, botón de contacto visible sin scrollear, favicon, metadatos para compartir, formulario probado de verdad, y analítica instalada antes del lanzamiento (no después).",
+  "copy": "Carrusel: velocidad en el celular, botón de turno visible sin scrollear, textos sin errores, datos de contacto reales, formulario probado de verdad, y medición instalada antes de lanzar, no después.",
   "cta": "Guardalo para tu próximo lanzamiento."
  },
  {
   "pilar": "Caso / servicio",
-  "gancho": "Turnos online: menos llamados, más reservas",
-  "copy": "[COMPLETAR CON DATOS REALES]\n\nCaso ideal para mostrar el dojo o un cliente de servicios. Antes: WhatsApp uno por uno. Después: agenda online, recordatorio automático y menos ausencias.",
-  "cta": "¿Tomás turnos a mano todavía?"
+  "gancho": "Menos llamados, más reservas",
+  "copy": "[COMPLETAR CON DATOS REALES]\n\nUn caso donde el teléfono dejó de sonar todo el día. Contá cuántos llamados recibía antes, cuántos ahora, y qué pasó con la cantidad de turnos.",
+  "cta": "¿Seguís tomando turnos por teléfono?"
  },
  {
-  "pilar": "Para dueños",
-  "gancho": "¿Sistema a medida o solución enlatada?",
-  "copy": "Enlatado si tu proceso es común y podés adaptarte a él. A medida si tu forma de trabajar es justamente tu ventaja.\n\nEl error caro es pagar a medida para terminar haciendo lo mismo que hace el enlatado.",
+  "pilar": "Para el profesional",
+  "gancho": "¿Sistema a medida o algo enlatado?",
+  "copy": "Enlatado si atendés como atiende todo el mundo y podés adaptarte a lo que trae.\nA medida si tu forma de trabajar es justamente lo que te distingue.\n\nEl error caro es pagar a medida para terminar haciendo lo mismo que hace el enlatado.",
   "cta": "Contame tu caso y te doy mi opinión."
  },
  {
   "pilar": "Detrás de escena",
   "gancho": "Errores que cometí cobrando barato",
-  "copy": "Cobrar poco no te consigue mejores clientes: te consigue más clientes apurados.\n\nLo que cambió mi año fue aprender a decir «esto no lo hago» y a cotizar contra el valor, no contra el miedo.",
+  "copy": "Cobrar poco no te trae mejores clientes: te trae más clientes apurados.\n\nLo que me cambió el año fue aprender a decir «esto no lo hago» y a cotizar contra el valor, no contra el miedo.",
   "cta": "¿Te pasó algo parecido?"
  },
  {
   "pilar": "Conversación",
-  "gancho": "Contame en qué se te va el día y te digo qué automatizaría",
-  "copy": "En serio: escribí abajo las 3 tareas que más tiempo te comen esta semana.\n\nVoy a responder una por una con qué se puede resolver y con qué herramienta.",
+  "gancho": "Contame cómo das turnos hoy y te digo qué automatizaría",
+  "copy": "En serio: escribí abajo cómo es tu circuito, desde que alguien te escribe hasta que se va del consultorio.\n\nTe respondo con el punto exacto donde estás perdiendo tiempo.",
   "cta": "Te leo."
  },
  {
   "pilar": "Axioma",
-  "gancho": "Medir mal es peor que no medir: te da confianza sin información.",
-  "copy": "Un tablero lleno de números que nadie usa para decidir no es un tablero, es decoración.\n\nElegí tres números que cambien lo que hacés el lunes. Los demás, ruido.",
+  "gancho": "Medir mal es peor que no medir: da confianza sin información.",
+  "copy": "Un tablero lleno de números que no cambian ninguna decisión no es un tablero, es decoración.\n\nPara un consultorio alcanzan tres: turnos dados, ausentes, y de dónde llegó cada paciente nuevo.",
   "cta": "Guardalo."
  },
  {
   "pilar": "Caso / servicio",
-  "gancho": "Diagnóstico de automatización: 30 minutos, sin costo",
-  "copy": "Nos sentamos, me contás cómo trabajás hoy y salís con un mapa de qué se puede automatizar, en qué orden y qué impacto tiene cada cosa.\n\nSin compromiso. Si no hay nada que valga la pena, te lo digo.",
+  "gancho": "Diagnóstico gratuito: 30 minutos, por videollamada",
+  "copy": "Me contás cómo trabajás hoy y salís con un mapa de qué se puede automatizar, en qué orden y qué impacto tiene cada cosa. Sin compromiso y sin importar dónde estés.\n\nSi no hay nada que valga la pena, te lo digo.",
   "cta": "Escribime «DIAGNÓSTICO» por DM."
  }
 ]
