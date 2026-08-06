@@ -66,6 +66,18 @@ def main():
     })
     print(f"PUBLICADO. id del post: {pub['id']}")
 
+    # Dejamos constancia para que ninguna otra corrida vuelva a publicar lo mismo.
+    registro = os.environ.get("REGISTRO")
+    fecha = os.environ.get("FECHA")
+    if registro and fecha:
+        ya = []
+        if os.path.exists(registro):
+            ya = open(registro, encoding="utf-8").read().split()
+        if fecha not in ya:
+            with open(registro, "a", encoding="utf-8") as f:
+                f.write(fecha + "\n")
+        print(f"Anotado en {registro}")
+
 
 if __name__ == "__main__":
     main()
