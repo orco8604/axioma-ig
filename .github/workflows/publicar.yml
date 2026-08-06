@@ -2,8 +2,12 @@ name: Publicar en Instagram
 
 on:
   schedule:
-    # 16:00 UTC = 13:00 en Argentina. Cambiá la hora acá si querés otro horario.
+    # 16:00 UTC = 13:00 en Argentina — la corrida principal.
     - cron: "0 16 * * *"
+    # 20:30 UTC = 17:30 en Argentina — red de seguridad.
+    # Si la de las 13:00 publicó, esta no hace nada. Si falló (por ejemplo,
+    # porque GitHub no consiguió una máquina), esta la cubre.
+    - cron: "30 20 * * *"
   workflow_dispatch:
     inputs:
       fecha:
@@ -11,6 +15,10 @@ on:
         required: false
       solo_generar:
         description: "true = genera la imagen pero NO publica"
+        required: false
+        default: "false"
+      forzar:
+        description: "true = publica aunque ya figure como publicado"
         required: false
         default: "false"
 
@@ -23,42 +31,79 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Candado: evita publicar dos veces el mismo día.
+      # El registro vive en posts/publicados.txt, una fecha por línea.
+      - name: ¿El post de hoy ya salió?
+        id: candado
+        run: |
+          FECHA="${{ github.event.inputs.fecha }}"
+          [ -z "$FECHA" ] && FECHA=$(date -u +%F)
+          echo "fecha=$FECHA" >> "$GITHUB_OUTPUT"
+          if [ "${{ github.event.inputs.forzar }}" = "true" ]; then
+            echo "Forzado: publico igual."
+            echo "saltear=false" >> "$GITHUB_OUTPUT"
+          elif grep -qx "$FECHA" posts/publicados.txt 2>/dev/null; then
+            echo "El post del $FECHA ya está publicado. No hago nada."
+            echo "saltear=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "saltear=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/setup-python@v5
+        if: steps.candado.outputs.saltear != 'true'
         with:
           python-version: "3.12"
 
       - name: Instalar dependencias
+        if: steps.candado.outputs.saltear != 'true'
         run: |
           pip install playwright pillow
           playwright install --with-deps chromium
 
       - name: Generar imagen y caption
         id: gen
+        if: steps.candado.outputs.saltear != 'true'
         env:
-          FECHA: ${{ github.event.inputs.fecha }}
+          FECHA: ${{ steps.candado.outputs.fecha }}
         run: python scripts/generar.py
 
       - name: Guardar el post en el repo
+        if: steps.candado.outputs.saltear != 'true'
         run: |
           git config user.name  "axioma-bot"
           git config user.email "actions@github.com"
+          git pull --rebase --autostash origin main || true
           git add posts/
           git diff --staged --quiet || git commit -m "post ${{ steps.gen.outputs.fecha }}"
           git push
 
       - name: Esperar a que la imagen quede accesible
+        if: steps.candado.outputs.saltear != 'true' && steps.gen.outputs.listo == 'true'
         run: sleep 25
 
       - name: Publicar en Instagram
-        if: steps.gen.outputs.listo == 'true' && github.event.inputs.solo_generar != 'true'
+        if: steps.candado.outputs.saltear != 'true' && steps.gen.outputs.listo == 'true' && github.event.inputs.solo_generar != 'true'
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           IMAGE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/posts/${{ steps.gen.outputs.archivo }}
           CAPTION_FILE: posts/${{ steps.gen.outputs.fecha }}.txt
+          REGISTRO: posts/publicados.txt
+          FECHA: ${{ steps.gen.outputs.fecha }}
         run: python scripts/publicar.py
 
+      - name: Anotar que ya se publicó
+        if: steps.candado.outputs.saltear != 'true' && steps.gen.outputs.listo == 'true' && github.event.inputs.solo_generar != 'true'
+        run: |
+          git config user.name  "axioma-bot"
+          git config user.email "actions@github.com"
+          git pull --rebase --autostash origin main || true
+          git add posts/publicados.txt
+          git diff --staged --quiet || git commit -m "publicado ${{ steps.gen.outputs.fecha }}"
+          git push
+
       - name: Subir la imagen como artefacto
+        if: steps.candado.outputs.saltear != 'true'
         uses: actions/upload-artifact@v4
         with:
           name: post-${{ steps.gen.outputs.fecha }}
