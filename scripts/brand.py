@@ -175,6 +175,8 @@ BG = FONDOS[0]
 
 def fondo(i=0):
     return FONDOS[i % len(FONDOS)]
+
+
 HEADER = ("<div class='brand'><div class='mark'><i></i><i></i><i></i></div>"
           "<div class='brand-txt'>AXIOMA<span>.</span>SOFTWARE</div></div>")
 
