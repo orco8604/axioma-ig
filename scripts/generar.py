@@ -85,25 +85,26 @@ def cta_pie(pilar):
     return CTA_PIE.get(pilar, "Seguime")
 
 
-def armar_html(post):
+def armar_html(post, idx=0):
     pilar = post["pilar"]
     titulo = cortar(post["gancho"])
     cuerpo = post["copy"]
     pie = cta_pie(pilar)
+    bg = idx % len(brand.FONDOS)   # el fondo rota dia a dia
 
     # Los posts que esperan datos o capturas tuyas se generan como borrador
     # y NO se publican solos.
     if "[COMPLETAR" in cuerpo:
         return brand.captura(pilar, titulo, "axioma · borrador",
-                             "ACÁ VA TU CAPTURA<br>O TUS NÚMEROS REALES", pie), False
+                             "ACÁ VA TU CAPTURA<br>O TUS NÚMEROS REALES", pie, bg), False
 
     items = [l.lstrip("0123456789. ") for l in cuerpo.split("\n")
              if l.strip() and l.strip()[0].isdigit()][:3]
     if items:
-        return brand.tip(pilar, titulo, items, pie), True
+        return brand.tip(pilar, titulo, items, pie, bg), True
 
     primera = cuerpo.split("\n\n")[0]
-    return brand.axioma(titulo, primera, pie), True
+    return brand.axioma(titulo, primera, pie, bg), True
 
 
 def caption(post, idx):
@@ -136,7 +137,7 @@ def main():
     salida = RAIZ / "posts"
     salida.mkdir(exist_ok=True)
     jpg = salida / f"{hoy}.jpg"
-    html, listo = armar_html(post)
+    html, listo = armar_html(post, idx)
     asyncio.run(render(html, jpg))
     (salida / f"{hoy}.txt").write_text(caption(post, idx), encoding="utf-8")
 
