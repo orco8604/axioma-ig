@@ -70,6 +70,12 @@ def main():
     else:
         raise SystemExit("El contenedor nunca quedó listo. Reintentá más tarde.")
 
+    # Modo prueba: si Meta aceptó el archivo, el contenedor llegó a FINISHED.
+    # Cortamos acá para verificar sin dejar nada publicado.
+    if os.environ.get("SOLO_CONTENEDOR") == "true":
+        print("PRUEBA OK: Meta descargó y aceptó el archivo. No publico.")
+        return
+
     pub = llamar("POST", f"{uid}/media_publish", {
         "creation_id": cid,
         "access_token": token,
