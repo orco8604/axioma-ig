@@ -1,146 +1,58 @@
 [
   {
-    "gancho": "Lo que hacés a mano *ya es un sistema*",
-    "beats": [
-      {"texto": "Anotás el turno", "pie": "En un cuaderno, en el chat, en la cabeza."},
-      {"texto": "Pasás el dato *a la planilla*", "pie": "Otra vez lo mismo, escrito dos veces."},
-      {"texto": "Mandás el recordatorio", "pie": "Si te acordás. Si no, se cae."}
-    ],
-    "lema": "Solo que *lo corrés vos*",
-    "cta_video": "Guardalo",
-    "copy": "Anotar el turno, pasar el pedido a la planilla, mandar el recordatorio. Eso es un proceso: existe, tiene reglas y se repite.\n\nLa pregunta no es si automatizarlo. Es cuánto te está costando seguir siendo vos el que lo ejecuta.",
-    "cta": "Mirá tu semana con esa lupa y contame qué encontraste."
+    "guion": "turnos",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "Turnos que se toman solos.<br>Aunque estés durmiendo.",
+    "boton": "Escribime por DM",
+    "copy": "El turno se pidió a las 23:04. Nadie contestó a esa hora: contestó el sistema.\n\nMostró los horarios que estaban realmente libres, tomó el que eligió, lo bloqueó en la agenda y mandó la confirmación. Al otro día vos te enterás con todo hecho.",
+    "cta": "¿Cuántos mensajes contestás fuera de horario? Te leo abajo."
   },
   {
-    "gancho": "3 cosas que tu cliente debería poder hacer *sin escribirte*",
-    "beats": [
-      {"texto": "Ver tus horarios *reales*", "pie": "Sin preguntarte y sin esperar respuesta."},
-      {"texto": "Reservar o comprar solo", "pie": "Sin negociarlo por chat."},
-      {"texto": "Recibir la confirmación *sola*", "pie": "Y el recordatorio también."}
-    ],
-    "lema": "Cada una te devuelve *horas por semana*",
-    "cta_video": "¿Cuál elegís?",
-    "copy": "Cada una te devuelve horas por semana:\n\n1. Ver tus horarios o tu stock reales, sin preguntarte.\n2. Reservar o comprar sin negociarlo por chat.\n3. Recibir la confirmación y el recordatorio solos.",
-    "cta": "¿Cuál te sacaría más peso de encima? Te leo abajo."
+    "guion": "tienda",
+    "lema": "Vendé <em>mientras dormís</em>",
+    "cierre": "Tienda online conectada<br>a tu stock real.",
+    "boton": "Quiero la mía",
+    "copy": "Una venta a las 3:12 de la mañana. El stock bajó solo de 4 a 3, el pedido quedó registrado y el aviso te esperaba cuando te despertaste.\n\nUna tienda que no está conectada a tu stock te hace vender cosas que no tenés. Esa es la parte cara.",
+    "cta": "¿Tu tienda descuenta stock sola? Contame cómo lo manejás."
   },
   {
-    "gancho": "El que no avisa *no es maleducado*",
-    "beats": [
-      {"texto": "Se olvidó", "pie": "Lo acordaron hace tres semanas."},
-      {"texto": "Y la vida *lo tapó*", "pie": "No es falta de respeto. Es memoria."},
-      {"texto": "Un recordatorio automático *resuelve casi todo*", "pie": "Sin enojarse y sin perseguir a nadie."}
-    ],
-    "lema": "Software *a tu medida*",
-    "cta_video": "Escribime",
-    "copy": "Las ausencias y los pedidos que se caen casi nunca son falta de respeto. Son algo que se acordó hace tres semanas y quedó tapado por la vida.\n\nUn recordatorio automático el día antes resuelve la enorme mayoría. Sin enojarse y sin perseguir a nadie.",
-    "cta": "¿Cuántos se te cayeron este mes? Contame."
+    "guion": "formulario",
+    "lema": "Sin copiar <em>ni pegar nada</em>",
+    "cierre": "Del formulario a tu celular,<br>sin escalas.",
+    "boton": "Escribime por DM",
+    "copy": "Alguien completa el formulario de tu web y el mensaje te llega al celular con el nombre, el teléfono y qué necesita, ya cargados.\n\nSin revisar un mail que no abrís. Sin copiar y pegar a una planilla. Se configura una vez y funciona siempre.",
+    "cta": "¿Cómo te llegan hoy las consultas de tu web?"
   },
   {
-    "gancho": "Automatizar un desorden *es multiplicarlo*",
-    "beats": [
-      {"texto": "Primero se *escribe* cómo trabajás", "pie": "En papel. Sin software todavía."},
-      {"texto": "Después *se ordena*", "pie": "Se sacan los pasos que no suman."},
-      {"texto": "Recién ahí *se automatiza*", "pie": "En ese orden. Nunca al revés."}
-    ],
-    "lema": "Si no, solo *acelerás el problema*",
-    "cta_video": "Guardalo",
-    "copy": "Si tu forma de trabajar cambia según el día y según quién pregunta, ningún sistema te va a salvar: te va a acelerar el problema.\n\nPrimero se escribe cómo trabajás. Después se ordena. Recién ahí se automatiza.",
-    "cta": "Guardalo antes de contratar nada."
+    "guion": "cobro",
+    "lema": "Cobrá <em>antes, no después</em>",
+    "cierre": "El link de pago va en el<br>mismo mensaje de siempre.",
+    "boton": "Contame tu caso",
+    "copy": "El link de pago viaja en el mismo mensaje donde confirmás. Se reserva recién cuando se paga, y el aviso te llega en el momento.\n\nLas cancelaciones bajan solas cuando hay algo puesto de por medio. No hace falta perseguir a nadie.",
+    "cta": "¿Cobrás seña hoy? Contame cómo lo resolvés."
   },
   {
-    "gancho": "Qué preguntar *antes de contratar* cualquier sistema",
-    "beats": [
-      {"texto": "¿Los datos *son míos*?", "pie": "¿Y me los puedo llevar cuando quiera?"},
-      {"texto": "¿Y si mañana *cambio de proveedor*?", "pie": "Que no te dejen atado."},
-      {"texto": "¿Quién responde *un lunes a la mañana*?", "pie": "Cuando se cae y tenés gente esperando."}
-    ],
-    "lema": "Tres preguntas que *te ahorran dolores de cabeza*",
-    "cta_video": "Copialas",
-    "copy": "Tres preguntas que te ahorran dolores de cabeza:\n\n1. ¿Los datos son míos y me los puedo llevar?\n2. ¿Qué pasa si mañana quiero cambiar de proveedor?\n3. ¿Quién responde si se cae un lunes a la mañana?",
-    "cta": "Copiá las tres para tu próxima reunión."
+    "guion": "recordatorio",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "Los recordatorios salen solos.<br>Vos no hacés nada.",
+    "boton": "Escribime por DM",
+    "copy": "Las ausencias casi nunca son falta de respeto: es algo que se acordó hace tres semanas y quedó tapado por la vida.\n\nUn mensaje automático el día antes resuelve la enorme mayoría. Tres recordatorios, cero llamadas tuyas.",
+    "cta": "¿Cuántos se te cayeron este mes?"
   },
   {
-    "gancho": "La cuenta que *casi nadie hace*",
-    "beats": [
-      {"texto": "Cuánto vale *una hora tuya*", "pie": "La de verdad, no la que te gustaría."},
-      {"texto": "Por las horas que pasás *copiando datos*", "pie": "Y contestando siempre lo mismo."},
-      {"texto": "Eso pagás *todos los meses*", "pie": "Por no haberlo resuelto."}
-    ],
-    "lema": "Suele ser *más caro que resolverlo*",
-    "cta_video": "Hacé la cuenta",
-    "copy": "Tomá lo que vale una hora tuya y multiplicalo por las horas que pasás copiando datos, contestando lo mismo y coordinando.\n\nEse número es lo que estás pagando todos los meses por no resolverlo. Suele ser bastante más caro que resolverlo.",
-    "cta": "Hacé la cuenta y contame qué te dio."
-  },
-  {
-    "gancho": "Si el proceso *no está escrito*, vive en la cabeza de alguien",
-    "beats": [
-      {"texto": "Cómo entra un pedido", "pie": "Escribilo. Hoy."},
-      {"texto": "Cómo *se cobra*", "pie": "Y quién avisa si no entró la plata."},
-      {"texto": "Dónde *queda registrado*", "pie": "Un solo lugar. No tres."}
-    ],
-    "lema": "El paso *más barato* y el que más gente se saltea",
-    "cta_video": "Guardalo",
-    "copy": "Y el día que esa persona se toma vacaciones, tu negocio se las toma con ella.\n\nEscribir cómo entra un pedido, cómo se cobra y dónde queda registrado es el paso más barato y el que más gente se saltea.",
-    "cta": "¿Lo tenés escrito? Te leo abajo."
-  },
-  {
-    "gancho": "3 cosas que tu web *debería hacer y no hace*",
-    "beats": [
-      {"texto": "Cargar en *menos de 3 segundos*", "pie": "Desde el celular, que es donde te buscan."},
-      {"texto": "Dejar que te compren *de un toque*", "pie": "Sin formularios de nueve campos."},
-      {"texto": "*Avisarte a vos*", "pie": "En vez de esperar que revises un mail que no abrís."}
-    ],
-    "lema": "Software *a tu medida*",
-    "cta_video": "Pasame tu web",
-    "copy": "1. Cargar en menos de 3 segundos desde el celular, que es donde te buscan.\n2. Dejar que te contacten o te compren de un toque, sin formularios de nueve campos.\n3. Avisarte a vos, en vez de esperar que revises un mail que no abrís.",
-    "cta": "Pasame tu web por DM y te digo cuál de las tres falla."
-  },
-  {
-    "gancho": "«Un sistema es *para negocios grandes*»",
-    "beats": [
-      {"texto": "Al revés", "pie": "Cuanto más chico sos, más caro te sale el desorden."},
-      {"texto": "Cada hora coordinando *es una hora que no cobrás*", "pie": "Si sos vos solo, la pagás doble."},
-      {"texto": "El grande tiene *un equipo administrativo*", "pie": "Vos tenés que tener sistema."}
-    ],
-    "lema": "Mito *desarmado*",
-    "cta_video": "¿De acuerdo?",
-    "copy": "Realidad: cuanto más chico sos, más caro te sale el desorden. Si sos vos solo, cada hora que perdés coordinando es una hora que no producís y no cobrás.\n\nEl grande tiene un equipo administrativo. Vos tenés que tener sistema.",
-    "cta": "¿De acuerdo o lo ves distinto? Te leo."
-  },
-  {
-    "gancho": "El mejor sistema es *el que usás sin manual*",
-    "beats": [
-      {"texto": "Si hacen falta *tres capacitaciones*", "pie": "Para cargar algo simple."},
-      {"texto": "El problema *no es el que lo usa*", "pie": "Es cómo está hecho."},
-      {"texto": "La complejidad va *adentro del software*", "pie": "No adelante de la persona."}
-    ],
-    "lema": "Software *a tu medida*",
-    "cta_video": "Guardalo",
-    "copy": "Si hacen falta tres capacitaciones para cargar algo, el problema no es el que lo usa.\n\nLa complejidad tiene que estar adentro del software, no adelante de la persona.",
-    "cta": "¿Te pasó con algún sistema? Contame cuál."
-  },
-  {
-    "gancho": "Cómo *cobrar por adelantado* sin perseguir a nadie",
-    "beats": [
-      {"texto": "Link de pago *en la confirmación*", "pie": "En el mismo mensaje, no aparte."},
-      {"texto": "Queda reservado *recién cuando se paga*", "pie": "Así de simple."},
-      {"texto": "Aviso automático *a vos*", "pie": "En el momento en que entra."}
-    ],
-    "lema": "Las cancelaciones *bajan solas*",
-    "cta_video": "Escribime",
-    "copy": "1. Link de pago en el mismo mensaje de confirmación.\n2. Queda reservado recién cuando se paga.\n3. Aviso automático a vos cuando entra.\n\nLas cancelaciones bajan solas cuando hay algo puesto de por medio.",
-    "cta": "¿Cobrás por adelantado hoy? Contame cómo lo hacés."
-  },
-  {
-    "gancho": "Medir mal *es peor que no medir*",
-    "beats": [
-      {"texto": "Da confianza *sin información*", "pie": "Números que no cambian ninguna decisión."},
-      {"texto": "Con *tres alcanza*", "pie": "Cuánto entró. Cuánto se cayó."},
-      {"texto": "Y *de dónde llegó* cada cliente nuevo", "pie": "Ese es el que casi nadie mide."}
-    ],
-    "lema": "Lo demás *es decoración*",
-    "cta_video": "Guardalo",
-    "copy": "Un tablero lleno de números que no cambian ninguna decisión no es un tablero, es decoración.\n\nCon tres alcanza: cuánto entró, cuánto se cayó, y de dónde llegó cada cliente nuevo.",
+    "guion": "tablero",
+    "lema": "Medí <em>lo que importa</em>",
+    "cierre": "Tres números que sí<br>cambian decisiones.",
+    "boton": "Hablemos por DM",
+    "copy": "Un tablero lleno de números que no cambian ninguna decisión no es un tablero, es decoración.\n\nCon tres alcanza: cuánto entró, cuánto se cayó, y de dónde llegó cada cliente nuevo. El tercero es el que casi nadie mide y el que más plata mueve.",
     "cta": "¿Cuál de los tres no estás midiendo hoy?"
+  },
+  {
+    "guion": "repetido",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "Lo repetido se contesta solo.<br>Vos atendés lo importante.",
+    "boton": "Escribime por DM",
+    "copy": "Envíos, horarios, precios, medios de pago, dirección. Las mismas cinco preguntas todos los días, contestadas una por una a mano.\n\nEso se automatiza en horas. Lo que llega a tu celular después es solo lo que de verdad necesita que respondas vos.",
+    "cta": "¿Cuál es la pregunta que más te repiten? Te leo."
   }
 ]
