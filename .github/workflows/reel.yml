@@ -19,6 +19,10 @@ on:
         description: "true = publica aunque ya figure como publicado"
         required: false
         default: "false"
+      probar:
+        description: "true = crea el contenedor en Meta para verificar, pero NO publica"
+        required: false
+        default: "false"
 
 permissions:
   contents: write
@@ -90,11 +94,12 @@ jobs:
           VIDEO_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/reels/${{ steps.gen.outputs.archivo }}
           CAPTION_FILE: reels/${{ steps.gen.outputs.fecha }}.txt
           REGISTRO: reels/publicados.txt
+          SOLO_CONTENEDOR: ${{ github.event.inputs.probar }}
           FECHA: ${{ steps.gen.outputs.fecha }}
         run: python scripts/publicar.py
 
       - name: Anotar que ya se publicó
-        if: steps.candado.outputs.saltear != 'true' && github.event.inputs.solo_generar != 'true'
+        if: steps.candado.outputs.saltear != 'true' && github.event.inputs.solo_generar != 'true' && github.event.inputs.probar != 'true'
         run: |
           git config user.name  "axioma-bot"
           git config user.email "actions@github.com"
