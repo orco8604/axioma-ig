@@ -2,16 +2,19 @@
 """Publica en Instagram vía la API de Meta (Instagram API with Instagram Login).
 
 Proceso en dos pasos, como pide Meta:
-  1. crear un contenedor de medios apuntando a la URL pública de la imagen
+  1. crear un contenedor de medios apuntando a la URL pública del archivo
   2. publicar ese contenedor
 
 Variables de entorno necesarias:
   IG_USER_ID       id numérico de la cuenta de Instagram
   IG_ACCESS_TOKEN  token de larga duración
-  IMAGE_URL        URL pública de la imagen (raw.githubusercontent.com)
+  IMAGE_URL        URL pública de la imagen  (para fotos)
+  VIDEO_URL        URL pública del video     (para reels)
   CAPTION_FILE     ruta al .txt con el caption
+  REGISTRO         archivo donde anotar la fecha publicada (opcional)
+  FECHA            la fecha a anotar (opcional)
 """
-import os, sys, time, json, urllib.parse, urllib.request
+import os, sys, time, json, urllib.parse, urllib.request, urllib.error
 
 API = "https://graph.instagram.com/v23.0"
 
@@ -24,7 +27,7 @@ def llamar(metodo, ruta, datos):
     if metodo == "GET":
         req = urllib.request.Request(f"{url}?{urllib.parse.urlencode(datos)}")
     try:
-        with urllib.request.urlopen(req, timeout=60) as r:
+        with urllib.request.urlopen(req, timeout=90) as r:
             return json.loads(r.read())
     except urllib.error.HTTPError as e:
         detalle = e.read().decode(errors="replace")
@@ -34,29 +37,36 @@ def llamar(metodo, ruta, datos):
 def main():
     uid = os.environ["IG_USER_ID"]
     token = os.environ["IG_ACCESS_TOKEN"]
-    image_url = os.environ["IMAGE_URL"]
     caption = open(os.environ["CAPTION_FILE"], encoding="utf-8").read().strip()
 
-    print(f"Imagen: {image_url}")
-    cont = llamar("POST", f"{uid}/media", {
-        "image_url": image_url,
-        "caption": caption,
-        "access_token": token,
-    })
+    video_url = os.environ.get("VIDEO_URL")
+    if video_url:
+        # Un reel tarda bastante más en procesarse que una foto.
+        campos = {"media_type": "REELS", "video_url": video_url,
+                  "share_to_feed": "true"}
+        intentos, espera = 40, 10
+        print(f"Reel: {video_url}")
+    else:
+        campos = {"image_url": os.environ["IMAGE_URL"]}
+        intentos, espera = 20, 6
+        print(f"Imagen: {campos['image_url']}")
+
+    cont = llamar("POST", f"{uid}/media", {**campos, "caption": caption,
+                                           "access_token": token})
     cid = cont["id"]
     print(f"Contenedor creado: {cid}")
 
-    # Meta procesa la imagen de forma asincrónica: esperamos a que quede lista
-    for intento in range(20):
+    # Meta procesa el archivo de forma asincrónica: esperamos a que quede listo
+    for intento in range(intentos):
         est = llamar("GET", cid, {"fields": "status_code,status",
                                   "access_token": token})
         code = est.get("status_code")
         if code == "FINISHED":
             break
         if code == "ERROR":
-            raise SystemExit(f"Meta rechazó la imagen: {est.get('status')}")
+            raise SystemExit(f"Meta rechazó el archivo: {est.get('status')}")
         print(f"  procesando... ({code})")
-        time.sleep(6)
+        time.sleep(espera)
     else:
         raise SystemExit("El contenedor nunca quedó listo. Reintentá más tarde.")
 

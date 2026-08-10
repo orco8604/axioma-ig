@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Genera un reel vertical (1080x1920) a partir de contenido/reels.json.
+"""Genera un reel vertical (1080x1920) mostrando el producto funcionando.
 
 Cómo funciona:
-  1. arma una página HTML con la animación completa en CSS
+  1. scripts/guiones.py arma la escena en HTML+CSS (cada guion es distinto)
   2. Playwright la captura cuadro por cuadro, moviendo el reloj a mano
   3. ffmpeg la pasa a MP4 (H.264 + AAC), que es lo que acepta Instagram
   4. si hay pistas en audio/, le pega una; si no, va una pista de silencio
@@ -14,14 +14,13 @@ Salida:
 import json, os, pathlib, asyncio, subprocess, datetime as dt, sys, shutil
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
-import brand
+import brand, guiones
 
 RAIZ = pathlib.Path(__file__).resolve().parent.parent
 INICIO = dt.date(2026, 8, 4)      # mismo día 1 que el calendario de estáticos
+DIAS_REEL = (0, 2, 4)             # lunes, miércoles, viernes
 FPS = 30
-# Instagram pide mínimo 3 segundos. Entre 20 y 30 es donde mejor rinde
-# un reel de texto: alcanza para leerlo sin que se haga largo.
-EXTRA_FINAL = 0.6                 # colita para que no corte el último cuadro
+CIERRE = 4.6                      # lo que dura la placa final
 
 HASHTAGS = [
     "#automatizacion #software #gestion #emprendedores",
@@ -30,166 +29,201 @@ HASHTAGS = [
 ]
 SEPARADOR = "·  ·  ·"
 
+CSS_CIERRE = r"""
+/* ---------- la cámara: cada guion elige la suya ---------- */
+.camara{position:absolute;inset:0;transform-origin:50% 46%}
+.camara.fija{}
+.camara.empuje{animation:camEmpuje var(--total) cubic-bezier(.35,0,.25,1) both}
+@keyframes camEmpuje{0%{transform:scale(1)}100%{transform:scale(1.10) translateY(-26px)}}
+.camara.lateral{animation:camLateral var(--total) cubic-bezier(.4,0,.35,1) both}
+@keyframes camLateral{0%{transform:scale(1.16) translateX(140px)}
+                      100%{transform:scale(1.16) translateX(-140px)}}
+.camara.retiro{animation:camRetiro var(--total) cubic-bezier(.25,.6,.2,1) both}
+@keyframes camRetiro{0%{transform:scale(2.1) translate(-90px,180px)}
+                     46%{transform:scale(1.02)}
+                     100%{transform:scale(1)}}
+.camara.vaiven{animation:camVaiven var(--total) ease-in-out both}
+@keyframes camVaiven{0%{transform:scale(1.06) translateX(-40px)}
+                     50%{transform:scale(1.02) translateX(36px)}
+                     100%{transform:scale(1.09) translateX(-20px)}}
+
+.prog{position:absolute;top:0;left:0;height:9px;background:#7CFFCB;width:0;
+  animation:avanza var(--total) linear both;z-index:30}
+@keyframes avanza{to{width:1080px}}
+.firma{position:absolute;left:0;right:0;bottom:110px;text-align:center;
+  font-family:'Mono';font-size:34px;color:#8B99B0;z-index:9}
+.firma.oculta{display:none}
+
+/* ---------- cierres: tres placas distintas ---------- */
+.fin{position:absolute;inset:0;z-index:20;opacity:0;
+  animation:apareceFin var(--fd) both}
+@keyframes apareceFin{0%{opacity:0}9%{opacity:1}100%{opacity:1}}
+.fin .mk{width:150px;height:150px;border-radius:42px;position:relative;flex:none;
+  background:linear-gradient(150deg,#4F7CFF,#2B3EE8);
+  box-shadow:0 26px 70px rgba(79,124,255,.5)}
+.fin .mk i{position:absolute;width:22px;height:22px;border-radius:50%;background:#fff}
+.fin .mk i:nth-child(1){top:40px;left:64px}
+.fin .mk i:nth-child(2){bottom:40px;left:38px}
+.fin .mk i:nth-child(3){bottom:40px;right:38px}
+.fin .lm{font-family:'Grotesk';font-weight:700;letter-spacing:-.03em;line-height:1.04}
+.fin .lm em{font-style:normal;color:#7CFFCB}
+.fin .btn{font-family:'Grotesk';font-weight:700;color:#070A11;background:#7CFFCB;
+  border-radius:999px}
+.fin .ar{font-family:'Mono';color:#8B99B0}
+
+/* a · placa oscura centrada */
+.fin.centro{display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:radial-gradient(78% 46% at 50% 44%,rgba(32,50,88,.55) 0%,transparent 72%),#070A11;
+  text-align:center}
+.fin.centro .mk{margin-bottom:52px;
+  animation:giraMarca 9s ease-in-out infinite}
+@keyframes giraMarca{0%,100%{transform:perspective(900px) rotateY(-16deg) rotateX(8deg)}
+                     50%{transform:perspective(900px) rotateY(16deg) rotateX(-6deg)}}
+.fin.centro .lm{font-size:86px;padding:0 70px}
+.fin.centro .sub{font-size:38px;color:#8B99B0;margin-top:28px;line-height:1.4}
+.fin.centro .btn{margin-top:58px;font-size:46px;padding:30px 58px;
+  box-shadow:0 22px 60px rgba(124,255,203,.32)}
+.fin.centro .ar{margin-top:36px;font-size:32px}
+
+/* b · placa clara, al revés: fondo menta y texto oscuro */
+.fin.claro{display:flex;flex-direction:column;justify-content:flex-end;
+  background:#7CFFCB;color:#070A11;padding:0 92px 210px}
+.fin.claro .mk{width:112px;height:112px;border-radius:32px;margin-bottom:44px;
+  background:#070A11;box-shadow:none}
+.fin.claro .mk i{background:#7CFFCB;width:17px;height:17px}
+.fin.claro .mk i:nth-child(1){top:30px;left:47px}
+.fin.claro .mk i:nth-child(2){bottom:30px;left:28px}
+.fin.claro .mk i:nth-child(3){bottom:30px;right:28px}
+.fin.claro .lm{font-size:96px}
+.fin.claro .lm em{color:#0B7A55}
+.fin.claro .sub{font-size:36px;color:rgba(7,10,17,.62);margin-top:26px;line-height:1.4}
+.fin.claro .btn{align-self:flex-start;margin-top:52px;font-size:44px;padding:28px 54px;
+  background:#070A11;color:#7CFFCB}
+.fin.claro .ar{margin-top:30px;font-size:30px;color:rgba(7,10,17,.55)}
+
+/* c · panel que sube y deja ver la escena atrás */
+.fin.panel{display:flex;flex-direction:column;justify-content:flex-end;
+  background:linear-gradient(180deg,transparent 0%,rgba(7,10,17,.62) 26%,#070A11 58%)}
+.fin.panel .caja{margin:0 64px 150px;background:rgba(12,18,32,.94);
+  border:1px solid rgba(124,255,203,.28);border-radius:38px;padding:56px 58px;
+  box-shadow:0 40px 110px rgba(0,0,0,.7);
+  animation:sube-panel .9s cubic-bezier(.2,.9,.25,1) both}
+@keyframes sube-panel{from{opacity:0;transform:translateY(150px)}to{opacity:1;transform:none}}
+.fin.panel .fila{display:flex;align-items:center;gap:26px;margin-bottom:34px}
+.fin.panel .mk{width:92px;height:92px;border-radius:26px}
+.fin.panel .mk i{width:14px;height:14px}
+.fin.panel .mk i:nth-child(1){top:25px;left:39px}
+.fin.panel .mk i:nth-child(2){bottom:25px;left:23px}
+.fin.panel .mk i:nth-child(3){bottom:25px;right:23px}
+.fin.panel .lm{font-size:64px}
+.fin.panel .sub{font-size:34px;color:#8B99B0;line-height:1.4}
+.fin.panel .btn{display:inline-block;margin-top:40px;font-size:40px;padding:26px 46px}
+.fin.panel .ar{margin-top:26px;font-size:28px}
+
+/* d · franja diagonal: mitad menta, mitad oscuro */
+.fin.franja{display:flex;flex-direction:column;justify-content:flex-start;
+  background:#070A11;padding:300px 78px 230px;overflow:hidden}
+.fin.franja::before{content:'';position:absolute;inset:-20% -30%;background:#7CFFCB;
+  transform:rotate(-13deg) translateY(58%);transform-origin:50% 50%}
+.fin.franja>*{position:relative;z-index:2}
+.fin.franja .mk{width:120px;height:120px;border-radius:34px;margin-bottom:40px}
+.fin.franja .lm{font-size:90px}
+.fin.franja .sub{font-size:36px;color:#8B99B0;margin-top:26px;line-height:1.4}
+.fin.franja .btn{align-self:flex-start;margin-top:auto;font-size:44px;padding:28px 54px;
+  background:#7CFFCB;color:#070A11;box-shadow:0 22px 60px rgba(124,255,203,.3)}
+.fin.franja .ar{margin-top:28px;font-size:30px;color:#8B99B0}
+"""
+
 
 # ---------------------------------------------------------------- contenido
 
 def reel_de_hoy(hoy):
-    reels = json.loads((RAIZ / "contenido" / "reels.json").read_text(encoding="utf-8"))
-    # Los reels salen lunes, miércoles y viernes. El índice avanza de a uno
-    # por reel publicado, no por día del calendario.
-    if hoy.weekday() not in (0, 2, 4):
+    datos = json.loads((RAIZ / "contenido" / "reels.json").read_text(encoding="utf-8"))
+    if hoy.weekday() not in DIAS_REEL:
         raise SystemExit(f"El {hoy} no toca reel (solo lunes, miércoles y viernes).")
     dias = (hoy - INICIO).days
     if dias < 0:
         raise SystemExit("El ciclo todavía no arrancó.")
-    # cuántos lunes/miércoles/viernes hubo desde el inicio, sin contar hoy
     idx = sum(1 for d in range(dias)
-              if (INICIO + dt.timedelta(days=d)).weekday() in (0, 2, 4))
-    if idx >= len(reels):
+              if (INICIO + dt.timedelta(days=d)).weekday() in DIAS_REEL)
+    if idx >= len(datos):
         raise SystemExit(
-            f"Se acabaron los reels ({len(reels)} guionados). Pedile a Claude el "
+            f"Se acabaron los reels ({len(datos)} guionados). Pedile a Claude el "
             f"próximo lote y actualizá contenido/reels.json.")
-    return reels[idx], idx
+    ficha = datos[idx]
+    por_id = dict(guiones.GUIONES)
+    if ficha["guion"] not in por_id:
+        raise SystemExit(f"No existe el guion «{ficha['guion']}» en scripts/guiones.py.")
+    return ficha, por_id[ficha["guion"]], idx
 
 
-def resaltar(texto):
-    """*asi* queda en verde menta."""
-    while "*" in texto:
-        texto = texto.replace("*", "<em>", 1).replace("*", "</em>", 1)
-    return texto
+def armar_html(ficha, fabrica):
+    """Cada guion trae su propio encuadre, su cámara y su placa de cierre."""
+    esc = fabrica()
+    total = esc["dur"] + esc.get("cierre_dur", CIERRE)
+    lema = ficha.get("lema") or esc["lema"]
+    cd = esc.get("cierre_dur", CIERRE)
+    estilo = esc.get("cierre_estilo", "centro")
+
+    bloque = (f"<div class='mk'><i></i><i></i><i></i></div>"
+              f"<div class='lm'>{lema}</div>"
+              f"<div class='sub'>{ficha['cierre']}</div>"
+              f"<div class='btn'>{ficha['boton']}</div>"
+              f"<div class='ar'>@axiomasoftwareok</div>")
+    if estilo == "panel":
+        # el logo y el lema van en la misma fila, adentro de la caja
+        bloque = (f"<div class='caja'>"
+                  f"<div class='fila'><div class='mk'><i></i><i></i><i></i></div>"
+                  f"<div class='lm'>{lema}</div></div>"
+                  f"<div class='sub'>{ficha['cierre']}</div>"
+                  f"<div class='btn'>{ficha['boton']}</div>"
+                  f"<div class='ar'>@axiomasoftwareok</div></div>")
+
+    fin = (f"<div class='fin {estilo}' style='--fd:{cd}s;"
+           f"animation-delay:{esc['dur']}s'>{bloque}</div>")
+
+    firma = "" if esc.get("sin_firma") else "<div class='firma'>@axiomasoftwareok</div>"
+    css = brand.CSS.split("body{")[0] + guiones.CSS + CSS_CIERRE + esc.get("css", "")
+    amb, trama = esc["amb"], esc["trama"]
+    camara = esc.get("camara", "empuje")
+    cuerpo = esc["cuerpo"]
+    return (f"<html><head><meta charset='utf-8'><style>{css}</style></head>"
+            f"<body style='--total:{total}s'>"
+            f"<div class='amb {amb}'></div><div class='{trama}'></div>"
+            f"<div class='prog'></div>"
+            f"<div class='camara {camara}'>{cuerpo}</div>"
+            f"{fin}{firma}</body></html>"), total
 
 
-# ---------------------------------------------------------------- animación
-
-CSS_REEL = r"""
-*{margin:0;padding:0;box-sizing:border-box}
-body{width:1080px;height:1920px;background:var(--bg);color:var(--txt);
-  font-family:'Inter',sans-serif;overflow:hidden;position:relative}
-
-/* el marco de contenido, centrado verticalmente */
-.escena{position:absolute;inset:0;padding:150px 90px 230px;
-  display:flex;flex-direction:column;justify-content:center;
-  opacity:0;animation:paso var(--dur) both}
-.escena.h1x{justify-content:center}
-@keyframes paso{
-  0%   {opacity:0;transform:translateY(46px) scale(.985)}
-  7%   {opacity:1;transform:translateY(0) scale(1)}
-  88%  {opacity:1;transform:translateY(0) scale(1)}
-  100% {opacity:0;transform:translateY(-30px) scale(.99)}
-}
-
-.gancho{font-family:'Grotesk';font-weight:700;font-size:104px;line-height:1.03;
-  letter-spacing:-.03em}
-.gancho em{font-style:normal;color:var(--mint)}
-.beat{font-family:'Grotesk';font-weight:700;font-size:86px;line-height:1.08;
-  letter-spacing:-.025em}
-.beat em{font-style:normal;color:var(--mint)}
-.pie-beat{font-size:40px;line-height:1.4;color:var(--muted);margin-top:40px;max-width:820px}
-
-/* numerito del beat */
-.paso-num{font-family:'Mono';font-weight:700;font-size:34px;letter-spacing:.2em;
-  color:var(--blue);margin-bottom:34px}
-
-/* cierre */
-.cierre{align-items:flex-start}
-.cierre .marca{display:flex;align-items:center;gap:22px;margin-bottom:52px}
-.cierre .mk{width:96px;height:96px;border-radius:26px;position:relative;
-  background:linear-gradient(150deg,var(--blue),#2B3EE8);
-  box-shadow:0 18px 46px rgba(79,124,255,.45)}
-.cierre .mk i{position:absolute;width:14px;height:14px;border-radius:50%;background:#fff}
-.cierre .mk i:nth-child(1){top:26px;left:41px}
-.cierre .mk i:nth-child(2){bottom:26px;left:25px}
-.cierre .mk i:nth-child(3){bottom:26px;right:25px}
-.cierre .mk-txt{font-family:'Grotesk';font-weight:700;font-size:40px;letter-spacing:.14em}
-.cierre .mk-txt span{color:var(--mint)}
-.cierre .lema{font-family:'Grotesk';font-weight:700;font-size:74px;line-height:1.1;
-  letter-spacing:-.02em}
-.cierre .lema em{font-style:normal;color:var(--mint)}
-.cierre .accion{margin-top:46px;display:inline-flex;align-items:center;gap:18px;
-  font-family:'Grotesk';font-weight:700;font-size:44px;color:var(--bg);
-  background:var(--mint);border-radius:999px;padding:26px 46px}
-
-/* barrita de progreso arriba */
-.barra{position:absolute;top:0;left:0;height:9px;background:var(--mint);
-  width:0;animation:avanza var(--total) linear both;z-index:9}
-@keyframes avanza{from{width:0}to{width:1080px}}
-
-/* firma fija abajo */
-.firma{position:absolute;left:90px;bottom:120px;display:flex;align-items:center;gap:18px;
-  font-family:'Mono';font-size:36px;color:var(--muted);z-index:8}
-.firma u{width:14px;height:14px;border-radius:50%;background:var(--blue);
-  text-decoration:none;display:block}
-"""
-
-
-def armar_html(reel, bg):
-    """Cada escena arranca cuando termina la anterior, con animation-delay."""
-    escenas = []
-    t = 0.0
-
-    def add(cuerpo, dur, clase=""):
-        nonlocal t
-        escenas.append(
-            f"<div class='escena {clase}' style=\"--dur:{dur}s;animation-delay:{t}s\">"
-            f"{cuerpo}</div>")
-        t += dur
-
-    add(f"<div class='gancho'>{resaltar(reel['gancho'])}</div>", reel.get("dur_gancho", 3.6))
-
-    for i, b in enumerate(reel["beats"]):
-        pie = f"<div class='pie-beat'>{resaltar(b['pie'])}</div>" if b.get("pie") else ""
-        num = (f"<div class='paso-num'>{i+1:02d}</div>"
-               if reel.get("numerar", True) else "")
-        add(f"{num}<div class='beat'>{resaltar(b['texto'])}</div>{pie}",
-            b.get("dur", 4.2))
-
-    add("<div class='marca'><div class='mk'><i></i><i></i><i></i></div>"
-        "<div class='mk-txt'>AXIOMA<span>.</span>SOFTWARE</div></div>"
-        f"<div class='lema'>{resaltar(reel.get('lema', 'Software *a tu medida*'))}</div>"
-        f"<div class='accion'>{reel['cta_video']}</div>",
-        reel.get("dur_cierre", 4.4), "cierre")
-
-    total = t
-    # Todo el sistema visual (tipografías, paleta y los 9 fondos) y encima
-    # las reglas del vertical, que pisan lo que haga falta.
-    css = brand.CSS + CSS_REEL
-    cuerpo = "".join(escenas)
-    html = (f"<html><head><meta charset='utf-8'><style>{css}</style></head>"
-            f"<body style='--total:{total}s'>{brand.fondo(bg)}"
-            f"<div class='barra'></div>{cuerpo}"
-            f"<div class='firma'><u></u>@axiomasoftwareok</div></body></html>")
-    return html, total
+def caption(ficha, idx):
+    return (f"{ficha['copy']}\n\n{ficha['cta']}\n\n"
+            f"{SEPARADOR}\n\n{HASHTAGS[idx % len(HASHTAGS)]}\n")
 
 
 # ---------------------------------------------------------------- render
 
-async def grabar(html, carpeta_tmp, segundos):
-    """Captura cuadro por cuadro moviendo el reloj de las animaciones a mano.
-
-    Grabar en tiempo real deja el video fuera de sincronía con los tiempos
-    que definimos en CSS. Acá congelamos las animaciones y las adelantamos
-    nosotros, así cada cuadro cae exactamente donde tiene que caer.
-    """
+async def capturar(html, tmp, segundos):
+    """Congelamos las animaciones y las adelantamos nosotros: así el video
+    queda exactamente sincronizado con los tiempos escritos en el guion."""
     from playwright.async_api import async_playwright
-    tmp_html = RAIZ / "_reel.html"
-    tmp_html.write_text(html, encoding="utf-8")
-    total = int(round((segundos + EXTRA_FINAL) * FPS))
+    f = RAIZ / "_reel.html"
+    f.write_text(html, encoding="utf-8")
+    n = int(round(segundos * FPS))
     async with async_playwright() as p:
         b = await p.chromium.launch(args=["--disable-lcd-text"])
         pg = await b.new_page(viewport={"width": 1080, "height": 1920},
                               device_scale_factor=1)
-        await pg.goto(f"file://{tmp_html}")
-        await pg.wait_for_timeout(700)          # que terminen de cargar las fuentes
+        await pg.goto(f"file://{f}")
+        await pg.wait_for_timeout(700)          # que carguen las fuentes
         await pg.evaluate("document.getAnimations().forEach(a => a.pause())")
-        for i in range(total):
-            ms = i * 1000 / FPS
+        for i in range(n):
             await pg.evaluate(
-                "t => document.getAnimations().forEach(a => a.currentTime = t)", ms)
-            await pg.screenshot(path=str(carpeta_tmp / f"f{i:05d}.jpg"),
+                "t => document.getAnimations().forEach(a => a.currentTime = t)",
+                i * 1000 / FPS)
+            await pg.screenshot(path=str(tmp / f"f{i:05d}.jpg"),
                                 type="jpeg", quality=92)
         await b.close()
-    tmp_html.unlink()
-    return carpeta_tmp / "f%05d.jpg"
+    f.unlink()
 
 
 def elegir_pista(idx):
@@ -203,41 +237,27 @@ def elegir_pista(idx):
 
 def a_mp4(patron, destino, segundos, pista):
     """Instagram quiere H.264 + AAC, yuv420p, dimensiones pares."""
-    dur = round(segundos + EXTRA_FINAL, 2)
+    dur = round(segundos, 2)
     cmd = ["ffmpeg", "-y", "-framerate", str(FPS), "-i", str(patron)]
     if pista:
-        # la pista se recorta al largo del video y se apaga al final
         cmd += ["-stream_loop", "-1", "-i", str(pista)]
-        audio = ["-filter:a", f"afade=t=out:st={max(dur-1.5, 0):.2f}:d=1.5,volume=0.85"]
+        audio = ["-filter:a", f"afade=t=out:st={max(dur - 1.6, 0):.2f}:d=1.6,volume=0.8"]
     else:
         cmd += ["-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=44100"]
         audio = []
-    cmd += [
-        "-map", "0:v:0", "-map", "1:a:0",
-        "-t", str(dur),
-        "-r", str(FPS),
-        "-c:v", "libx264", "-preset", "medium", "-crf", "20",
-        "-profile:v", "high", "-level", "4.0", "-pix_fmt", "yuv420p",
-        "-vf", "scale=1080:1920:flags=lanczos",
-        "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
-        *audio,
-        "-movflags", "+faststart",
-        "-shortest", str(destino),
-    ]
+    cmd += ["-map", "0:v:0", "-map", "1:a:0", "-t", str(dur), "-r", str(FPS),
+            "-c:v", "libx264", "-preset", "medium", "-crf", "20",
+            "-profile:v", "high", "-level", "4.0", "-pix_fmt", "yuv420p",
+            "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2",
+            *audio, "-movflags", "+faststart", "-shortest", str(destino)]
     r = subprocess.run(cmd, capture_output=True, text=True)
     if r.returncode != 0:
         raise SystemExit("ffmpeg falló:\n" + r.stderr[-3000:])
 
 
-def caption(reel, idx):
-    return (f"{reel['copy']}\n\n{reel['cta']}\n\n"
-            f"{SEPARADOR}\n\n{HASHTAGS[idx % len(HASHTAGS)]}\n")
-
-
 def main():
     hoy = dt.date.fromisoformat(os.environ.get("FECHA") or dt.date.today().isoformat())
-    reel, idx = reel_de_hoy(hoy)
-    bg = idx % len(brand.FONDOS)
+    ficha, fabrica, idx = reel_de_hoy(hoy)
 
     salida = RAIZ / "reels"
     salida.mkdir(exist_ok=True)
@@ -247,17 +267,17 @@ def main():
         shutil.rmtree(tmp)
     tmp.mkdir()
 
-    html, segundos = armar_html(reel, bg)
-    cuadros = asyncio.run(grabar(html, tmp, segundos))
+    html, segundos = armar_html(ficha, fabrica)
+    asyncio.run(capturar(html, tmp, segundos))
     pista = elegir_pista(idx)
-    a_mp4(cuadros, mp4, segundos, pista)
+    a_mp4(tmp / "f%05d.jpg", mp4, segundos, pista)
     shutil.rmtree(tmp)
 
-    (salida / f"{hoy}.txt").write_text(caption(reel, idx), encoding="utf-8")
+    (salida / f"{hoy}.txt").write_text(caption(ficha, idx), encoding="utf-8")
 
-    peso = mp4.stat().st_size / 1e6
-    print(f"Generado {mp4.name} — reel {idx+1} — {segundos + EXTRA_FINAL:.1f}s — "
-          f"{peso:.1f} MB — audio: {pista.name if pista else 'silencio'}")
+    print(f"Generado {mp4.name} — reel {idx+1} «{ficha['guion']}» — "
+          f"{segundos:.1f}s — {mp4.stat().st_size/1e6:.1f} MB — "
+          f"audio: {pista.name if pista else 'silencio'}")
     if pista is None:
         print("::warning::No hay pistas en audio/. El reel sale mudo. "
               "Subí 3 o 4 mp3 de licencia libre a esa carpeta.")
