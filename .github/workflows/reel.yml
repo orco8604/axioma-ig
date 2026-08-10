@@ -54,9 +54,12 @@ jobs:
       - name: Instalar dependencias
         if: steps.candado.outputs.saltear != 'true'
         run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
           pip install playwright
           playwright install --with-deps chromium
-          ffmpeg -version | head -1
+          # chequeo de verdad: si falta ffmpeg, la corrida corta acá y no a los 2 minutos
+          ffmpeg -hide_banner -version > /dev/null
 
       - name: Generar el reel
         id: gen
