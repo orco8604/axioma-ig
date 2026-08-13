@@ -1,0 +1,9 @@
+Es una demo, no un cliente: la hice justamente para que se entienda sin tener que imaginárselo.
+
+Se reserva un turno, entra solo a la agenda, el cliente recibe la confirmación y el recordatorio, y el dueño se entera en el momento. Todo sin que nadie escriba un mensaje.
+
+¿Querés verla funcionando? Escribime.
+
+·  ·  ·
+
+#automatizacion #software #gestion #emprendedores
