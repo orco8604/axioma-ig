@@ -1,0 +1,12 @@
+Carrusel:
+1. Que muestre solo lo que vos querés ofrecer.
+2. Que se bloquee sola cuando ya no hay lugar o stock.
+3. Que mande la confirmación sin que la pidas.
+4. Que te avise a vos en el momento.
+5. Que el cliente pueda cancelar sin escribirte.
+
+Guardalo para comparar opciones.
+
+·  ·  ·
+
+#desarrolloweb #sistemas #turnos #pymes
