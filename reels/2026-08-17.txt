@@ -1,0 +1,9 @@
+Un tablero lleno de números que no cambian ninguna decisión no es un tablero, es decoración.
+
+Con tres alcanza: cuánto entró, cuánto se cayó, y de dónde llegó cada cliente nuevo. El tercero es el que casi nadie mide y el que más plata mueve.
+
+¿Cuál de los tres no estás midiendo hoy?
+
+·  ·  ·
+
+#softwareamedida #automatizacion #ecommerce #productividad
