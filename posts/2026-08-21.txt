@@ -1,0 +1,9 @@
+Carrusel: el cliente completa un formulario → se valida → queda registrado → sale la confirmación → te llega el aviso.
+
+Una slide por paso, con captura real. Cerrá con «esto se configura una vez y funciona para siempre».
+
+Guardalo para cuando te sientes a hacerlo.
+
+·  ·  ·
+
+#softwareamedida #automatizacion #ecommerce #productividad
