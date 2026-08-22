@@ -179,7 +179,8 @@ body{width:1080px;height:1920px;background:#070A11;color:#EDF2FB;
 .llena .barra-esc .env{width:74px;height:74px;border-radius:50%;background:#7CFFCB}
 
 /* rótulo abajo, tipo placa de noticiero */
-.rotulo.abajo{top:auto;bottom:340px;padding:0 54px;text-align:left}
+/* bottom >= 470: la interfaz de reels de Instagram tapa los ultimos ~420 px */
+.rotulo.abajo{top:auto;bottom:480px;padding:0 54px;text-align:left}
 .rotulo.abajo .t{display:inline-block;font-size:62px;background:rgba(7,10,17,.86);
   border-left:10px solid #7CFFCB;padding:26px 34px;border-radius:0 20px 20px 0;
   animation:rotPlaca var(--rd) both}
@@ -239,7 +240,7 @@ body{width:1080px;height:1920px;background:#070A11;color:#EDF2FB;
   letter-spacing:-.04em;margin-top:8px}
 
 /* rótulo chico abajo a la izquierda */
-.rotulo.pie{top:auto;bottom:210px;text-align:left;padding:0 64px}
+.rotulo.pie{top:auto;bottom:480px;text-align:left;padding:0 64px}
 .rotulo.pie .t{font-size:52px;animation:rotPlaca var(--rd) both}
 
 /* ============ encuadre D: la ficha del producto ocupa todo =========== */
@@ -316,6 +317,7 @@ body{width:1080px;height:1920px;background:#070A11;color:#EDF2FB;
 .linea span{position:absolute;left:60px;top:-46px;font-family:'Mono';font-size:26px;
   letter-spacing:.2em;color:#7CFFCB;text-transform:uppercase}
 .tapa{position:absolute;left:0;right:0;height:420px;z-index:7;pointer-events:none}
+.tapa.aba{height:620px}
 .tapa.arr{top:0;background:linear-gradient(180deg,#070A11 26%,transparent)}
 .tapa.aba{bottom:0;background:linear-gradient(0deg,#070A11 30%,transparent)}
 
@@ -545,7 +547,7 @@ def g_formulario(datos=None):
     p = ["<div class='partida'>" + arriba +
          "<div class='raya'><div class='pulso' style='animation-delay:6.5s'></div></div>"
          + abajo + "</div>",
-         aviso(d["aviso"], 10.4, 3.6, top=1660)]
+         aviso(d["aviso"], 10.4, 3.6, top=1455)]
     return {"cuerpo": "".join(p), "dur": 15.4, "amb": "azul", "trama": "malla",
             "camara": "fija", "cierre_estilo": "franja", "sin_firma": True,
             "lema": "Sin copiar <em>ni pegar nada</em>"}
