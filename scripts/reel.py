@@ -137,31 +137,17 @@ CSS_CIERRE = r"""
 
 # ---------------------------------------------------------------- contenido
 
-def _sin_contenido(motivo):
-    """Quedarse sin contenido es un final esperado, no un error.
-
-    Salimos con código 0 y dejamos un aviso amarillo, para que GitHub no
-    mande un mail de falla en cada corrida. El workflow ve saltar=true y
-    se saltea los pasos que siguen.
-    """
-    print(f"::warning::{motivo}")
-    if (gh := os.environ.get("GITHUB_OUTPUT")):
-        with open(gh, "a") as f:
-            f.write("saltar=true\n")
-    raise SystemExit(0)
-
-
 def reel_de_hoy(hoy):
     datos = json.loads((RAIZ / "contenido" / "reels.json").read_text(encoding="utf-8"))
     if hoy.weekday() not in DIAS_REEL:
-        return _sin_contenido(f"El {hoy} no toca reel (solo lunes, miércoles y viernes).")
+        raise SystemExit(f"El {hoy} no toca reel (solo lunes, miércoles y viernes).")
     dias = (hoy - INICIO).days
     if dias < 0:
         raise SystemExit("El ciclo todavía no arrancó.")
     idx = sum(1 for d in range(dias)
               if (INICIO + dt.timedelta(days=d)).weekday() in DIAS_REEL)
     if idx >= len(datos):
-        return _sin_contenido(
+        raise SystemExit(
             f"Se acabaron los reels ({len(datos)} guionados). Pedile a Claude el "
             f"próximo lote y actualizá contenido/reels.json.")
     ficha = datos[idx]
@@ -173,11 +159,11 @@ def reel_de_hoy(hoy):
 
 def armar_html(ficha, fabrica):
     """Cada guion trae su propio encuadre, su cámara y su placa de cierre."""
-    esc = fabrica()
+    esc = fabrica(ficha.get("datos") or {})
     total = esc["dur"] + esc.get("cierre_dur", CIERRE)
     lema = ficha.get("lema") or esc["lema"]
     cd = esc.get("cierre_dur", CIERRE)
-    estilo = esc.get("cierre_estilo", "centro")
+    estilo = ficha.get("cierre_estilo") or esc.get("cierre_estilo", "centro")
 
     bloque = (f"<div class='mk'><i></i><i></i><i></i></div>"
               f"<div class='lm'>{lema}</div>"
@@ -198,8 +184,11 @@ def armar_html(ficha, fabrica):
 
     firma = "" if esc.get("sin_firma") else "<div class='firma'>@axiomasoftwareok</div>"
     css = brand.CSS.split("body{")[0] + guiones.CSS + CSS_CIERRE + esc.get("css", "")
-    amb, trama = esc["amb"], esc["trama"]
-    camara = esc.get("camara", "empuje")
+    # El reel puede pisar el clima visual del encuadre: mismo molde, otra
+    # foto. Asi un encuadre repetido dentro del trimestre no se ve igual.
+    amb = ficha.get("amb") or esc["amb"]
+    trama = ficha.get("trama") or esc["trama"]
+    camara = ficha.get("camara") or esc.get("camara", "empuje")
     cuerpo = esc["cuerpo"]
     return (f"<html><head><meta charset='utf-8'><style>{css}</style></head>"
             f"<body style='--total:{total}s'>"

@@ -417,186 +417,254 @@ def puntero(nombre, pasos, ini):
 # =====================================================================
 #  guiones
 # =====================================================================
+def _d(datos, base):
+    """Mezcla los datos que vienen de reels.json sobre los valores por defecto."""
+    d = dict(base)
+    d.update({k: v for k, v in (datos or {}).items() if v is not None})
+    return d
 
-def g_turnos():
+
+def g_turnos(datos=None):
     """Encuadre A: estás mirando la pantalla del cliente. Cámara quieta."""
+    d = _d(datos, {
+        "titulo": "Axioma", "estado": "en línea",
+        "hora1": "23:04", "hora2": "23:05",
+        "msgs": ["Hola! Tenés turno para el jueves?", "Perdón la hora",
+                 "Hola! Tengo 15:30 y 17:00 libres", "El de las 17 me sirve",
+                 "Listo, te lo reservo",
+                 "Confirmado: jueves 17:00", "Te aviso un día antes"],
+        "rotulos": ["Son las <em>23:04</em>", "Nadie está atendiendo",
+                    "El sistema <em>sí</em>"],
+    })
+    m, h1, h2 = d["msgs"], d["hora1"], d["hora2"]
     chat = "".join([
-        burbuja("el", "Hola! Tenés turno para el jueves?", "23:04", 0.9),
-        burbuja("el", "Perdón la hora", "23:04", 1.7),
+        burbuja("el", m[0], h1, 0.9),
+        burbuja("el", m[1], h1, 1.7),
         escribiendo(2.3, 1.0),
-        burbuja("yo", "Hola! Tengo 15:30 y 17:00 libres", "23:04", 3.5),
-        burbuja("el", "El de las 17 me sirve", "23:05", 5.0),
-        burbuja("yo", "Listo, te lo reservo", "23:05", 6.0),
-        burbuja("yo", "Confirmado: jueves 17:00", "23:05", 13.9),
-        burbuja("yo", "Te aviso un día antes", "23:05", 15.0),
+        burbuja("yo", m[2], h1, 3.5),
+        burbuja("el", m[3], h2, 5.0),
+        burbuja("yo", m[4], h2, 6.0),
+        burbuja("yo", m[5], h2, 13.9),
+        burbuja("yo", m[6], h2, 15.0),
     ])
     pantalla = (
         "<div class='llena'>"
-        "<div class='estado'><span>23:05</span><span>· · ·</span></div>"
+        f"<div class='estado'><span>{h2}</span><span>· · ·</span></div>"
         "<div class='cab'><div class='av'>A</div>"
-        "<div><div class='n'>Axioma</div><div class='e'>en línea</div></div></div>"
+        f"<div><div class='n'>{d['titulo']}</div><div class='e'>{d['estado']}</div></div></div>"
         f"<div class='cuerpo'>{chat}</div>"
         "<div class='barra-esc'><div class='caja'>Escribí un mensaje</div>"
         "<div class='env'></div></div></div>")
 
+    r = d["rotulos"]
     p = [pantalla,
-         rot("Son las <em>23:04</em>", 0.4, 4.2, "abajo"),
-         rot("Nadie está atendiendo", 4.9, 3.8, "abajo"),
-         rot("El sistema <em>sí</em>", 9.1, 4.2, "abajo")]
+         rot(r[0], 0.4, 4.2, "abajo"),
+         rot(r[1], 4.9, 3.8, "abajo"),
+         rot(r[2], 9.1, 4.2, "abajo")]
     return {"cuerpo": "".join(p), "dur": 17.6, "amb": "azul", "trama": "malla",
             "camara": "fija", "cierre_estilo": "claro", "cierre_dur": 4.2,
             "sin_firma": True, "lema": "Software <em>a tu medida</em>"}
 
 
-def g_tienda():
+def g_tienda(datos=None):
     """Encuadre D: la ficha del producto ocupa toda la pantalla. Sello que cae."""
+    d = _d(datos, {
+        "dominio": "tutienda.com.ar", "hora": "03:12",
+        "producto": "Kit de instalación", "precio": "$ 48.500",
+        "stock_de": "4", "stock_a": "3", "boton": "Comprar", "sello": "VENDIDO",
+        "rotulos": ["Son las <em>3 de la mañana</em>", "Alguien compra",
+                    "El stock <em>baja solo</em>"],
+        "aviso": "Venta nueva · <b>$ 48.500</b>",
+    })
     css, mouse = puntero("mTienda", [(820, 900, 0), (700, 1200, .7),
                                      (540, 1560, 1.6), (540, 1560, 2.6)], 2.4)
     tienda = (
         f"<style>{css}</style>"
         "<div class='tienda'>"
-        "<div class='top'><span>tutienda.com.ar</span><span>03:12</span></div>"
+        f"<div class='top'><span>{d['dominio']}</span><span>{d['hora']}</span></div>"
         "<div class='foto'><b></b></div>"
-        "<div class='nom'>Kit de instalación</div>"
-        "<div class='pre'>$ 48.500</div>"
+        f"<div class='nom'>{d['producto']}</div>"
+        f"<div class='pre'>{d['precio']}</div>"
         "<div class='stk'>Stock: "
         "<span style='position:relative;display:inline-block;width:36px;height:42px;vertical-align:-8px'>"
         "<b style='position:absolute;left:0;color:#EDF2FB;"
-        "animation:sale .9s forwards;animation-delay:9.4s'>4</b>"
+        f"animation:sale .9s forwards;animation-delay:9.4s'>{d['stock_de']}</b>"
         "<b style='position:absolute;left:0;opacity:0;color:#7CFFCB;"
-        "animation:entraArriba .55s both;animation-delay:10.0s'>3</b></span></div>"
+        f"animation:entraArriba .55s both;animation-delay:10.0s'>{d['stock_a']}</b></span></div>"
         "<div class='comprar' style='animation:pulso .5s both;animation-delay:5.0s'>"
-        "Comprar</div></div>"
-        "<div class='sello' style='animation-delay:9.6s'>VENDIDO</div>")
+        f"{d['boton']}</div></div>"
+        f"<div class='sello' style='animation-delay:9.6s'>{d['sello']}</div>")
 
+    r = d["rotulos"]
     p = [tienda, mouse,
-         rot("Son las <em>3 de la mañana</em>", 0.5, 5.0, "abajo"),
-         rot("Alguien compra", 5.8, 3.4, "abajo"),
-         rot("El stock <em>baja solo</em>", 9.6, 5.2, "abajo"),
-         aviso("Venta nueva · <b>$ 48.500</b>", 12.0, 3.4, top=380)]
+         rot(r[0], 0.5, 5.0, "abajo"),
+         rot(r[1], 5.8, 3.4, "abajo"),
+         rot(r[2], 9.6, 5.2, "abajo"),
+         aviso(d["aviso"], 12.0, 3.4, top=380)]
     return {"cuerpo": "".join(p), "dur": 16.4, "amb": "menta", "trama": "malla puntos",
             "camara": "empuje", "cierre_estilo": "panel", "sin_firma": True,
             "lema": "Vendé <em>mientras dormís</em>"}
 
 
-def g_formulario():
+def g_formulario(datos=None):
     """Encuadre E: arriba la web, abajo tu celular. Un pulso baja de una a otra."""
-    campos = [("Nombre", "Marina Ruiz", 1.4, 1.0),
-              ("Teléfono", "351 468 2290", 2.7, 1.0),
-              ("Qué necesitás", "Una web con turnos online", 4.0, 1.5)]
+    d = _d(datos, {
+        "arriba": "En <em>tu web</em>", "abajo": "En <em>tu celular</em>",
+        "campos": [["Nombre", "Marina Ruiz"], ["Teléfono", "351 468 2290"],
+                   ["Qué necesitás", "Una web con turnos online"]],
+        "boton": "Enviar", "ficha_titulo": "Consulta nueva",
+        "ficha_lineas": ["Marina Ruiz", "351 468 2290", "«Una web con turnos online»"],
+        "origen": "Origen: formulario de la web · 09:41",
+        "aviso": "Llegó en <b>2 segundos</b>",
+    })
+    ritmo = [(1.4, 1.0), (2.7, 1.0), (4.0, 1.5)]
     filas = "".join(
         f"<div style='margin-bottom:20px'>"
-        f"<div style='font-size:24px;color:#7E8DA6;margin-bottom:8px'>{e}</div>"
+        f"<div style='font-size:24px;color:#7E8DA6;margin-bottom:8px'>{c[0]}</div>"
         f"<div style='background:#0D1626;border:1px solid rgba(255,255,255,.09);"
         f"border-radius:14px;padding:18px 22px;font-size:30px;min-height:70px'>"
-        f"{tecleo(v, i, d)}</div></div>" for e, v, i, d in campos)
+        f"{tecleo(c[1], ritmo[i][0], ritmo[i][1])}</div></div>"
+        for i, c in enumerate(d["campos"][:3]))
 
     arriba = ("<div class='mitad'>"
-              "<div class='rot'>En <em>tu web</em></div>" + filas +
+              f"<div class='rot'>{d['arriba']}</div>" + filas +
               "<div style='margin-top:8px;padding:24px;border-radius:16px;text-align:center;"
               "font-family:\"Grotesk\";font-weight:700;font-size:34px;color:#070A11;"
-              "background:#7CFFCB;animation:pulso .5s both;animation-delay:6.2s'>Enviar</div>"
+              f"background:#7CFFCB;animation:pulso .5s both;animation-delay:6.2s'>{d['boton']}</div>"
               "</div>")
 
     abajo = ("<div class='mitad abajo'>"
-             "<div class='rot'>En <em>tu celular</em></div>"
+             f"<div class='rot'>{d['abajo']}</div>"
              "<div class='ficha' style='animation-delay:8.0s'>"
-             "<div style='font-size:28px;color:#7CFFCB;font-weight:600'>Consulta nueva</div>"
+             f"<div style='font-size:28px;color:#7CFFCB;font-weight:600'>{d['ficha_titulo']}</div>"
              "<div style='font-size:34px;margin-top:16px;line-height:1.5'>"
-             "Marina Ruiz<br>351 468 2290<br>«Una web con turnos online»</div></div>"
+             f"{'<br>'.join(d['ficha_lineas'])}</div></div>"
              "<div class='ficha' style='margin-top:18px;font-size:28px;color:#8B99B0;"
-             "animation-delay:9.2s'>Origen: formulario de la web · 09:41</div></div>")
+             f"animation-delay:9.2s'>{d['origen']}</div></div>")
 
     p = ["<div class='partida'>" + arriba +
          "<div class='raya'><div class='pulso' style='animation-delay:6.5s'></div></div>"
          + abajo + "</div>",
-         aviso("Llegó en <b>2 segundos</b>", 10.4, 3.6, top=1660)]
+         aviso(d["aviso"], 10.4, 3.6, top=1660)]
     return {"cuerpo": "".join(p), "dur": 15.4, "amb": "azul", "trama": "malla",
             "camara": "fija", "cierre_estilo": "franja", "sin_firma": True,
             "lema": "Sin copiar <em>ni pegar nada</em>"}
 
 
-def g_cobro():
+def g_cobro(datos=None):
     """Encuadre F: la plata en pantalla completa. Pendiente → pagado."""
+    d = _d(datos, {
+        "etiqueta": "Seña para reservar", "monto": "$ 12.000",
+        "pendiente": "Pendiente de pago", "pagado": "Pagado · turno confirmado",
+        "hora1": "18:22", "hora2": "18:24",
+        "msgs": ["Te dejo el link para dejarlo reservado", "Listo, ya pagué",
+                 "Confirmado: martes 10:30"],
+        "rotulos": ["El link va <em>en el mismo mensaje</em>",
+                    "Se reserva <em>cuando se paga</em>",
+                    "Las cancelaciones <em>bajan solas</em>"],
+    })
     plata = (
         "<div class='plata'>"
-        "<div class='et'>Seña para reservar</div>"
-        "<div class='mn'>$ 12.000</div>"
+        f"<div class='et'>{d['etiqueta']}</div>"
+        f"<div class='mn'>{d['monto']}</div>"
         "<div class='est pend' style='animation-delay:7.4s'>"
         "<span style='width:16px;height:16px;border-radius:50%;background:#FFB86B'></span>"
-        "Pendiente de pago</div>"
+        f"{d['pendiente']}</div>"
         "<div class='est list' style='position:absolute;margin-top:0;top:1130px;"
         "animation-delay:7.9s'>"
         "<span style='width:16px;height:16px;border-radius:50%;background:#7CFFCB'></span>"
-        "Pagado · turno confirmado</div>"
+        f"{d['pagado']}</div>"
         "</div>")
 
+    m = d["msgs"]
     tira = ("<div class='tira'>"
-            + burbuja("yo", "Te dejo el link para dejarlo reservado", "18:22", 1.6)
-            + burbuja("el", "Listo, ya pagué", "18:24", 6.4)
-            + burbuja("yo", "Confirmado: martes 10:30", "18:24", 10.6)
+            + burbuja("yo", m[0], d["hora1"], 1.6)
+            + burbuja("el", m[1], d["hora2"], 6.4)
+            + burbuja("yo", m[2], d["hora2"], 10.6)
             + "</div>")
 
+    r = d["rotulos"]
     p = [plata, tira,
-         rot("El link va <em>en el mismo mensaje</em>", 0.5, 5.4, "izq"),
-         rot("Se reserva <em>cuando se paga</em>", 6.4, 5.4, "izq"),
-         rot("Las cancelaciones <em>bajan solas</em>", 12.2, 5.0, "izq")]
+         rot(r[0], 0.5, 5.4, "izq"),
+         rot(r[1], 6.4, 5.4, "izq"),
+         rot(r[2], 12.2, 5.0, "izq")]
     return {"cuerpo": "".join(p), "dur": 17.0, "amb": "hondo", "trama": "malla",
             "camara": "vaiven", "cierre_estilo": "claro", "sin_firma": True,
             "lema": "Cobrá <em>antes, no después</em>"}
 
 
-def g_recordatorio():
+def g_recordatorio(datos=None):
     """Encuadre B: tres cartas paradas que se dan vuelta. Cámara que pasea."""
-    gente = [("Marina", "10:30"), ("Diego", "14:00"), ("Sofía", "17:30")]
+    d = _d(datos, {
+        "gente": [["Marina", "10:30"], ["Diego", "14:00"], ["Sofía", "17:30"]],
+        "cuando": "mañana", "etiqueta": "sin confirmar",
+        "vuelta": "Recordatorio<br>enviado", "pie": "18:00 · automático",
+        "rotulos": ["El que no avisa<br><em>se olvidó</em>",
+                    "Un mensaje<br><em>el día antes</em>",
+                    "Sin perseguir<br><em>a nadie</em>"],
+        "aviso": "<b>3</b> recordatorios · 0 llamadas tuyas",
+    })
     cartas = []
-    for i, (nom, hora) in enumerate(gente):
+    for i, par in enumerate(d["gente"][:3]):
+        nom, hora = par[0], par[1]
         entra = round(1.0 + i * 0.28, 2)
         gira = round(7.6 + i * 0.75, 2)
         cartas.append(
             f"<div class='carta' style='animation-delay:{entra}s'>"
             f"<div class='cara frente' style='animation-delay:{gira}s'>"
             f"<div class='av'>{nom[0]}</div>"
-            f"<div class='nm'>{nom}</div><div class='hr'>mañana {hora}</div>"
-            f"<div class='et'>sin confirmar</div></div>"
+            f"<div class='nm'>{nom}</div><div class='hr'>{d['cuando']} {hora}</div>"
+            f"<div class='et'>{d['etiqueta']}</div></div>"
             f"<div class='cara atras' style='animation-delay:{round(gira + .42, 2)}s'>"
             f"<div class='tick'><s></s></div>"
-            f"<div class='tx'>Recordatorio<br>enviado</div>"
-            f"<div class='sb'>18:00 · automático</div></div></div>")
+            f"<div class='tx'>{d['vuelta']}</div>"
+            f"<div class='sb'>{d['pie']}</div></div></div>")
 
+    r = d["rotulos"]
     p = [f"<div class='mesa'>{''.join(cartas)}</div>",
-         rot("El que no avisa<br><em>se olvidó</em>", 0.5, 6.2, "izq"),
-         rot("Un mensaje<br><em>el día antes</em>", 7.0, 5.4, "izq"),
-         rot("Sin perseguir<br><em>a nadie</em>", 12.8, 5.0, "izq"),
-         aviso("<b>3</b> recordatorios · 0 llamadas tuyas", 10.4, 3.6, top=1330)]
+         rot(r[0], 0.5, 6.2, "izq"),
+         rot(r[1], 7.0, 5.4, "izq"),
+         rot(r[2], 12.8, 5.0, "izq"),
+         aviso(d["aviso"], 10.4, 3.6, top=1330)]
     return {"cuerpo": "".join(p), "dur": 17.8, "amb": "menta", "trama": "malla puntos",
             "camara": "vaiven", "cierre_estilo": "centro",
             "lema": "Software <em>a tu medida</em>"}
 
 
-def g_tablero():
+def g_tablero(datos=None):
     """Encuadre C: los números ocupan la pantalla. La cámara arranca encima
     de uno y va retrocediendo hasta mostrar los tres."""
-    keyframes = "".join(f"@keyframes sube{v}{{to{{--n:{v}}}}}" for v in (127, 9, 62))
+    d = _d(datos, {
+        "titulo": "Tu mes · en tres números",
+        "grande": ["Turnos que entraron", 127],
+        "par": [["Se cayeron", 9, "#FFB86B"], ["Vinieron de la web", 62, "#7CFFCB"]],
+        "barras": [38, 55, 47, 72, 61, 88, 76],
+        "rotulos": ["Cuánto <em>entró</em>", "Cuánto <em>se cayó</em>",
+                    "Y <em>de dónde llegó</em> cada uno"],
+    })
+    gr_et, gr_v = d["grande"][0], int(d["grande"][1])
+    par = d["par"]
+    vals = [gr_v] + [int(x[1]) for x in par]
+    keyframes = "".join(f"@keyframes sube{v}{{to{{--n:{v}}}}}" for v in dict.fromkeys(vals))
     keyframes += "@keyframes crece{to{transform:scaleY(1)}}"
+
+    celdas = "".join(
+        f"<div><div class='et'>{x[0]}</div>"
+        f"<div class='vl contador' style='--n:0;color:{x[2]};"
+        f"animation:sube{int(x[1])} {1.6 + i * .2:.1f}s cubic-bezier(.2,.8,.3,1) both;"
+        f"animation-delay:{6.2 + i * 3.4:.1f}s'></div></div>"
+        for i, x in enumerate(par[:2]))
 
     cuerpo = (
         f"<style>{keyframes}</style>"
         "<div class='sangre'>"
-        "<div class='tit'>Tu mes · en tres números</div>"
+        f"<div class='tit'>{d['titulo']}</div>"
 
-        "<div class='gran'><div class='et'>Turnos que entraron</div>"
-        "<div class='vl contador' style='--n:0;"
-        "animation:sube127 2.1s cubic-bezier(.2,.8,.3,1) both;animation-delay:.5s'></div></div>"
+        f"<div class='gran'><div class='et'>{gr_et}</div>"
+        f"<div class='vl contador' style='--n:0;"
+        f"animation:sube{gr_v} 2.1s cubic-bezier(.2,.8,.3,1) both;animation-delay:.5s'></div></div>"
 
-        "<div class='par'>"
-        "<div><div class='et'>Se cayeron</div>"
-        "<div class='vl contador' style='--n:0;color:#FFB86B;"
-        "animation:sube9 1.6s cubic-bezier(.2,.8,.3,1) both;animation-delay:6.2s'></div></div>"
-        "<div><div class='et'>Vinieron de la web</div>"
-        "<div class='vl contador' style='--n:0;color:#7CFFCB;"
-        "animation:sube62 1.8s cubic-bezier(.2,.8,.3,1) both;animation-delay:9.6s'></div></div>"
-        "</div>"
+        f"<div class='par'>{celdas}</div>"
 
         "<div style='display:flex;align-items:flex-end;gap:20px;height:300px;margin-top:20px'>"
         + "".join(
@@ -605,41 +673,46 @@ def g_tablero():
             f"background:linear-gradient(180deg,rgba(79,124,255,.95),rgba(79,124,255,.18));"
             f"animation:crece .7s cubic-bezier(.2,.9,.25,1) both;"
             f"animation-delay:{round(11.8 + i * 0.1, 2)}s'></u>"
-            for i, h in enumerate([38, 55, 47, 72, 61, 88, 76]))
+            for i, h in enumerate(d["barras"]))
         + "</div></div>")
 
+    r = d["rotulos"]
     p = [cuerpo,
-         rot("Cuánto <em>entró</em>", 1.0, 4.6, "pie"),
-         rot("Cuánto <em>se cayó</em>", 6.2, 3.2, "pie"),
-         rot("Y <em>de dónde llegó</em> cada uno", 9.6, 5.0, "pie")]
+         rot(r[0], 1.0, 4.6, "pie"),
+         rot(r[1], 6.2, 3.2, "pie"),
+         rot(r[2], 9.6, 5.0, "pie")]
     return {"cuerpo": "".join(p), "dur": 15.6, "amb": "hondo", "trama": "malla",
             "camara": "retiro", "cierre_estilo": "panel", "sin_firma": True,
             "lema": "Medí <em>lo que importa</em>"}
 
 
-def g_repetido():
+def g_repetido(datos=None):
     """Encuadre G: una lista que corre sola. Lo que cruza la franja, se contesta."""
-    preguntas = [("Hacen envíos?", "09:02"), ("Qué horario tienen?", "09:07"),
-                 ("Cuánto sale?", "09:11"), ("Aceptan tarjeta?", "09:15"),
-                 ("Dónde están?", "09:20"), ("Hacen factura A?", "09:26"),
-                 ("Tienen stock del azul?", "09:31"), ("Se puede retirar?", "09:38")]
-    # la lista viaja 2330 px en 17 s: cada ítem cruza la franja en su momento
-    alto = 152
+    d = _d(datos, {
+        "preguntas": [["Hacen envíos?", "09:02"], ["Qué horario tienen?", "09:07"],
+                      ["Cuánto sale?", "09:11"], ["Aceptan tarjeta?", "09:15"],
+                      ["Dónde están?", "09:20"], ["Hacen factura A?", "09:26"],
+                      ["Tienen stock del azul?", "09:31"], ["Se puede retirar?", "09:38"]],
+        "sello": "respondida", "franja": "se contestan solas",
+        "rotulos": ["Las mismas preguntas <em>de siempre</em>",
+                    "Se contestan <em>solas</em>",
+                    "Vos aparecés <em>cuando hace falta</em>"],
+    })
     items = []
-    for i, (q, h) in enumerate(preguntas):
-        # cuándo este ítem pasa por la franja del medio
+    for i, par in enumerate(d["preguntas"][:8]):
+        q, h = par[0], par[1]
         cruce = round(2.0 + i * 1.05, 2)
         items.append(
             f"<div class='it'><div><div>{q}</div><div class='hr'>{h}</div></div>"
-            f"<span class='ok' style='animation-delay:{cruce}s'>respondida</span></div>")
+            f"<span class='ok' style='animation-delay:{cruce}s'>{d['sello']}</span></div>")
 
-    # la lista se repite una vez para que la pantalla nunca quede vacía
+    r = d["rotulos"]
     p = [f"<div class='rollo' style='--rd:17s'>{''.join(items)}{''.join(items[:4])}</div>",
-         "<div class='linea'><span>se contestan solas</span></div>",
+         f"<div class='linea'><span>{d['franja']}</span></div>",
          "<div class='tapa arr'></div><div class='tapa aba'></div>",
-         rot("Las mismas preguntas <em>de siempre</em>", 0.5, 5.6, "pie"),
-         rot("Se contestan <em>solas</em>", 6.6, 4.6, "pie"),
-         rot("Vos aparecés <em>cuando hace falta</em>", 11.8, 4.8, "pie")]
+         rot(r[0], 0.5, 5.6, "pie"),
+         rot(r[1], 6.6, 4.6, "pie"),
+         rot(r[2], 11.8, 4.8, "pie")]
     return {"cuerpo": "".join(p), "dur": 17.0, "amb": "hondo", "trama": "malla puntos",
             "camara": "fija", "cierre_estilo": "centro", "sin_firma": True,
             "lema": "Software <em>a tu medida</em>"}
