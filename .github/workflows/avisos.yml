@@ -1,0 +1,40 @@
+name: Avisar cuando se esté por acabar el contenido
+
+on:
+  schedule:
+    # Lunes 12:00 UTC = 09:00 en Argentina.
+    - cron: "0 12 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  revisar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: ¿Cuánto contenido queda?
+        id: q
+        run: python scripts/cuanto_queda.py
+
+      # Solo abre un issue si falta poco. El resto de las semanas el
+      # workflow corre, informa en el log y no molesta a nadie.
+      - name: Abrir el aviso
+        if: steps.q.outputs.urge == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITULO="Se está por acabar el contenido programado"
+          ABIERTO=$(gh issue list --state open --search "$TITULO in:title" --json number --jq '.[0].number')
+          if [ -n "$ABIERTO" ]; then
+            gh issue comment "$ABIERTO" --body "${{ steps.q.outputs.cuerpo }}"
+          else
+            gh issue create --title "$TITULO" --body "${{ steps.q.outputs.cuerpo }}"
+          fi
