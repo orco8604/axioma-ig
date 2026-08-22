@@ -23,13 +23,27 @@ HASHTAGS = [
 SEPARADOR = "\u00b7  \u00b7  \u00b7"
 
 
+def _sin_contenido(motivo):
+    """Quedarse sin contenido es un final esperado, no un error.
+
+    Salimos con código 0 y dejamos un aviso amarillo, para que GitHub no
+    mande un mail de falla en cada corrida. El workflow ve saltar=true y
+    se saltea los pasos que siguen.
+    """
+    print(f"::warning::{motivo}")
+    if (gh := os.environ.get("GITHUB_OUTPUT")):
+        with open(gh, "a") as f:
+            f.write("saltar=true\n")
+    raise SystemExit(0)
+
+
 def post_de_hoy(hoy):
     posts = json.loads((RAIZ / "contenido" / "calendario.json").read_text(encoding="utf-8"))
     idx = (hoy - INICIO).days
     if idx < 0:
-        raise SystemExit("El ciclo todavía no arrancó.")
+        return _sin_contenido("El ciclo todavía no arrancó.")
     if idx >= len(posts):
-        raise SystemExit(
+        return _sin_contenido(
             f"Se acabó el calendario ({len(posts)} posts). Pedile a Claude el próximo lote "
             f"y actualizá contenido/calendario.json.")
     return posts[idx], idx
