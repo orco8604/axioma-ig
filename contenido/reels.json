@@ -54,5 +54,1607 @@
     "boton": "Escribime por DM",
     "copy": "Envíos, horarios, precios, medios de pago, dirección. Las mismas cinco preguntas todos los días, contestadas una por una a mano.\n\nEso se automatiza en horas. Lo que llega a tu celular después es solo lo que de verdad necesita que respondas vos.",
     "cta": "¿Cuál es la pregunta que más te repiten? Te leo."
+  },
+  {
+    "guion": "turnos",
+    "camara": "vaiven",
+    "amb": "hondo",
+    "trama": "malla puntos",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "Tu agenda se llena sola.<br>Vos la mirás a la mañana.",
+    "boton": "Escribime por DM",
+    "datos": {
+      "titulo": "Kinesiología Norte",
+      "estado": "responde al toque",
+      "hora1": "21:47",
+      "hora2": "21:48",
+      "msgs": [
+        "Buenas, tienen lugar el lunes?",
+        "Sé que es tarde, disculpen",
+        "Hola! Lunes tengo 08:00, 11:30 y 19:00",
+        "El de las 19 me queda bárbaro",
+        "Listo, te lo dejo agendado",
+        "Confirmado: lunes 19:00",
+        "Te mando un aviso el domingo"
+      ],
+      "rotulos": [
+        "Sábado, <em>21:47</em>",
+        "El consultorio está cerrado",
+        "La agenda <em>no</em>"
+      ]
+    },
+    "copy": "Sábado a la noche. El consultorio cerrado hace seis horas y alguien necesita turno para el lunes.\n\nNo esperó al lunes para preguntar, ni quedó un mensaje sin leer hasta el martes. Vio los horarios que estaban realmente libres, eligió uno y quedó agendado. Cuando abrís el lunes, ya está.",
+    "cta": "¿Cuántos turnos se te pierden un fin de semana?"
+  },
+  {
+    "guion": "tienda",
+    "camara": "empuje",
+    "amb": "azul",
+    "trama": "malla",
+    "lema": "Vendé <em>mientras dormís</em>",
+    "cierre": "Tu tienda no duerme.<br>Tu stock tampoco miente.",
+    "boton": "Quiero la mía",
+    "cierre_estilo": "centro",
+    "datos": {
+      "dominio": "tostado.com.ar",
+      "hora": "04:38",
+      "producto": "Café de origen · 1 kg",
+      "precio": "$ 21.900",
+      "stock_de": "7",
+      "stock_a": "6",
+      "boton": "Agregar al carrito",
+      "sello": "VENDIDO",
+      "rotulos": [
+        "Son las <em>4:38</em>",
+        "Alguien compra un kilo",
+        "Y el stock <em>se acomoda solo</em>"
+      ],
+      "aviso": "Pedido nuevo · <b>$ 21.900</b>"
+    },
+    "copy": "Un kilo vendido a las 4:38 de la mañana. Nadie estaba despierto y nada se rompió.\n\nEl stock pasó de 7 a 6 solo. El pedido quedó registrado con la dirección y el medio de pago. Cuando te levantaste, el aviso te estaba esperando y no había nada que corregir a mano.",
+    "cta": "¿Tu tienda sabe cuánto te queda de verdad?"
+  },
+  {
+    "guion": "formulario",
+    "amb": "menta",
+    "trama": "malla puntos",
+    "lema": "Sin copiar <em>ni pegar nada</em>",
+    "cierre": "El pedido de presupuesto<br>te llega ya cargado.",
+    "boton": "Contame tu caso",
+    "datos": {
+      "arriba": "En <em>tu web</em>",
+      "abajo": "En <em>tu celular</em>",
+      "campos": [
+        [
+          "Nombre",
+          "Ricardo Paz"
+        ],
+        [
+          "Teléfono",
+          "341 502 7714"
+        ],
+        [
+          "Qué necesitás",
+          "Reja para balcón, 3,20 m"
+        ]
+      ],
+      "boton": "Pedir presupuesto",
+      "ficha_titulo": "Presupuesto pedido",
+      "ficha_lineas": [
+        "Ricardo Paz",
+        "341 502 7714",
+        "«Reja para balcón, 3,20 m»"
+      ],
+      "origen": "Origen: web · 08:12 · sin responder",
+      "aviso": "Con la medida <b>ya escrita</b>"
+    },
+    "copy": "El que pide presupuesto por teléfono te obliga a anotar todo mientras hablás. Después hay que llamarlo de nuevo porque faltó la medida.\n\nEl formulario pide lo que vos necesitás para cotizar. Te llega con el nombre, el teléfono y el detalle escritos por el cliente. Vos abrís y cotizás.",
+    "cta": "¿Cuántas veces llamás de vuelta por un dato que faltó?"
+  },
+  {
+    "guion": "cobro",
+    "camara": "empuje",
+    "amb": "menta",
+    "trama": "malla puntos",
+    "lema": "Cobrá <em>antes, no después</em>",
+    "cierre": "La fecha se bloquea<br>cuando entra la seña.",
+    "boton": "Hablemos por DM",
+    "cierre_estilo": "panel",
+    "datos": {
+      "etiqueta": "Seña para bloquear la fecha",
+      "monto": "$ 85.000",
+      "pendiente": "Fecha sin confirmar",
+      "pagado": "Seña acreditada · fecha tomada",
+      "hora1": "11:05",
+      "hora2": "11:19",
+      "msgs": [
+        "Te paso el link para bloquear el 14 de noviembre",
+        "Listo, ya está pago",
+        "Confirmado: 14 de noviembre reservado"
+      ],
+      "rotulos": [
+        "La fecha <em>se pide mucho</em>",
+        "Se bloquea <em>cuando se paga</em>",
+        "Nadie más te la pisa"
+      ]
+    },
+    "copy": "Reservar una fecha de palabra no es reservar: es esperar. Y mientras esperás no se la podés ofrecer a nadie.\n\nCon el link de pago en el mismo mensaje, la fecha se bloquea sola cuando entra la seña. El que dudaba, decide. El que decidió, no se cae.",
+    "cta": "¿Cuántas fechas guardaste sin seña este año?"
+  },
+  {
+    "guion": "recordatorio",
+    "camara": "empuje",
+    "amb": "azul",
+    "trama": "malla puntos",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "Los vencimientos avisan solos.<br>Vos no perseguís a nadie.",
+    "boton": "Escribime por DM",
+    "datos": {
+      "gente": [
+        [
+          "Lucía",
+          "vence el 3"
+        ],
+        [
+          "Martín",
+          "vence el 4"
+        ],
+        [
+          "Camila",
+          "vence el 5"
+        ]
+      ],
+      "cuando": "Cuota ·",
+      "etiqueta": "sin pagar",
+      "vuelta": "Aviso<br>enviado",
+      "pie": "3 días antes · automático",
+      "rotulos": [
+        "La cuota <em>se vence</em>",
+        "El aviso sale <em>tres días antes</em>",
+        "Y casi siempre <em>alcanza</em>"
+      ],
+      "aviso": "<b>3</b> avisos · 0 llamadas incómodas"
+    },
+    "copy": "Cobrarle a alguien que se olvidó es incómodo para los dos. Y el que se olvidó casi nunca lo hizo a propósito.\n\nUn aviso tres días antes del vencimiento resuelve la mayoría sin que tengas que escribir nada. Los que quedan son pocos, y con esos sí vale la pena hablar.",
+    "cta": "¿Cuántas cuotas estás persiguiendo este mes?",
+    "cierre_estilo": "claro"
+  },
+  {
+    "guion": "tablero",
+    "camara": "empuje",
+    "amb": "menta",
+    "trama": "malla puntos",
+    "lema": "Medí <em>lo que importa</em>",
+    "cierre": "Saber de dónde llegan<br>cambia dónde ponés la plata.",
+    "boton": "Hablemos por DM",
+    "datos": {
+      "titulo": "De dónde llegaron tus clientes",
+      "grande": [
+        "Consultas del mes",
+        214
+      ],
+      "par": [
+        [
+          "Por Instagram",
+          89,
+          "#7CFFCB"
+        ],
+        [
+          "Por recomendación",
+          56,
+          "#FFB86B"
+        ]
+      ],
+      "barras": [
+        42,
+        58,
+        51,
+        66,
+        74,
+        63,
+        81
+      ],
+      "rotulos": [
+        "Cuántos <em>te escribieron</em>",
+        "Cuántos <em>vinieron de IG</em>",
+        "Y cuántos <em>te recomendaron</em>"
+      ]
+    },
+    "copy": "Casi todos saben cuánto facturaron. Muy pocos saben de dónde salió cada cliente.\n\nEs el número que decide en qué gastás el mes que viene: si tu mejor canal es la recomendación, publicar más no te va a mover la aguja. Si es Instagram, ahí está la palanca. Sin el dato, es todo intuición.",
+    "cta": "¿Sabés cuál es tu mejor canal hoy?"
+  },
+  {
+    "guion": "repetido",
+    "amb": "azul",
+    "trama": "malla",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "«¿Dónde está mi pedido?»<br>se contesta sin vos.",
+    "boton": "Escribime por DM",
+    "cierre_estilo": "franja",
+    "datos": {
+      "preguntas": [
+        [
+          "Dónde está mi pedido?",
+          "08:41"
+        ],
+        [
+          "Salió el envío 4471?",
+          "08:52"
+        ],
+        [
+          "Llega hoy o mañana?",
+          "09:03"
+        ],
+        [
+          "Me pasan el seguimiento?",
+          "09:14"
+        ],
+        [
+          "El repartidor ya salió?",
+          "09:22"
+        ],
+        [
+          "Cambió la dirección, llega igual?",
+          "09:35"
+        ],
+        [
+          "Cuánto falta para que llegue?",
+          "09:44"
+        ],
+        [
+          "Dónde está mi pedido?",
+          "09:58"
+        ]
+      ],
+      "sello": "contestada",
+      "franja": "con el seguimiento real",
+      "rotulos": [
+        "Siempre <em>la misma pregunta</em>",
+        "Con el dato <em>real del envío</em>",
+        "Contestada <em>en el momento</em>"
+      ]
+    },
+    "copy": "En una distribuidora, la mitad de los mensajes del día son la misma pregunta: dónde está el pedido.\n\nEsa respuesta ya existe en el sistema de envíos. Conectarla al chat es cuestión de horas. Después el cliente pregunta, recibe el seguimiento real al instante, y a vos te llega solo lo que de verdad necesita una persona.",
+    "cta": "¿Cuántos mensajes por día son la misma pregunta?"
+  },
+  {
+    "guion": "turnos",
+    "camara": "empuje",
+    "amb": "menta",
+    "trama": "malla puntos",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "El turno entra solo<br>y con el auto ya cargado.",
+    "boton": "Contame tu caso",
+    "cierre_estilo": "panel",
+    "datos": {
+      "titulo": "Taller Beltrán",
+      "estado": "turnos online",
+      "hora1": "07:12",
+      "hora2": "07:13",
+      "msgs": [
+        "Buen día, necesito service para el Gol",
+        "Se puede esta semana?",
+        "Hola! Jueves 08:00 o viernes 14:00",
+        "Jueves 8 está perfecto",
+        "Listo, anotado con el Gol 2016",
+        "Confirmado: jueves 08:00 · service",
+        "Dejalo con medio tanque o menos"
+      ],
+      "rotulos": [
+        "<em>7:12</em> de la mañana",
+        "Todavía no abriste",
+        "El turno <em>ya está tomado</em>"
+      ]
+    },
+    "copy": "El que necesita service pregunta camino al trabajo, a las siete de la mañana. Si nadie contesta, a las nueve ya llamó a otro taller.\n\nEl sistema muestra los huecos reales, toma el turno con el modelo y el año del auto, y te lo deja anotado. Vos abrís el portón y ya sabés qué entra.",
+    "cta": "¿A qué hora te escriben y a qué hora contestás?"
+  },
+  {
+    "guion": "tienda",
+    "camara": "vaiven",
+    "amb": "hondo",
+    "trama": "malla",
+    "lema": "Vendé <em>mientras dormís</em>",
+    "cierre": "Nunca más vender<br>algo que no tenés.",
+    "boton": "Quiero la mía",
+    "datos": {
+      "dominio": "repuestosdelsur.com",
+      "hora": "22:54",
+      "producto": "Kit de embrague · Fiat",
+      "precio": "$ 156.400",
+      "stock_de": "2",
+      "stock_a": "1",
+      "boton": "Comprar ahora",
+      "sello": "ÚLTIMO",
+      "rotulos": [
+        "Quedaban <em>dos</em>",
+        "Se vendió <em>uno</em>",
+        "Y la web <em>ya lo sabe</em>"
+      ],
+      "aviso": "Queda <b>1</b> · avisar al proveedor"
+    },
+    "copy": "Vender un repuesto que ya no tenés cuesta mucho más caro que no venderlo: perdés el cliente y la reputación de una.\n\nCuando la tienda descuenta del stock real, eso no puede pasar. Y cuando queda uno, el sistema te avisa a vos antes de que te enteres por un reclamo.",
+    "cta": "¿Cuántas veces vendiste algo que no estaba?"
+  },
+  {
+    "guion": "formulario",
+    "amb": "hondo",
+    "trama": "malla",
+    "lema": "Sin copiar <em>ni pegar nada</em>",
+    "cierre": "La inscripción llega<br>lista para confirmar.",
+    "boton": "Escribime por DM",
+    "cierre_estilo": "centro",
+    "datos": {
+      "arriba": "En <em>la página del curso</em>",
+      "abajo": "En <em>tu panel</em>",
+      "campos": [
+        [
+          "Nombre y apellido",
+          "Julieta Ferrer"
+        ],
+        [
+          "Nivel",
+          "Intermedio B1"
+        ],
+        [
+          "Turno que preferís",
+          "Martes y jueves · 19hs"
+        ]
+      ],
+      "boton": "Inscribirme",
+      "ficha_titulo": "Inscripción nueva",
+      "ficha_lineas": [
+        "Julieta Ferrer · B1",
+        "Martes y jueves 19hs",
+        "Quedan 4 lugares"
+      ],
+      "origen": "Cupo actualizado automáticamente",
+      "aviso": "El cupo <b>bajó solo</b>"
+    },
+    "copy": "Una inscripción por WhatsApp son cinco mensajes, una planilla que actualizás a mano y un cupo que nunca sabés bien cómo va.\n\nEn la página, el que se inscribe elige nivel y turno, y el cupo se descuenta solo. Vos ves la lista al día, sin haber escrito una línea.",
+    "cta": "¿Cómo llevás hoy los cupos de tus grupos?"
+  },
+  {
+    "guion": "cobro",
+    "camara": "fija",
+    "amb": "azul",
+    "trama": "malla",
+    "lema": "Cobrá <em>antes, no después</em>",
+    "cierre": "El anticipo entra<br>antes de que empieces.",
+    "boton": "Contame tu caso",
+    "datos": {
+      "etiqueta": "Anticipo · 40% para arrancar",
+      "monto": "$ 340.000",
+      "pendiente": "Trabajo sin iniciar",
+      "pagado": "Anticipo acreditado · arranca lunes",
+      "hora1": "16:40",
+      "hora2": "17:02",
+      "msgs": [
+        "Te dejo el link del anticipo y el alcance por escrito",
+        "Listo, transferido",
+        "Perfecto, arrancamos el lunes"
+      ],
+      "rotulos": [
+        "El alcance <em>por escrito</em>",
+        "El anticipo <em>antes de arrancar</em>",
+        "Los dos <em>tranquilos</em>"
+      ]
+    },
+    "copy": "Empezar sin anticipo no es generosidad: es asumir vos todo el riesgo de un trabajo que todavía nadie confirmó del todo.\n\nEl anticipo no es desconfianza. Es la señal de que el proyecto arrancó de verdad. Y con el alcance escrito al lado, después nadie discute qué incluía.",
+    "cta": "¿Pedís anticipo o arrancás de palabra?"
+  },
+  {
+    "guion": "recordatorio",
+    "camara": "vaiven",
+    "amb": "hondo",
+    "trama": "malla",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "El aviso de entrega<br>sale sin que lo escribas.",
+    "boton": "Escribime por DM",
+    "cierre_estilo": "panel",
+    "datos": {
+      "gente": [
+        [
+          "Pedido 4418",
+          "hoy 14–17"
+        ],
+        [
+          "Pedido 4419",
+          "hoy 14–17"
+        ],
+        [
+          "Pedido 4421",
+          "hoy 17–20"
+        ]
+      ],
+      "cuando": "Entrega ·",
+      "etiqueta": "sin avisar",
+      "vuelta": "Aviso<br>enviado",
+      "pie": "2 horas antes · automático",
+      "rotulos": [
+        "Nadie <em>en la puerta</em>",
+        "Un aviso <em>dos horas antes</em>",
+        "Y la entrega <em>se hace</em>"
+      ],
+      "aviso": "<b>3</b> avisos · 0 viajes al pedo"
+    },
+    "copy": "Un viaje perdido porque no había nadie cuesta el flete, la hora del repartidor y la reprogramación. Tres veces por semana ya es plata.\n\nUn mensaje dos horas antes con la franja de entrega baja muchísimo esa cifra. No hace falta llamar a nadie: sale solo cuando el pedido se carga al reparto.",
+    "cta": "¿Cuántas entregas se te caen por semana?"
+  },
+  {
+    "guion": "tablero",
+    "camara": "fija",
+    "amb": "azul",
+    "trama": "malla puntos",
+    "lema": "Medí <em>lo que importa</em>",
+    "cierre": "Las horas que recuperás<br>también son un número.",
+    "boton": "Hablemos por DM",
+    "cierre_estilo": "franja",
+    "datos": {
+      "titulo": "Lo que dejaste de hacer a mano",
+      "grande": [
+        "Mensajes contestados solos",
+        1840
+      ],
+      "par": [
+        [
+          "Horas por mes",
+          46,
+          "#7CFFCB"
+        ],
+        [
+          "Turnos cargados solos",
+          312,
+          "#4F7CFF"
+        ]
+      ],
+      "barras": [
+        30,
+        44,
+        52,
+        61,
+        70,
+        79,
+        86
+      ],
+      "rotulos": [
+        "Lo que <em>se contestó solo</em>",
+        "Las horas <em>que te volvieron</em>",
+        "Y lo que <em>ya no cargás</em>"
+      ]
+    },
+    "copy": "Cuando alguien pregunta si automatizar conviene, la discusión suele quedar en el precio. El número que falta es el otro: cuántas horas tuyas se van hoy en tareas que no requieren que seas vos.\n\nCuarenta y seis horas por mes es una semana de trabajo. Puesta en otra cosa, o simplemente no trabajada.",
+    "cta": "¿Cuántas horas por semana repetís lo mismo?"
+  },
+  {
+    "guion": "repetido",
+    "amb": "menta",
+    "trama": "malla puntos",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "El precio se contesta solo.<br>Vos cerrás la venta.",
+    "boton": "Escribime por DM",
+    "datos": {
+      "preguntas": [
+        [
+          "Cuánto sale el corte?",
+          "10:02"
+        ],
+        [
+          "Precio del color?",
+          "10:11"
+        ],
+        [
+          "Hacen descuento por dos?",
+          "10:19"
+        ],
+        [
+          "Cuánto la sesión de uñas?",
+          "10:27"
+        ],
+        [
+          "Sale más caro el sábado?",
+          "10:36"
+        ],
+        [
+          "Aceptan transferencia?",
+          "10:44"
+        ],
+        [
+          "Cuánto sale el alisado?",
+          "10:51"
+        ],
+        [
+          "Precio del corte de nena?",
+          "11:03"
+        ]
+      ],
+      "sello": "con lista actualizada",
+      "franja": "precio al día, siempre",
+      "rotulos": [
+        "Cien veces <em>el mismo precio</em>",
+        "Contestado <em>con la lista real</em>",
+        "Y sin <em>equivocarse nunca</em>"
+      ]
+    },
+    "copy": "El problema de contestar precios a mano no es el tiempo: es que un día contestás uno viejo y quedás mal.\n\nSi la lista vive en un solo lugar y el chat la lee de ahí, el precio que sale es siempre el que vos cargaste. Lo actualizás una vez y queda actualizado en todos lados.",
+    "cta": "¿Dónde tenés hoy la lista de precios?"
+  },
+  {
+    "guion": "turnos",
+    "camara": "fija",
+    "amb": "menta",
+    "trama": "malla",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "La consulta se agenda sola,<br>con la mascota cargada.",
+    "boton": "Escribime por DM",
+    "cierre_estilo": "centro",
+    "datos": {
+      "titulo": "Veterinaria Aurora",
+      "estado": "agenda online",
+      "hora1": "20:31",
+      "hora2": "20:33",
+      "msgs": [
+        "Hola, el perro está decaído desde ayer",
+        "Hay algo mañana temprano?",
+        "Hola! Mañana 09:00 y 10:30 libres",
+        "Voy a las 9",
+        "Listo. Es Tobi, labrador, 6 años?",
+        "Confirmado: mañana 09:00 · Tobi",
+        "Traé la libreta si la tenés a mano"
+      ],
+      "rotulos": [
+        "El perro <em>no espera</em>",
+        "La veterinaria <em>ya cerró</em>",
+        "El turno <em>igual se toma</em>"
+      ]
+    },
+    "copy": "El que tiene el perro decaído a las ocho y media de la noche no quiere dejar un mensaje. Quiere saber si mañana hay lugar.\n\nEl sistema conoce la agenda real y la ficha del animal. Muestra el hueco, lo toma, y te deja el turno anotado con el nombre, la raza y la edad ya cargados.",
+    "cta": "¿Cuántas consultas te entran fuera de horario?"
+  },
+  {
+    "guion": "tienda",
+    "camara": "empuje",
+    "amb": "menta",
+    "trama": "malla puntos",
+    "lema": "Vendé <em>mientras dormís</em>",
+    "cierre": "Vendés lo que tenés.<br>Ni uno más.",
+    "boton": "Quiero la mía",
+    "datos": {
+      "dominio": "viverolaspalmas.com",
+      "hora": "23:19",
+      "producto": "Monstera · maceta 25",
+      "precio": "$ 34.500",
+      "stock_de": "9",
+      "stock_a": "8",
+      "boton": "Comprar",
+      "sello": "VENDIDO",
+      "rotulos": [
+        "Un vivero <em>también vende de noche</em>",
+        "El pedido <em>entra igual</em>",
+        "Y el stock <em>se ajusta</em>"
+      ],
+      "aviso": "Retira en local · <b>sábado</b>"
+    },
+    "copy": "Un vivero parece el negocio menos digital del mundo hasta que ves a qué hora la gente elige plantas: de noche, en la cama, con el teléfono.\n\nLa tienda toma el pedido, descuenta el stock y ofrece retiro en el local. Vos llegás el sábado y ya está separado, sin haber contestado un mensaje.",
+    "cta": "¿A qué hora te compran de verdad?"
+  },
+  {
+    "guion": "formulario",
+    "amb": "azul",
+    "trama": "malla puntos",
+    "lema": "Sin copiar <em>ni pegar nada</em>",
+    "cierre": "La consulta llega filtrada.<br>Vos mostrás la propiedad.",
+    "boton": "Contame tu caso",
+    "datos": {
+      "arriba": "En <em>la ficha de la propiedad</em>",
+      "abajo": "En <em>tu celular</em>",
+      "campos": [
+        [
+          "Nombre",
+          "Andrés Molina"
+        ],
+        [
+          "Presupuesto",
+          "Hasta $ 480.000"
+        ],
+        [
+          "Cuándo se mudaría",
+          "Antes del 15/11"
+        ]
+      ],
+      "boton": "Quiero verla",
+      "ficha_titulo": "Consulta calificada",
+      "ficha_lineas": [
+        "Andrés Molina",
+        "Hasta $ 480.000 · antes del 15/11",
+        "Depto Güemes · 2 amb"
+      ],
+      "origen": "Origen: ficha del depto · 19:26",
+      "aviso": "Presupuesto y fecha <b>ya preguntados</b>"
+    },
+    "copy": "En inmobiliaria el problema no es la falta de consultas: es que la mitad no encaja y te enterás después de dos visitas.\n\nSi el formulario pregunta presupuesto y fecha antes de que vos contestes, la consulta que llega ya viene filtrada. Menos mensajes, menos visitas al pedo, más cierres.",
+    "cta": "¿Cuántas visitas hacés que no iban a ningún lado?"
+  },
+  {
+    "guion": "cobro",
+    "camara": "vaiven",
+    "amb": "menta",
+    "trama": "malla",
+    "lema": "Cobrá <em>antes, no después</em>",
+    "cierre": "La cuota se cobra sola.<br>Y se registra sola.",
+    "boton": "Hablemos por DM",
+    "cierre_estilo": "panel",
+    "datos": {
+      "etiqueta": "Cuota mensual · octubre",
+      "monto": "$ 28.500",
+      "pendiente": "Vence el 5",
+      "pagado": "Pagada · acceso activo",
+      "hora1": "09:00",
+      "hora2": "09:26",
+      "msgs": [
+        "Te llegó el link de la cuota de octubre",
+        "Pagué recién",
+        "Listo, ya te quedó activa hasta el 31"
+      ],
+      "rotulos": [
+        "El link sale <em>solo el día 1</em>",
+        "Se paga <em>desde el mensaje</em>",
+        "Y el acceso <em>se activa solo</em>"
+      ]
+    },
+    "copy": "Cobrar cuotas a mano es un trabajo entero: mandar, anotar quién pagó, chequear el banco, activar el acceso, perseguir a los que faltan.\n\nTodo eso es proceso, y el proceso se automatiza. Sale el link, entra el pago, se registra, se activa. Vos mirás una lista al final del mes.",
+    "cta": "¿Cuánto tiempo te lleva cobrar el mes?"
+  },
+  {
+    "guion": "recordatorio",
+    "camara": "empuje",
+    "amb": "azul",
+    "trama": "malla",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "El control anual<br>se acuerda solo.",
+    "boton": "Escribime por DM",
+    "datos": {
+      "gente": [
+        [
+          "Tobi",
+          "vacuna en 7 días"
+        ],
+        [
+          "Nina",
+          "control en 10 días"
+        ],
+        [
+          "Rocco",
+          "antipulgas hoy"
+        ]
+      ],
+      "cuando": "",
+      "etiqueta": "sin avisar",
+      "vuelta": "Aviso<br>enviado",
+      "pie": "según su ficha · automático",
+      "rotulos": [
+        "Nadie <em>se acuerda</em> de la vacuna",
+        "El sistema <em>sí</em>",
+        "Y el turno <em>vuelve solo</em>"
+      ],
+      "aviso": "<b>3</b> avisos · 3 turnos que vuelven"
+    },
+    "copy": "El cliente que no vuelve casi nunca se fue enojado. Se le pasó la fecha y nadie se la recordó.\n\nSi la ficha guarda cuándo toca la próxima vacuna o el próximo control, el aviso puede salir solo en el momento justo. No es marketing: es el dato que ya tenías, usado a tiempo.",
+    "cta": "¿Sabés a quién le toca volver este mes?"
+  },
+  {
+    "guion": "tablero",
+    "camara": "retiro",
+    "amb": "hondo",
+    "trama": "malla puntos",
+    "lema": "Medí <em>lo que importa</em>",
+    "cierre": "Lo que se cae<br>también hay que mirarlo.",
+    "boton": "Hablemos por DM",
+    "datos": {
+      "titulo": "Lo que no se cerró este mes",
+      "grande": [
+        "Presupuestos enviados",
+        68
+      ],
+      "par": [
+        [
+          "Sin respuesta",
+          31,
+          "#FFB86B"
+        ],
+        [
+          "Cerrados",
+          22,
+          "#7CFFCB"
+        ]
+      ],
+      "barras": [
+        70,
+        64,
+        58,
+        49,
+        44,
+        38,
+        31
+      ],
+      "rotulos": [
+        "Cuántos <em>presupuestaste</em>",
+        "Cuántos <em>no contestaron</em>",
+        "Y cuántos <em>cerraron</em>"
+      ]
+    },
+    "copy": "Treinta y un presupuestos sin respuesta no es mala suerte: es información. Puede ser el precio, el tiempo de respuesta o cómo está escrito el presupuesto.\n\nPero mientras el número no exista en ningún lado, no hay nada que corregir. Medir lo que se cae duele más que medir lo que entra, y sirve más.",
+    "cta": "¿Sabés cuántos presupuestos tuyos quedaron sin respuesta?"
+  },
+  {
+    "guion": "repetido",
+    "amb": "hondo",
+    "trama": "malla",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "Los horarios se contestan solos.<br>Las 24 horas.",
+    "boton": "Escribime por DM",
+    "cierre_estilo": "centro",
+    "datos": {
+      "preguntas": [
+        [
+          "A qué hora es funcional?",
+          "06:12"
+        ],
+        [
+          "Hay clase el feriado?",
+          "06:31"
+        ],
+        [
+          "Queda lugar en spinning?",
+          "07:04"
+        ],
+        [
+          "El profe de hoy quién es?",
+          "07:22"
+        ],
+        [
+          "Cambiaron el horario de yoga?",
+          "07:41"
+        ],
+        [
+          "Hay clase a la noche?",
+          "08:03"
+        ],
+        [
+          "Puedo ir sin reservar?",
+          "08:19"
+        ],
+        [
+          "A qué hora es funcional?",
+          "08:40"
+        ]
+      ],
+      "sello": "con la grilla real",
+      "franja": "grilla del día, en vivo",
+      "rotulos": [
+        "La grilla <em>cambia</em>",
+        "Y todos <em>preguntan igual</em>",
+        "Que conteste <em>la grilla misma</em>"
+      ]
+    },
+    "copy": "En un gimnasio la grilla cambia todas las semanas, y cada cambio genera cincuenta mensajes iguales.\n\nSi el chat lee la grilla real, la respuesta siempre está al día, incluso a las seis de la mañana. Y cuando movés una clase, no tenés que avisarle a nadie: ya está avisado.",
+    "cta": "¿Cuántas veces por día te preguntan el horario?"
+  },
+  {
+    "guion": "turnos",
+    "camara": "vaiven",
+    "amb": "hondo",
+    "trama": "malla puntos",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "La seña y el turno,<br>en el mismo mensaje.",
+    "boton": "Contame tu caso",
+    "cierre_estilo": "franja",
+    "datos": {
+      "titulo": "Estudio Filo",
+      "estado": "agenda + seña",
+      "hora1": "01:18",
+      "hora2": "01:21",
+      "msgs": [
+        "Hola! Quiero hacerme un tattoo mediano",
+        "Tienen turno para noviembre?",
+        "Hola! 6, 13 y 20 de noviembre libres",
+        "El 13 me sirve",
+        "Listo. Te paso el link de la seña",
+        "Confirmado: 13/11 · seña acreditada",
+        "Te escribo dos días antes con los cuidados"
+      ],
+      "rotulos": [
+        "<em>1:18</em> de la madrugada",
+        "Nadie contestando",
+        "Turno <em>y seña</em>, listos"
+      ]
+    },
+    "copy": "El turno que se toma a la una de la madrugada y no se paga, se cae. El que se toma y se seña, se sostiene.\n\nCuando el link de la seña viaja en el mismo mensaje en que se confirma el turno, no hay que perseguir a nadie después. La agenda que ves a la mañana ya está firme.",
+    "cta": "¿Cuántos turnos se te caen sin seña?"
+  },
+  {
+    "guion": "tienda",
+    "camara": "fija",
+    "amb": "azul",
+    "trama": "malla",
+    "lema": "Vendé <em>mientras dormís</em>",
+    "cierre": "Cada talle con su stock.<br>Sin sorpresas.",
+    "boton": "Quiero la mía",
+    "cierre_estilo": "panel",
+    "datos": {
+      "dominio": "tiendaenero.com.ar",
+      "hora": "01:47",
+      "producto": "Campera de jean · talle M",
+      "precio": "$ 89.900",
+      "stock_de": "3",
+      "stock_a": "2",
+      "boton": "Comprar",
+      "sello": "VENDIDO",
+      "rotulos": [
+        "Compró <em>un talle M</em>",
+        "Bajó <em>el stock del M</em>",
+        "El resto <em>quedó igual</em>"
+      ],
+      "aviso": "Venta · <b>M</b> · quedan 2"
+    },
+    "copy": "En indumentaria el stock no es un número: son cinco números por producto, uno por talle. Ahí es donde las planillas se rompen.\n\nUna tienda que maneja variantes de verdad descuenta del talle que se vendió y deja el resto intacto. Nadie compra un talle que no está, y vos sabés qué reponer.",
+    "cta": "¿Cómo llevás hoy el stock por talle?"
+  },
+  {
+    "guion": "formulario",
+    "amb": "menta",
+    "trama": "malla",
+    "lema": "Sin copiar <em>ni pegar nada</em>",
+    "cierre": "La cotización sale<br>con los datos completos.",
+    "boton": "Escribime por DM",
+    "datos": {
+      "arriba": "En <em>tu web</em>",
+      "abajo": "En <em>tu sistema</em>",
+      "campos": [
+        [
+          "Nombre",
+          "Valeria Sosa"
+        ],
+        [
+          "Vehículo",
+          "Corolla 2021"
+        ],
+        [
+          "Uso",
+          "Particular · Rosario"
+        ]
+      ],
+      "boton": "Cotizar",
+      "ficha_titulo": "Cotización pedida",
+      "ficha_lineas": [
+        "Valeria Sosa",
+        "Corolla 2021 · particular",
+        "Rosario · sin siniestros"
+      ],
+      "origen": "Cargado en el sistema · 11:08",
+      "aviso": "Sin <b>una sola</b> llamada"
+    },
+    "copy": "Una cotización mal cargada se rehace entera. Y se carga mal cuando el dato pasa por tres manos: el cliente lo dice, vos lo anotás, alguien lo tipea.\n\nSi el cliente lo escribe una vez y eso entra directo al sistema, el error desaparece. No es velocidad: es que el dato no se toca.",
+    "cta": "¿Cuántas veces se retipea un dato en tu proceso?"
+  },
+  {
+    "guion": "cobro",
+    "camara": "empuje",
+    "amb": "hondo",
+    "trama": "malla puntos",
+    "lema": "Cobrá <em>antes, no después</em>",
+    "cierre": "Entrada pagada,<br>lugar asegurado.",
+    "boton": "Hablemos por DM",
+    "datos": {
+      "etiqueta": "Entrada · taller del sábado",
+      "monto": "$ 15.000",
+      "pendiente": "Lugar reservado 20 min",
+      "pagado": "Pagada · lugar confirmado",
+      "hora1": "13:44",
+      "hora2": "13:51",
+      "msgs": [
+        "Te reservo el lugar 20 minutos, acá está el link",
+        "Pagado",
+        "Confirmado. Te mando la dirección el viernes"
+      ],
+      "rotulos": [
+        "El lugar <em>se guarda un rato</em>",
+        "Si no se paga, <em>vuelve a estar libre</em>",
+        "Nadie <em>ocupa de gratis</em>"
+      ]
+    },
+    "copy": "Anotar gente en una lista sin cobrar llena el cupo de nombres que no van a venir. Después el taller queda a medias y quedó gente afuera.\n\nUn lugar reservado veinte minutos, y libre de nuevo si no se paga, arregla el problema sin que tengas que decidir a quién sacar.",
+    "cta": "¿Cobrás la inscripción o anotás y esperás?"
+  },
+  {
+    "guion": "recordatorio",
+    "camara": "fija",
+    "amb": "menta",
+    "trama": "malla puntos",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "La renovación se avisa<br>antes de que se caiga.",
+    "boton": "Escribime por DM",
+    "cierre_estilo": "franja",
+    "datos": {
+      "gente": [
+        [
+          "Plan mensual",
+          "vence en 5 días"
+        ],
+        [
+          "Plan trimestral",
+          "vence en 5 días"
+        ],
+        [
+          "Plan anual",
+          "vence en 12 días"
+        ]
+      ],
+      "cuando": "",
+      "etiqueta": "sin renovar",
+      "vuelta": "Aviso<br>enviado",
+      "pie": "antes del vencimiento · automático",
+      "rotulos": [
+        "El plan <em>se vence</em>",
+        "Y el que no lo ve, <em>se va</em>",
+        "Avisar <em>antes</em> cambia todo"
+      ],
+      "aviso": "Avisar antes cuesta <b>cero</b>"
+    },
+    "copy": "Recuperar a alguien que ya se dio de baja cuesta bastante más que evitar que se dé de baja.\n\nLa mayoría de las bajas por vencimiento no son decisiones: son olvidos. Un aviso cinco días antes, con el link para renovar adentro, convierte buena parte de esos olvidos en renovaciones.",
+    "cta": "¿Cuántas bajas tuyas fueron en realidad olvidos?"
+  },
+  {
+    "guion": "tablero",
+    "camara": "vaiven",
+    "amb": "azul",
+    "trama": "malla",
+    "lema": "Medí <em>lo que importa</em>",
+    "cierre": "Saber qué se vende<br>cambia qué comprás.",
+    "boton": "Hablemos por DM",
+    "cierre_estilo": "centro",
+    "datos": {
+      "titulo": "Qué se vendió de verdad",
+      "grande": [
+        "Unidades del mes",
+        1476
+      ],
+      "par": [
+        [
+          "Top 3 productos",
+          61,
+          "#7CFFCB"
+        ],
+        [
+          "Sin una sola venta",
+          18,
+          "#FFB86B"
+        ]
+      ],
+      "barras": [
+        88,
+        74,
+        66,
+        48,
+        37,
+        26,
+        14
+      ],
+      "rotulos": [
+        "Cuánto <em>salió</em>",
+        "Qué <em>concentra la venta</em>",
+        "Y qué <em>está parado</em>"
+      ]
+    },
+    "copy": "Casi siempre tres productos hacen la mitad de la facturación, y hay otros dieciocho que no vendieron ni una unidad en el mes.\n\nEsos dieciocho son plata quieta en el depósito. Verlos en una pantalla, ordenados, cambia la próxima compra más que cualquier consejo que te pueda dar yo.",
+    "cta": "¿Sabés cuáles de tus productos no vendieron nada?"
+  },
+  {
+    "guion": "repetido",
+    "amb": "azul",
+    "trama": "malla puntos",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "«¿Hay turno?»<br>se contesta con la agenda real.",
+    "boton": "Escribime por DM",
+    "datos": {
+      "preguntas": [
+        [
+          "Hay turno para hoy?",
+          "08:05"
+        ],
+        [
+          "Y para mañana?",
+          "08:14"
+        ],
+        [
+          "Tenés algo el sábado?",
+          "08:29"
+        ],
+        [
+          "Hay lugar a la tarde?",
+          "08:47"
+        ],
+        [
+          "Se puede sin turno?",
+          "09:02"
+        ],
+        [
+          "Cuánto hay que esperar?",
+          "09:16"
+        ],
+        [
+          "Atienden al mediodía?",
+          "09:31"
+        ],
+        [
+          "Hay turno para hoy?",
+          "09:52"
+        ]
+      ],
+      "sello": "con la agenda abierta",
+      "franja": "mira tu agenda de verdad",
+      "rotulos": [
+        "Todo el día <em>la misma pregunta</em>",
+        "Y la respuesta <em>ya existe</em>",
+        "Está <em>en tu agenda</em>"
+      ]
+    },
+    "copy": "La respuesta a «¿hay turno?» ya está escrita: es tu agenda. El problema es que la agenda está de un lado y el que pregunta del otro.\n\nConectarlas es de las cosas más baratas que se pueden hacer, y de las que más alivio dan. El que pregunta ve los huecos reales y toma uno.",
+    "cta": "¿Cuántas veces al día mirás la agenda por otro?"
+  },
+  {
+    "guion": "turnos",
+    "camara": "empuje",
+    "amb": "azul",
+    "trama": "malla",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "El turno entra de noche.<br>Vos lo ves a la mañana.",
+    "boton": "Escribime por DM",
+    "datos": {
+      "titulo": "Odonto Centro",
+      "estado": "agenda online",
+      "hora1": "22:08",
+      "hora2": "22:10",
+      "msgs": [
+        "Se me rompió una muela, hay algo mañana?",
+        "Duele bastante",
+        "Hola! Mañana 08:30 y 12:00 para urgencia",
+        "Voy a las 8:30",
+        "Listo, te dejo el turno de urgencia",
+        "Confirmado: mañana 08:30",
+        "Si empeora, escribinos igual"
+      ],
+      "rotulos": [
+        "Una urgencia <em>a las 22</em>",
+        "El consultorio <em>cerrado</em>",
+        "El turno <em>tomado igual</em>"
+      ]
+    },
+    "copy": "Las urgencias no consultan el horario de atención. Y el que tiene dolor a las diez de la noche va a escribirle a quien le conteste primero.\n\nSi tu agenda deja huecos reservados para urgencias, el sistema puede ofrecerlos sin que vos intervengas. Lo que llega a tu celular es el turno, ya tomado.",
+    "cta": "¿Guardás huecos para urgencias en tu agenda?"
+  },
+  {
+    "guion": "tienda",
+    "camara": "vaiven",
+    "amb": "menta",
+    "trama": "malla",
+    "lema": "Vendé <em>mientras dormís</em>",
+    "cierre": "Reponés lo que se vende,<br>no lo que creés.",
+    "boton": "Quiero la mía",
+    "cierre_estilo": "franja",
+    "datos": {
+      "dominio": "nutriciondirecta.com",
+      "hora": "05:22",
+      "producto": "Proteína · 1 kg vainilla",
+      "precio": "$ 42.700",
+      "stock_de": "12",
+      "stock_a": "11",
+      "boton": "Comprar",
+      "sello": "VENDIDO",
+      "rotulos": [
+        "<em>5:22</em>, antes de entrenar",
+        "Compra <em>y paga</em>",
+        "El stock <em>ya lo sabe</em>"
+      ],
+      "aviso": "Vainilla: <b>11</b> · chocolate: 2"
+    },
+    "copy": "Cuando el stock lo llevás de memoria, reponés lo que te parece que se vende. Casi nunca coincide con lo que se vende de verdad.\n\nCon la tienda descontando sola, la lista de reposición se arma con datos: este sabor voló, este está hace dos meses. La compra deja de ser una apuesta.",
+    "cta": "¿Reponés por dato o por intuición?"
+  },
+  {
+    "guion": "formulario",
+    "amb": "hondo",
+    "trama": "malla puntos",
+    "lema": "Sin copiar <em>ni pegar nada</em>",
+    "cierre": "El reclamo entra ordenado<br>y con número.",
+    "boton": "Contame tu caso",
+    "cierre_estilo": "panel",
+    "datos": {
+      "arriba": "En <em>tu web</em>",
+      "abajo": "En <em>tu tablero</em>",
+      "campos": [
+        [
+          "Equipo",
+          "Notebook Lenovo"
+        ],
+        [
+          "Nº de orden",
+          "OT-2291"
+        ],
+        [
+          "Qué le pasa",
+          "No carga, luz naranja"
+        ]
+      ],
+      "boton": "Enviar reclamo",
+      "ficha_titulo": "Reclamo #4412",
+      "ficha_lineas": [
+        "Notebook Lenovo · OT-2291",
+        "«No carga, luz naranja»",
+        "Asignado a taller"
+      ],
+      "origen": "Reclamo con número · el cliente lo sigue solo",
+      "aviso": "Con <b>número</b> desde el minuto cero"
+    },
+    "copy": "Un reclamo por WhatsApp no tiene número, no tiene estado y no tiene dueño. Por eso se pierde y por eso el cliente vuelve a preguntar tres veces.\n\nCon un formulario, cada reclamo nace con número y estado. El cliente lo sigue solo y vos ves de un vistazo qué está trabado y hace cuánto.",
+    "cta": "¿Cómo seguís hoy los reclamos abiertos?"
+  },
+  {
+    "guion": "cobro",
+    "camara": "fija",
+    "amb": "menta",
+    "trama": "malla puntos",
+    "lema": "Cobrá <em>antes, no después</em>",
+    "cierre": "Cobrado antes de salir.<br>Cero viajes al pedo.",
+    "boton": "Hablemos por DM",
+    "datos": {
+      "etiqueta": "Pedido 4488 · pago antes del envío",
+      "monto": "$ 67.300",
+      "pendiente": "Sin pagar · no sale",
+      "pagado": "Pagado · sale hoy",
+      "hora1": "10:12",
+      "hora2": "10:40",
+      "msgs": [
+        "Te paso el link así sale en el reparto de hoy",
+        "Listo, pagué",
+        "Confirmado, sale hoy entre 14 y 17"
+      ],
+      "rotulos": [
+        "El flete <em>cuesta igual</em>",
+        "Si no está pago, <em>no sale</em>",
+        "Y nadie <em>vuelve con la caja</em>"
+      ]
+    },
+    "copy": "El envío contrareembolso que vuelve sin entregar te cuesta el flete de ida y el de vuelta, y la mercadería estuvo un día fuera del depósito.\n\nCobrar antes de cargar el reparto no es desconfiar del cliente: es que el viaje solo se hace cuando la venta está cerrada de verdad.",
+    "cta": "¿Cuántos envíos te vuelven por mes?"
+  },
+  {
+    "guion": "recordatorio",
+    "camara": "fija",
+    "amb": "hondo",
+    "trama": "malla",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "La clase de prueba<br>se recuerda sola.",
+    "boton": "Escribime por DM",
+    "datos": {
+      "gente": [
+        [
+          "Nahuel",
+          "prueba mañana 18h"
+        ],
+        [
+          "Belén",
+          "prueba mañana 19h"
+        ],
+        [
+          "Iván",
+          "prueba jueves 20h"
+        ]
+      ],
+      "cuando": "",
+      "etiqueta": "anotado, sin confirmar",
+      "vuelta": "Recordatorio<br>enviado",
+      "pie": "el día antes · automático",
+      "rotulos": [
+        "La clase de prueba <em>es la venta</em>",
+        "El que no viene <em>no compra</em>",
+        "Un aviso <em>el día antes</em>"
+      ],
+      "aviso": "<b>3</b> pruebas · 3 recordatorios"
+    },
+    "copy": "La clase de prueba es el momento donde se decide casi todo. Si el que se anotó no aparece, no perdiste una clase: perdiste la venta entera.\n\nUn recordatorio el día anterior sube muchísimo la asistencia. Cuesta cero mandarlo y no requiere que vos te acuerdes de nada.",
+    "cta": "¿Qué porcentaje de tus pruebas se presenta?"
+  },
+  {
+    "guion": "tablero",
+    "camara": "empuje",
+    "amb": "hondo",
+    "trama": "malla",
+    "lema": "Medí <em>lo que importa</em>",
+    "cierre": "Lo que te deben<br>en una sola pantalla.",
+    "boton": "Hablemos por DM",
+    "cierre_estilo": "centro",
+    "datos": {
+      "titulo": "Lo que falta cobrar",
+      "grande": [
+        "Facturas emitidas",
+        148
+      ],
+      "par": [
+        [
+          "Vencidas hace +30 días",
+          22,
+          "#FFB86B"
+        ],
+        [
+          "Cobradas en término",
+          118,
+          "#7CFFCB"
+        ]
+      ],
+      "barras": [
+        24,
+        38,
+        45,
+        59,
+        68,
+        77,
+        90
+      ],
+      "rotulos": [
+        "Cuántas <em>emitiste</em>",
+        "Cuántas <em>están vencidas</em>",
+        "Y cuántas <em>entraron en fecha</em>"
+      ]
+    },
+    "copy": "Facturar y cobrar no son lo mismo, y muchos negocios que parecen sanos tienen el problema del otro lado: la plata está, pero está en la calle.\n\nVeintidós facturas vencidas hace más de treinta días no es «me deben algo». Es una lista concreta de a quién llamar hoy, y se actualiza sola todas las mañanas.",
+    "cta": "¿Sabés cuánto te deben ahora mismo?"
+  },
+  {
+    "guion": "repetido",
+    "amb": "menta",
+    "trama": "malla",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "Las mismas preguntas de siempre,<br>contestadas siempre igual.",
+    "boton": "Escribime por DM",
+    "datos": {
+      "preguntas": [
+        [
+          "Cuándo abre la inscripción?",
+          "07:48"
+        ],
+        [
+          "Qué documentación piden?",
+          "08:02"
+        ],
+        [
+          "Cuánto sale la cuota?",
+          "08:15"
+        ],
+        [
+          "Hay vacantes en 3er grado?",
+          "08:31"
+        ],
+        [
+          "A qué hora es la salida?",
+          "08:49"
+        ],
+        [
+          "Dan vianda o hay que llevar?",
+          "09:05"
+        ],
+        [
+          "Cuándo son las reuniones?",
+          "09:20"
+        ],
+        [
+          "Qué documentación piden?",
+          "09:38"
+        ]
+      ],
+      "sello": "contestada",
+      "franja": "la misma respuesta, siempre",
+      "rotulos": [
+        "Cien familias <em>preguntan lo mismo</em>",
+        "Y la respuesta <em>no cambia</em>",
+        "Que la dé <em>el sistema</em>"
+      ]
+    },
+    "copy": "En marzo, una escuela contesta la misma pregunta doscientas veces. No es difícil: es agotador y ocupa a alguien todo el día.\n\nLo que se repite exactamente igual puede contestarse solo. Lo que necesita criterio, no. Separar una cosa de la otra es la mitad del trabajo de automatizar bien.",
+    "cta": "¿Cuál es la pregunta que más te repiten?"
+  },
+  {
+    "guion": "turnos",
+    "camara": "vaiven",
+    "amb": "menta",
+    "trama": "malla puntos",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "La reunión se agenda sola.<br>Con la documentación pedida.",
+    "boton": "Contame tu caso",
+    "cierre_estilo": "panel",
+    "datos": {
+      "titulo": "Estudio Arrieta",
+      "estado": "agenda de reuniones",
+      "hora1": "19:52",
+      "hora2": "19:55",
+      "msgs": [
+        "Necesito una reunión por el cierre",
+        "Tienen algo esta semana?",
+        "Hola! Jueves 10:00 o viernes 16:00",
+        "Jueves 10 está bien",
+        "Listo. Te paso qué traer",
+        "Confirmado: jueves 10:00 · videollamada",
+        "Traé los últimos 3 resúmenes bancarios"
+      ],
+      "rotulos": [
+        "Casi <em>las 20</em>",
+        "El estudio <em>cerró a las 18</em>",
+        "La reunión <em>ya está armada</em>"
+      ]
+    },
+    "copy": "La reunión que se agenda por cadena de mensajes tarda dos días en cerrarse y encima llega sin la documentación.\n\nSi el sistema muestra tus huecos reales y, al confirmar, manda la lista de lo que hay que traer, la reunión empieza donde tiene que empezar. No perdiste media hora pidiendo papeles.",
+    "cta": "¿Cuánto tardás en cerrar una reunión por chat?"
+  },
+  {
+    "guion": "tienda",
+    "camara": "vaiven",
+    "amb": "hondo",
+    "trama": "malla puntos",
+    "lema": "Vendé <em>mientras dormís</em>",
+    "cierre": "Una tienda chica<br>también vende sola.",
+    "boton": "Quiero la mía",
+    "datos": {
+      "dominio": "libreriaelfaro.com.ar",
+      "hora": "00:41",
+      "producto": "Cuaderno A5 · tapa dura",
+      "precio": "$ 9.800",
+      "stock_de": "5",
+      "stock_a": "4",
+      "boton": "Comprar",
+      "sello": "VENDIDO",
+      "rotulos": [
+        "Una venta <em>chica</em>",
+        "A las <em>00:41</em>",
+        "Que <em>igual entró</em>"
+      ],
+      "aviso": "Retira mañana · <b>$ 9.800</b>"
+    },
+    "copy": "Hay una idea de que la tienda online es para el que vende mucho. Es al revés: al que vende poco, cada venta que se le escapa le pesa más.\n\nUn cuaderno de nueve mil pesos a las doce y media de la noche no cambia el mes. Veinte de esos, sí. Y no te costaron una sola respuesta.",
+    "cta": "¿Cuántas ventas chicas se te escapan por no contestar?"
+  },
+  {
+    "guion": "formulario",
+    "amb": "azul",
+    "trama": "malla",
+    "lema": "Sin copiar <em>ni pegar nada</em>",
+    "cierre": "Así arranca un proyecto<br>que sale bien.",
+    "boton": "Escribime por DM",
+    "cierre_estilo": "centro",
+    "datos": {
+      "arriba": "En <em>axioma</em>",
+      "abajo": "En <em>mi tablero</em>",
+      "campos": [
+        [
+          "Rubro",
+          "Distribuidora de bebidas"
+        ],
+        [
+          "Qué hacés a mano",
+          "Pedidos por WhatsApp"
+        ],
+        [
+          "Cuánto tiempo te lleva",
+          "4 horas por día"
+        ]
+      ],
+      "boton": "Enviar",
+      "ficha_titulo": "Consulta nueva",
+      "ficha_lineas": [
+        "Distribuidora de bebidas",
+        "Pedidos por WhatsApp",
+        "4 horas por día a mano"
+      ],
+      "origen": "Con esto ya sé por dónde empezar",
+      "aviso": "Tres preguntas, <b>todo el contexto</b>"
+    },
+    "copy": "Cuando alguien me escribe «cuánto sale un sistema», la respuesta honesta es que no sé todavía. Falta lo importante.\n\nCon tres datos ya se puede hablar en serio: qué hacés, qué parte hacés a mano y cuánto tiempo te lleva. Con eso te digo si conviene, por dónde empezar y qué no haría.",
+    "cta": "Contame esas tres cosas y lo charlamos."
+  },
+  {
+    "guion": "cobro",
+    "camara": "vaiven",
+    "amb": "azul",
+    "trama": "malla puntos",
+    "lema": "Cobrá <em>antes, no después</em>",
+    "cierre": "El plan de pagos<br>se lleva solo.",
+    "boton": "Hablemos por DM",
+    "cierre_estilo": "franja",
+    "datos": {
+      "etiqueta": "Cuota 2 de 6",
+      "monto": "$ 54.000",
+      "pendiente": "Vence en 3 días",
+      "pagado": "Pagada · quedan 4",
+      "hora1": "08:30",
+      "hora2": "08:58",
+      "msgs": [
+        "Cuota 2 de 6, te dejo el link",
+        "Ya está",
+        "Perfecto. La 3 vence el 18 del mes que viene"
+      ],
+      "rotulos": [
+        "Seis cuotas <em>son seis recordatorios</em>",
+        "Y seis <em>anotaciones</em>",
+        "O <em>ninguna</em>, si lo lleva el sistema"
+      ]
+    },
+    "copy": "Financiar en cuotas propias es una gran herramienta de venta y un pésimo trabajo administrativo: hay que acordarse, mandar, anotar y controlar seis veces por cliente.\n\nEse seguimiento es exactamente el tipo de tarea que una computadora hace mejor. Vos ofrecés el plan; el plan se lleva solo.",
+    "cta": "¿Financiás en cuotas propias? ¿Cómo lo seguís?"
+  },
+  {
+    "guion": "recordatorio",
+    "camara": "empuje",
+    "amb": "menta",
+    "trama": "malla",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "Los vencimientos avisan<br>antes de ser un problema.",
+    "boton": "Escribime por DM",
+    "datos": {
+      "gente": [
+        [
+          "Habilitación",
+          "vence en 30 días"
+        ],
+        [
+          "Seguro de flota",
+          "vence en 21 días"
+        ],
+        [
+          "VTV camioneta",
+          "vence en 9 días"
+        ]
+      ],
+      "cuando": "",
+      "etiqueta": "sin renovar",
+      "vuelta": "Aviso<br>enviado",
+      "pie": "con anticipación · automático",
+      "rotulos": [
+        "Los papeles <em>se vencen</em>",
+        "Y siempre <em>en el peor momento</em>",
+        "Salvo que <em>algo te avise</em>"
+      ],
+      "aviso": "Enterarse <b>tarde</b> siempre sale caro"
+    },
+    "copy": "Habilitaciones, seguros, VTV, matrículas. Ninguno de esos vencimientos avisa, y todos generan un problema caro cuando se pasan.\n\nEs de lo más simple que se puede automatizar: una fecha cargada una vez y un aviso con anticipación. Cuesta muy poco y evita el día que no podés operar.",
+    "cta": "¿Cuál es el próximo vencimiento que tenés? ¿Lo sabés de memoria?"
+  },
+  {
+    "guion": "tablero",
+    "camara": "retiro",
+    "amb": "azul",
+    "trama": "malla",
+    "lema": "Medí <em>lo que importa</em>",
+    "cierre": "Tres números.<br>Y decisiones distintas.",
+    "boton": "Hablemos por DM",
+    "datos": {
+      "titulo": "El trimestre, en tres números",
+      "grande": [
+        "Clientes nuevos",
+        96
+      ],
+      "par": [
+        [
+          "Que volvieron",
+          41,
+          "#7CFFCB"
+        ],
+        [
+          "Que no volvieron",
+          55,
+          "#FFB86B"
+        ]
+      ],
+      "barras": [
+        33,
+        41,
+        50,
+        58,
+        67,
+        74,
+        83
+      ],
+      "rotulos": [
+        "Cuántos <em>llegaron</em>",
+        "Cuántos <em>volvieron</em>",
+        "Y cuántos <em>no</em>"
+      ]
+    },
+    "copy": "Conseguir un cliente nuevo cuesta bastante más que hacer volver a uno que ya te compró. Sin embargo casi todo el esfuerzo se va en conseguir.\n\nCincuenta y cinco que no volvieron es la lista más valiosa que tenés, y en la mayoría de los negocios ni siquiera existe escrita en algún lado.",
+    "cta": "¿Sabés cuántos de tus clientes volvieron este trimestre?"
+  },
+  {
+    "guion": "repetido",
+    "amb": "hondo",
+    "trama": "malla puntos",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "Lo repetido, solo.<br>Lo importante, con vos.",
+    "boton": "Escribime por DM",
+    "cierre_estilo": "panel",
+    "datos": {
+      "preguntas": [
+        [
+          "Hacen factura A?",
+          "09:04"
+        ],
+        [
+          "Trabajan los sábados?",
+          "09:12"
+        ],
+        [
+          "Aceptan Mercado Pago?",
+          "09:23"
+        ],
+        [
+          "Tienen local o solo online?",
+          "09:35"
+        ],
+        [
+          "Hacen envíos al interior?",
+          "09:47"
+        ],
+        [
+          "Cuánto tarda el envío?",
+          "09:59"
+        ],
+        [
+          "Se puede retirar?",
+          "10:11"
+        ],
+        [
+          "Hacen factura A?",
+          "10:24"
+        ]
+      ],
+      "sello": "contestada sola",
+      "franja": "vos, solo para lo que importa",
+      "rotulos": [
+        "Ocho preguntas <em>en una hora</em>",
+        "Ninguna <em>necesita ser vos</em>",
+        "La novena <em>sí</em>"
+      ]
+    },
+    "copy": "Automatizar bien no es que conteste todo una máquina. Es que vos aparezcas solamente cuando hace falta que aparezcas.\n\nOcho preguntas de trámite se contestan solas. La novena, la que decide una venta grande o resuelve un problema real, te llega limpia y con contexto. Ahí sí sos irremplazable.",
+    "cta": "¿Cuántos de tus mensajes de hoy necesitaban ser vos?"
+  },
+  {
+    "guion": "turnos",
+    "camara": "fija",
+    "amb": "hondo",
+    "trama": "malla",
+    "lema": "Software <em>a tu medida</em>",
+    "cierre": "Un año de turnos<br>que se tomaron solos.",
+    "boton": "Contame tu caso",
+    "cierre_estilo": "centro",
+    "datos": {
+      "titulo": "Salón Duna",
+      "estado": "agenda online",
+      "hora1": "23:41",
+      "hora2": "23:42",
+      "msgs": [
+        "Hola! Queda algo para el 24?",
+        "Sé que es sobre la hora",
+        "Hola! El 24 tengo 10:00 y 16:30",
+        "El de las 10, por favor",
+        "Listo, te lo reservo",
+        "Confirmado: 24/12 · 10:00",
+        "Te aviso el 23 a la mañana"
+      ],
+      "rotulos": [
+        "<em>23:41</em> del 22 de diciembre",
+        "Nadie <em>está trabajando</em>",
+        "Y el turno <em>entró igual</em>"
+      ]
+    },
+    "copy": "Diciembre a las once y media de la noche es cuando más se pide y menos se contesta. El que no encuentra respuesta, prueba con otro.\n\nUna agenda que se puede tomar sola no te hace trabajar más en la temporada alta: te hace no perder lo que ya te estaban ofreciendo.",
+    "cta": "¿Cuánto se te llena la agenda en tu mes más fuerte?"
   }
 ]

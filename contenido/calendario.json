@@ -1,182 +1,722 @@
 [
- {
-  "pilar": "Axioma",
-  "gancho": "Lo que hacés a mano todos los días ya es un sistema. Solo que lo corrés vos.",
-  "copy": "Anotar el turno, pasar el pedido a la planilla, mandar el recordatorio. Eso es un proceso: existe, tiene reglas y se repite.\n\nLa pregunta no es si automatizarlo. Es cuánto te está costando seguir siendo vos el que lo ejecuta.",
-  "cta": "Guardalo y mirá tu semana con esa lupa."
- },
- {
-  "pilar": "Tip aplicable",
-  "gancho": "3 cosas que tu cliente debería poder hacer sin escribirte",
-  "copy": "Cada una te devuelve horas por semana:\n\n1. Ver tus horarios o tu stock reales, sin preguntarte.\n2. Reservar o comprar sin negociarlo por chat.\n3. Recibir la confirmación y el recordatorio solos.",
-  "cta": "¿Cuál te sacaría más peso de encima?"
- },
- {
-  "pilar": "Servicio",
-  "gancho": "Software a tu medida: qué significa en la práctica",
-  "copy": "No es un producto que te vendo y te adaptás. Es al revés: miro cómo trabajás hoy y el sistema se construye alrededor de eso.\n\nWebs, tiendas online, sistemas de gestión, turneros, automatizaciones. Lo que haga falta para que dejes de hacerlo a mano.",
-  "cta": "Contame qué hacés a mano y te digo si se puede."
- },
- {
-  "pilar": "Mini-guía",
-  "gancho": "5 señales de que tu forma de trabajar ya no da más",
-  "copy": "Carrusel, una por slide:\n1. Anotás lo mismo en dos lugares distintos.\n2. Contestás mensajes fuera de tu horario.\n3. Te enterás tarde de las cosas que salieron mal.\n4. No sabés cuántas ventas o turnos tuviste el mes pasado.\n5. Si te vas una semana, se frena todo.",
-  "cta": "¿Cuántas tildaste? Guardalo."
- },
- {
-  "pilar": "Para el que decide",
-  "gancho": "El que no avisa no es maleducado: se olvidó",
-  "copy": "Las ausencias y los pedidos que se caen casi nunca son falta de respeto. Son algo que se acordó hace tres semanas y quedó tapado por la vida.\n\nUn recordatorio automático el día antes resuelve la enorme mayoría. Sin enojarse y sin perseguir a nadie.",
-  "cta": "¿Cuántos se te cayeron este mes?"
- },
- {
-  "pilar": "Detrás de escena",
-  "gancho": "Cómo trabajo con alguien que está a 3.000 km",
-  "copy": "Videollamada para entender el problema, un mapa del proceso por escrito, entregas parciales que podés ver funcionando, y un canal directo conmigo. Sin intermediarios.\n\nLa distancia no es el riesgo. El riesgo es no saber en qué anda tu proyecto.",
-  "cta": "¿Trabajaste a distancia antes? Te leo."
- },
- {
-  "pilar": "Conversación",
-  "gancho": "Mito: «un sistema es para negocios grandes»",
-  "copy": "Realidad: cuanto más chico sos, más caro te sale el desorden. Si sos vos solo, cada hora que perdés coordinando es una hora que no producís y no cobrás.\n\nEl grande tiene un equipo administrativo. Vos tenés que tener sistema.",
-  "cta": "¿De acuerdo o lo ves distinto?"
- },
- {
-  "pilar": "Axioma",
-  "gancho": "Automatizar un desorden es multiplicarlo.",
-  "copy": "Si tu forma de trabajar cambia según el día y según quién pregunta, ningún sistema te va a salvar: te va a acelerar el problema.\n\nPrimero se escribe cómo trabajás. Después se ordena. Recién ahí se automatiza.",
-  "cta": "Guardalo antes de contratar nada."
- },
- {
-  "pilar": "Tip aplicable",
-  "gancho": "Qué preguntar antes de contratar cualquier sistema",
-  "copy": "Tres preguntas que te ahorran dolores de cabeza:\n\n1. ¿Los datos son míos y me los puedo llevar?\n2. ¿Qué pasa si mañana quiero cambiar de proveedor?\n3. ¿Quién responde si se cae un lunes a la mañana?",
-  "cta": "Copiá las tres para tu próxima reunión."
- },
- {
-  "pilar": "Servicio",
-  "gancho": "Una demo que armé para mostrar cómo funciona",
-  "copy": "Es una demo, no un cliente: la hice justamente para que se entienda sin tener que imaginárselo.\n\nSe reserva un turno, entra solo a la agenda, el cliente recibe la confirmación y el recordatorio, y el dueño se entera en el momento. Todo sin que nadie escriba un mensaje.",
-  "cta": "¿Querés verla funcionando? Escribime."
- },
- {
-  "pilar": "Mini-guía",
-  "gancho": "Lo mínimo que tiene que tener tu agenda o tu tienda online",
-  "copy": "Carrusel:\n1. Que muestre solo lo que vos querés ofrecer.\n2. Que se bloquee sola cuando ya no hay lugar o stock.\n3. Que mande la confirmación sin que la pidas.\n4. Que te avise a vos en el momento.\n5. Que el cliente pueda cancelar sin escribirte.",
-  "cta": "Guardalo para comparar opciones."
- },
- {
-  "pilar": "Para el que decide",
-  "gancho": "La cuenta que casi nadie hace",
-  "copy": "Tomá lo que vale una hora tuya y multiplicalo por las horas que pasás copiando datos, contestando lo mismo y coordinando.\n\nEse número es lo que estás pagando todos los meses por no resolverlo. Suele ser bastante más caro que resolverlo.",
-  "cta": "Hacé la cuenta y contame qué te dio."
- },
- {
-  "pilar": "Detrás de escena",
-  "gancho": "Por qué no cobro por hora",
-  "copy": "Cobrar por hora premia la lentitud y castiga la experiencia. Cotizo por alcance: qué problema resolvemos y qué te queda funcionando.\n\nSi el sistema te devuelve ocho horas al mes, el precio se discute contra eso, no contra mi reloj.",
-  "cta": "¿Cómo lo ves desde tu lado?"
- },
- {
-  "pilar": "Conversación",
-  "gancho": "¿Cuál es la parte de tu semana que más te agota y no es tu trabajo real?",
-  "copy": "Contámela en comentarios. Voy a responder una por una diciéndote si se puede resolver con software y con qué.\n\nSi en tu caso no conviene automatizarlo, también te lo voy a decir.",
-  "cta": "Te leo abajo."
- },
- {
-  "pilar": "Axioma",
-  "gancho": "Si el proceso no está escrito, vive en la cabeza de alguien.",
-  "copy": "Y el día que esa persona se toma vacaciones, tu negocio se las toma con ella.\n\nEscribir cómo entra un pedido, cómo se cobra y dónde queda registrado es el paso más barato y el que más gente se saltea.",
-  "cta": "Guardalo."
- },
- {
-  "pilar": "Tip aplicable",
-  "gancho": "Cómo conectar tu web con WhatsApp sin escribir código",
-  "copy": "El camino corto:\n1. Un formulario en tu web.\n2. Un enlace que dispara el aviso.\n3. El mensaje te llega al celular con todos los datos cargados.\n\nEs cuestión de horas, no de meses.",
-  "cta": "¿Querés el flujo armado? Escribime."
- },
- {
-  "pilar": "Servicio",
-  "gancho": "Qué hago, en una lista",
-  "copy": "Webs que cargan rápido y traen consultas. Tiendas online conectadas a tu stock. Sistemas de gestión hechos para tu forma de trabajar. Turneros y agendas. Bots de WhatsApp que contestan lo repetido.\n\nSi lo hacés a mano y se repite, probablemente entre acá.",
-  "cta": "¿Lo tuyo entra en la lista? Preguntame."
- },
- {
-  "pilar": "Mini-guía",
-  "gancho": "Tu primera automatización, paso a paso",
-  "copy": "Carrusel: el cliente completa un formulario → se valida → queda registrado → sale la confirmación → te llega el aviso.\n\nUna slide por paso, con captura real. Cerrá con «esto se configura una vez y funciona para siempre».",
-  "cta": "Guardalo para cuando te sientes a hacerlo."
- },
- {
-  "pilar": "Para el que decide",
-  "gancho": "3 cosas que tu web debería hacer y no hace",
-  "copy": "1. Cargar en menos de 3 segundos desde el celular, que es donde te buscan.\n2. Dejar que te contacten o te compren de un toque, sin formularios de nueve campos.\n3. Avisarte a vos, en vez de esperar que revises un mail que no abrís.",
-  "cta": "Pasame tu web por DM y te digo cuál falla."
- },
- {
-  "pilar": "Detrás de escena",
-  "gancho": "Un día de trabajo: de la reunión al sistema andando",
-  "copy": "La videollamada donde entiendo el problema, el rato de mapear el proceso en papel, el código, la prueba con el cliente y el mensaje del final.\n\nA distancia, el cliente contrata a la persona antes que a la tecnología.",
-  "cta": "¿Cómo es tu día? Contame."
- },
- {
-  "pilar": "Conversación",
-  "gancho": "¿Verdadero o falso? Una web hoy se hace gratis",
-  "copy": "Verdadero: podés armar una en una tarde con un constructor.\nFalso: que esa web te traiga clientes, cargue rápido, aparezca cuando te buscan y esté conectada a lo que hacés.\n\nLo gratis suele ser la parte fácil.",
-  "cta": "¿Vos qué opinás?"
- },
- {
-  "pilar": "Axioma",
-  "gancho": "El mejor sistema es el que usás sin manual.",
-  "copy": "Si hacen falta tres capacitaciones para cargar algo, el problema no es el que lo usa.\n\nLa complejidad tiene que estar adentro del software, no adelante de la persona.",
-  "cta": "Guardalo."
- },
- {
-  "pilar": "Tip aplicable",
-  "gancho": "Cómo cobrar por adelantado sin perseguir a nadie",
-  "copy": "1. Link de pago en el mismo mensaje de confirmación.\n2. Queda reservado recién cuando se paga.\n3. Aviso automático a vos cuando entra.\n\nLas cancelaciones bajan solas cuando hay algo puesto de por medio.",
-  "cta": "¿Cobrás por adelantado hoy? Contame cómo."
- },
- {
-  "pilar": "Mini-guía",
-  "gancho": "Checklist antes de lanzar tu web",
-  "copy": "Carrusel: velocidad en el celular, botón de contacto visible sin scrollear, textos sin errores, datos reales, formulario probado de verdad, y medición instalada antes de lanzar, no después.",
-  "cta": "Guardalo para tu próximo lanzamiento."
- },
- {
-  "pilar": "Servicio",
-  "gancho": "Cómo empieza un proyecto conmigo",
-  "copy": "Primero una videollamada de 30 minutos donde me contás cómo trabajás. De ahí sale un mapa de qué conviene resolver y en qué orden.\n\nCon eso te paso un alcance y un precio cerrado. Si no hay nada que valga la pena, te lo digo y listo.",
-  "cta": "Escribime «DIAGNÓSTICO» por DM."
- },
- {
-  "pilar": "Para el que decide",
-  "gancho": "¿Sistema a medida o algo enlatado?",
-  "copy": "Enlatado si trabajás como trabaja todo el mundo y podés adaptarte a lo que trae.\nA medida si tu forma de trabajar es justamente lo que te distingue.\n\nEl error caro es pagar a medida para terminar haciendo lo mismo que hace el enlatado.",
-  "cta": "Contame tu caso y te doy mi opinión."
- },
- {
-  "pilar": "Detrás de escena",
-  "gancho": "Errores que cometí cobrando barato",
-  "copy": "Cobrar poco no te trae mejores clientes: te trae más clientes apurados.\n\nLo que me cambió el año fue aprender a decir «esto no lo hago» y a cotizar contra el valor, no contra el miedo.",
-  "cta": "¿Te pasó algo parecido?"
- },
- {
-  "pilar": "Conversación",
-  "gancho": "Contame cómo es tu circuito y te digo qué automatizaría",
-  "copy": "En serio: escribí abajo cómo es, desde que alguien te contacta hasta que la venta o el trabajo está cerrado.\n\nTe respondo con el punto exacto donde estás perdiendo tiempo.",
-  "cta": "Te leo."
- },
- {
-  "pilar": "Axioma",
-  "gancho": "Medir mal es peor que no medir: da confianza sin información.",
-  "copy": "Un tablero lleno de números que no cambian ninguna decisión no es un tablero, es decoración.\n\nCon tres alcanza: cuánto entró, cuánto se cayó, y de dónde llegó cada cliente nuevo.",
-  "cta": "Guardalo."
- },
- {
-  "pilar": "Servicio",
-  "gancho": "Software a tu medida, sin importar dónde estés",
-  "copy": "Trabajo con clientes de distintos rubros y de distintos países, todo a distancia. Lo que tienen en común no es a qué se dedican: es que estaban haciendo a mano algo que podía funcionar solo.\n\nSi eso te suena conocido, hablemos.",
-  "cta": "Escribime y lo charlamos sin compromiso."
- }
+  {
+    "pilar": "Axioma",
+    "gancho": "Lo que hacés a mano todos los días ya es un sistema. Solo que lo corrés vos.",
+    "copy": "Anotar el turno, pasar el pedido a la planilla, mandar el recordatorio. Eso es un proceso: existe, tiene reglas y se repite.\n\nLa pregunta no es si automatizarlo. Es cuánto te está costando seguir siendo vos el que lo ejecuta.",
+    "cta": "Guardalo y mirá tu semana con esa lupa."
+  },
+  {
+    "pilar": "Tip aplicable",
+    "gancho": "3 cosas que tu cliente debería poder hacer sin escribirte",
+    "copy": "Cada una te devuelve horas por semana:\n\n1. Ver tus horarios o tu stock reales, sin preguntarte.\n2. Reservar o comprar sin negociarlo por chat.\n3. Recibir la confirmación y el recordatorio solos.",
+    "cta": "¿Cuál te sacaría más peso de encima?"
+  },
+  {
+    "pilar": "Servicio",
+    "gancho": "Software a tu medida: qué significa en la práctica",
+    "copy": "No es un producto que te vendo y te adaptás. Es al revés: miro cómo trabajás hoy y el sistema se construye alrededor de eso.\n\nWebs, tiendas online, sistemas de gestión, turneros, automatizaciones. Lo que haga falta para que dejes de hacerlo a mano.",
+    "cta": "Contame qué hacés a mano y te digo si se puede."
+  },
+  {
+    "pilar": "Mini-guía",
+    "gancho": "5 señales de que tu forma de trabajar ya no da más",
+    "copy": "Carrusel, una por slide:\n1. Anotás lo mismo en dos lugares distintos.\n2. Contestás mensajes fuera de tu horario.\n3. Te enterás tarde de las cosas que salieron mal.\n4. No sabés cuántas ventas o turnos tuviste el mes pasado.\n5. Si te vas una semana, se frena todo.",
+    "cta": "¿Cuántas tildaste? Guardalo."
+  },
+  {
+    "pilar": "Para el que decide",
+    "gancho": "El que no avisa no es maleducado: se olvidó",
+    "copy": "Las ausencias y los pedidos que se caen casi nunca son falta de respeto. Son algo que se acordó hace tres semanas y quedó tapado por la vida.\n\nUn recordatorio automático el día antes resuelve la enorme mayoría. Sin enojarse y sin perseguir a nadie.",
+    "cta": "¿Cuántos se te cayeron este mes?"
+  },
+  {
+    "pilar": "Detrás de escena",
+    "gancho": "Cómo trabajo con alguien que está a 3.000 km",
+    "copy": "Videollamada para entender el problema, un mapa del proceso por escrito, entregas parciales que podés ver funcionando, y un canal directo conmigo. Sin intermediarios.\n\nLa distancia no es el riesgo. El riesgo es no saber en qué anda tu proyecto.",
+    "cta": "¿Trabajaste a distancia antes? Te leo."
+  },
+  {
+    "pilar": "Conversación",
+    "gancho": "Mito: «un sistema es para negocios grandes»",
+    "copy": "Realidad: cuanto más chico sos, más caro te sale el desorden. Si sos vos solo, cada hora que perdés coordinando es una hora que no producís y no cobrás.\n\nEl grande tiene un equipo administrativo. Vos tenés que tener sistema.",
+    "cta": "¿De acuerdo o lo ves distinto?"
+  },
+  {
+    "pilar": "Axioma",
+    "gancho": "Automatizar un desorden es multiplicarlo.",
+    "copy": "Si tu forma de trabajar cambia según el día y según quién pregunta, ningún sistema te va a salvar: te va a acelerar el problema.\n\nPrimero se escribe cómo trabajás. Después se ordena. Recién ahí se automatiza.",
+    "cta": "Guardalo antes de contratar nada."
+  },
+  {
+    "pilar": "Tip aplicable",
+    "gancho": "Qué preguntar antes de contratar cualquier sistema",
+    "copy": "Tres preguntas que te ahorran dolores de cabeza:\n\n1. ¿Los datos son míos y me los puedo llevar?\n2. ¿Qué pasa si mañana quiero cambiar de proveedor?\n3. ¿Quién responde si se cae un lunes a la mañana?",
+    "cta": "Copiá las tres para tu próxima reunión."
+  },
+  {
+    "pilar": "Servicio",
+    "gancho": "Una demo que armé para mostrar cómo funciona",
+    "copy": "Es una demo, no un cliente: la hice justamente para que se entienda sin tener que imaginárselo.\n\nSe reserva un turno, entra solo a la agenda, el cliente recibe la confirmación y el recordatorio, y el dueño se entera en el momento. Todo sin que nadie escriba un mensaje.",
+    "cta": "¿Querés verla funcionando? Escribime."
+  },
+  {
+    "pilar": "Mini-guía",
+    "gancho": "Lo mínimo que tiene que tener tu agenda o tu tienda online",
+    "copy": "Carrusel:\n1. Que muestre solo lo que vos querés ofrecer.\n2. Que se bloquee sola cuando ya no hay lugar o stock.\n3. Que mande la confirmación sin que la pidas.\n4. Que te avise a vos en el momento.\n5. Que el cliente pueda cancelar sin escribirte.",
+    "cta": "Guardalo para comparar opciones."
+  },
+  {
+    "pilar": "Para el que decide",
+    "gancho": "La cuenta que casi nadie hace",
+    "copy": "Tomá lo que vale una hora tuya y multiplicalo por las horas que pasás copiando datos, contestando lo mismo y coordinando.\n\nEse número es lo que estás pagando todos los meses por no resolverlo. Suele ser bastante más caro que resolverlo.",
+    "cta": "Hacé la cuenta y contame qué te dio."
+  },
+  {
+    "pilar": "Detrás de escena",
+    "gancho": "Por qué no cobro por hora",
+    "copy": "Cobrar por hora premia la lentitud y castiga la experiencia. Cotizo por alcance: qué problema resolvemos y qué te queda funcionando.\n\nSi el sistema te devuelve ocho horas al mes, el precio se discute contra eso, no contra mi reloj.",
+    "cta": "¿Cómo lo ves desde tu lado?"
+  },
+  {
+    "pilar": "Conversación",
+    "gancho": "¿Cuál es la parte de tu semana que más te agota y no es tu trabajo real?",
+    "copy": "Contámela en comentarios. Voy a responder una por una diciéndote si se puede resolver con software y con qué.\n\nSi en tu caso no conviene automatizarlo, también te lo voy a decir.",
+    "cta": "Te leo abajo."
+  },
+  {
+    "pilar": "Axioma",
+    "gancho": "Si el proceso no está escrito, vive en la cabeza de alguien.",
+    "copy": "Y el día que esa persona se toma vacaciones, tu negocio se las toma con ella.\n\nEscribir cómo entra un pedido, cómo se cobra y dónde queda registrado es el paso más barato y el que más gente se saltea.",
+    "cta": "Guardalo."
+  },
+  {
+    "pilar": "Tip aplicable",
+    "gancho": "Cómo conectar tu web con WhatsApp sin escribir código",
+    "copy": "El camino corto:\n1. Un formulario en tu web.\n2. Un enlace que dispara el aviso.\n3. El mensaje te llega al celular con todos los datos cargados.\n\nEs cuestión de horas, no de meses.",
+    "cta": "¿Querés el flujo armado? Escribime."
+  },
+  {
+    "pilar": "Servicio",
+    "gancho": "Qué hago, en una lista",
+    "copy": "Webs que cargan rápido y traen consultas. Tiendas online conectadas a tu stock. Sistemas de gestión hechos para tu forma de trabajar. Turneros y agendas. Bots de WhatsApp que contestan lo repetido.\n\nSi lo hacés a mano y se repite, probablemente entre acá.",
+    "cta": "¿Lo tuyo entra en la lista? Preguntame."
+  },
+  {
+    "pilar": "Mini-guía",
+    "gancho": "Tu primera automatización, paso a paso",
+    "copy": "Carrusel: el cliente completa un formulario → se valida → queda registrado → sale la confirmación → te llega el aviso.\n\nUna slide por paso, con captura real. Cerrá con «esto se configura una vez y funciona para siempre».",
+    "cta": "Guardalo para cuando te sientes a hacerlo."
+  },
+  {
+    "pilar": "Para el que decide",
+    "gancho": "3 cosas que tu web debería hacer y no hace",
+    "copy": "1. Cargar en menos de 3 segundos desde el celular, que es donde te buscan.\n2. Dejar que te contacten o te compren de un toque, sin formularios de nueve campos.\n3. Avisarte a vos, en vez de esperar que revises un mail que no abrís.",
+    "cta": "Pasame tu web por DM y te digo cuál falla."
+  },
+  {
+    "pilar": "Detrás de escena",
+    "gancho": "Un día de trabajo: de la reunión al sistema andando",
+    "copy": "La videollamada donde entiendo el problema, el rato de mapear el proceso en papel, el código, la prueba con el cliente y el mensaje del final.\n\nA distancia, el cliente contrata a la persona antes que a la tecnología.",
+    "cta": "¿Cómo es tu día? Contame."
+  },
+  {
+    "pilar": "Conversación",
+    "gancho": "¿Verdadero o falso? Una web hoy se hace gratis",
+    "copy": "Verdadero: podés armar una en una tarde con un constructor.\nFalso: que esa web te traiga clientes, cargue rápido, aparezca cuando te buscan y esté conectada a lo que hacés.\n\nLo gratis suele ser la parte fácil.",
+    "cta": "¿Vos qué opinás?"
+  },
+  {
+    "pilar": "Axioma",
+    "gancho": "El mejor sistema es el que usás sin manual.",
+    "copy": "Si hacen falta tres capacitaciones para cargar algo, el problema no es el que lo usa.\n\nLa complejidad tiene que estar adentro del software, no adelante de la persona.",
+    "cta": "Guardalo."
+  },
+  {
+    "pilar": "Tip aplicable",
+    "gancho": "Cómo cobrar por adelantado sin perseguir a nadie",
+    "copy": "1. Link de pago en el mismo mensaje de confirmación.\n2. Queda reservado recién cuando se paga.\n3. Aviso automático a vos cuando entra.\n\nLas cancelaciones bajan solas cuando hay algo puesto de por medio.",
+    "cta": "¿Cobrás por adelantado hoy? Contame cómo."
+  },
+  {
+    "pilar": "Mini-guía",
+    "gancho": "Checklist antes de lanzar tu web",
+    "copy": "Carrusel: velocidad en el celular, botón de contacto visible sin scrollear, textos sin errores, datos reales, formulario probado de verdad, y medición instalada antes de lanzar, no después.",
+    "cta": "Guardalo para tu próximo lanzamiento."
+  },
+  {
+    "pilar": "Servicio",
+    "gancho": "Cómo empieza un proyecto conmigo",
+    "copy": "Primero una videollamada de 30 minutos donde me contás cómo trabajás. De ahí sale un mapa de qué conviene resolver y en qué orden.\n\nCon eso te paso un alcance y un precio cerrado. Si no hay nada que valga la pena, te lo digo y listo.",
+    "cta": "Escribime «DIAGNÓSTICO» por DM."
+  },
+  {
+    "pilar": "Para el que decide",
+    "gancho": "¿Sistema a medida o algo enlatado?",
+    "copy": "Enlatado si trabajás como trabaja todo el mundo y podés adaptarte a lo que trae.\nA medida si tu forma de trabajar es justamente lo que te distingue.\n\nEl error caro es pagar a medida para terminar haciendo lo mismo que hace el enlatado.",
+    "cta": "Contame tu caso y te doy mi opinión."
+  },
+  {
+    "pilar": "Detrás de escena",
+    "gancho": "Errores que cometí cobrando barato",
+    "copy": "Cobrar poco no te trae mejores clientes: te trae más clientes apurados.\n\nLo que me cambió el año fue aprender a decir «esto no lo hago» y a cotizar contra el valor, no contra el miedo.",
+    "cta": "¿Te pasó algo parecido?"
+  },
+  {
+    "pilar": "Conversación",
+    "gancho": "Contame cómo es tu circuito y te digo qué automatizaría",
+    "copy": "En serio: escribí abajo cómo es, desde que alguien te contacta hasta que la venta o el trabajo está cerrado.\n\nTe respondo con el punto exacto donde estás perdiendo tiempo.",
+    "cta": "Te leo."
+  },
+  {
+    "pilar": "Axioma",
+    "gancho": "Medir mal es peor que no medir: da confianza sin información.",
+    "copy": "Un tablero lleno de números que no cambian ninguna decisión no es un tablero, es decoración.\n\nCon tres alcanza: cuánto entró, cuánto se cayó, y de dónde llegó cada cliente nuevo.",
+    "cta": "Guardalo."
+  },
+  {
+    "pilar": "Servicio",
+    "gancho": "Software a tu medida, sin importar dónde estés",
+    "copy": "Trabajo con clientes de distintos rubros y de distintos países, todo a distancia. Lo que tienen en común no es a qué se dedican: es que estaban haciendo a mano algo que podía funcionar solo.\n\nSi eso te suena conocido, hablemos.",
+    "cta": "Escribime y lo charlamos sin compromiso."
+  },
+  {
+    "pilar": "Mini-guía",
+    "gancho": "Backup en tres movimientos",
+    "copy": "Sirve igual para tu sistema, para tu web y hasta para esa planilla que sostiene todo:\n\n1. Una copia automática diaria, sin que nadie tenga que acordarse.\n2. Guardada en un lugar distinto del original.\n3. Una prueba de restauración cada tanto, para saber que sirve.",
+    "cta": "Guardalo y agendá la prueba."
+  },
+  {
+    "pilar": "Servicio",
+    "gancho": "Formularios internos para tu equipo, no solo para clientes",
+    "copy": "El parte de cierre de caja, el control de limpieza, la carga de horas, el remito de entrega. Hoy todo eso suele ser una foto de un papel en un grupo de mensajería.\n\nUn formulario en el celular, con campos obligatorios y foto adjunta, deja el dato cargado en el momento y consultable después por sucursal, por día y por persona.",
+    "cta": "¿Qué parte pasa hoy por foto de un papel?"
+  },
+  {
+    "pilar": "Mini-guía",
+    "gancho": "Tres pasos antes de pedir un presupuesto de software",
+    "copy": "Con esto en la mano, cualquier cotización que recibas va a ser comparable con las otras:\n\n1. Escribí el problema en una frase, sin nombrar la solución.\n2. Anotá cuántas veces por semana pasa y a quién le pasa.\n3. Definí qué tendría que ocurrir para considerarlo resuelto.",
+    "cta": "Guardalo antes de escribirle a nadie."
+  },
+  {
+    "pilar": "Conversación",
+    "gancho": "Mito: primero vendo más y después ordeno",
+    "copy": "Suena razonable y en la práctica funciona exactamente al revés. Vender más con el desorden puesto multiplica los errores, las quejas y las horas administrativas.\n\nOrdenar antes es lo que permite que el crecimiento no te coma vivo. Igual entiendo el argumento contrario, así que decime cómo lo ves desde tu lado.",
+    "cta": "¿De acuerdo o no?"
+  },
+  {
+    "pilar": "Detrás de escena",
+    "gancho": "Qué hago cuando piden algo fuera de alcance",
+    "copy": "Lo anoto, digo cuánto suma en tiempo y en plata, y dejo que el cliente decida si entra ahora o queda para una segunda etapa. Sin cara larga y sin regalarlo.\n\nRegalar cambios parece simpático y termina siempre igual: el proyecto se estira, la entrega se corre y la relación se pone rara. Es más sano poner el número arriba de la mesa.",
+    "cta": "¿Te tocó estar del otro lado alguna vez?"
+  },
+  {
+    "pilar": "Tip aplicable",
+    "gancho": "Tres avisos que deberían salir sin que los mandes",
+    "copy": "Si alguno de estos todavía lo escribís vos, uno por uno, ahí tenés tu próxima automatización sin necesidad de un sistema entero:\n\n1. Confirmación apenas alguien reserva o compra.\n2. Recordatorio antes del turno, la entrega o el vencimiento.\n3. Aviso a vos cuando algo queda sin responder.",
+    "cta": "¿Cuál seguís escribiendo vos?"
+  },
+  {
+    "pilar": "Detrás de escena",
+    "gancho": "Grabo videos de tres minutos en vez de manuales",
+    "copy": "Un manual de cuarenta páginas no lo lee nadie. Un video corto por tarea, con la pantalla real y la voz explicando, se mira cuando hace falta y se le pasa al que entra nuevo.\n\nQuedan guardados en tu cuenta, no en la mía. Si el mes que viene sumás a alguien, la capacitación ya está hecha y no depende de que yo esté disponible.",
+    "cta": "¿Cómo capacitás hoy a alguien nuevo?"
+  },
+  {
+    "pilar": "Servicio",
+    "gancho": "Presupuestos que se arman en dos minutos",
+    "copy": "En una herrería o un corralón, el presupuesto es la venta. Si tarda dos días en salir, la mitad de la gente ya compró en otro lado.\n\nCon las medidas, los materiales y los precios cargados una vez, el presupuesto sale con tu formato, numerado y guardado. Cuando el cliente vuelve a los veinte días, sabés exactamente qué le cotizaste.",
+    "cta": "¿Cuánto tardás en mandar un presupuesto?"
+  },
+  {
+    "pilar": "Detrás de escena",
+    "gancho": "El día que el sistema arranca de verdad",
+    "copy": "Se elige un día flojo, se carga la información real, se deja el método viejo disponible una semana en paralelo y me quedo cerca por si algo cruje.\n\nNadie apaga de un día para el otro lo que venía funcionando. Esa semana de superposición es incómoda y es exactamente lo que evita el desastre del primer lunes.",
+    "cta": "¿Cómo fue tu último cambio de herramienta?"
+  },
+  {
+    "pilar": "Para el que decide",
+    "gancho": "¿Qué pasa si el que hizo tu sistema desaparece?",
+    "copy": "No es una hipótesis rara: pasa por mudanzas, por cambios de rubro o simplemente porque alguien se cansó. La pregunta es en qué estado te deja el día que ocurre.\n\nSi el código está en un repositorio tuyo, los datos en tu cuenta y hay algo escrito sobre cómo funciona, otra persona lo retoma. Si nada de eso existe, estás alquilando tu propio negocio.",
+    "cta": "Preguntale eso a tu proveedor actual."
+  },
+  {
+    "pilar": "Conversación",
+    "gancho": "¿Cuánto tardás en saber cuánto vendiste ayer?",
+    "copy": "Hay tres respuestas posibles: lo veo en el momento, lo saco en un rato, o me tengo que sentar a sumar. Ninguna está mal en sí misma, pero cada una cuesta distinto.\n\nMe interesa saber en cuál estás y con qué lo hacés. Es el número que más cambia la forma de decidir de un negocio chico.",
+    "cta": "Contame cuál de las tres sos."
+  },
+  {
+    "pilar": "Tip aplicable",
+    "gancho": "Tres errores de planilla que después duelen",
+    "copy": "Los veo en casi todas las migraciones y son bastante fáciles de evitar desde hoy mismo:\n\n1. Mezclar texto y números en la misma columna.\n2. Usar el color de la celda como si fuera un dato.\n3. Escribir las fechas a mano, cada una con su formato.",
+    "cta": "¿Cuál de los tres tenés en la tuya?"
+  },
+  {
+    "pilar": "Servicio",
+    "gancho": "Seguimiento de reparaciones para un taller",
+    "copy": "Cada unidad que entra tiene un estado: recibida, diagnosticada, presupuestada, aprobada, lista para retirar. El cliente ve en qué anda sin llamar y el mostrador deja de ser una central telefónica.\n\nSirve igual para un taller mecánico, un servicio técnico de celulares o un laboratorio dental. Lo que cambia son los nombres de los estados, no la idea.",
+    "cta": "¿Cómo seguís hoy los trabajos abiertos?"
+  },
+  {
+    "pilar": "Tip aplicable",
+    "gancho": "Tres formas de bajar los ausentes sin cobrar seña",
+    "copy": "Si todavía no querés pedir dinero por adelantado, empezá por estas tres, en este orden:\n\n1. Confirmación inmediata con fecha, hora y dirección escritas.\n2. Recordatorio el día anterior con un botón para cancelar.\n3. Lista de espera que ofrece el lugar liberado al toque.",
+    "cta": "¿Cuántos ausentes tuviste este mes?"
+  },
+  {
+    "pilar": "Mini-guía",
+    "gancho": "Cómo preparar tus datos para una migración",
+    "copy": "Una fila por cliente, una columna por dato y ningún dato escondido adentro de un comentario. Los teléfonos en un solo formato, las fechas en otro, y una columna que diga si ese registro sigue vigente.\n\nDos horas tuyas ordenando eso valen más que dos días míos adivinando. Y te evitan el clásico cliente cargado tres veces con el nombre mal escrito.",
+    "cta": "Guardalo para antes de migrar."
+  },
+  {
+    "pilar": "Conversación",
+    "gancho": "¿Cuál fue la última venta que perdiste por tardar?",
+    "copy": "Todos tenemos una que duele: el presupuesto que salió el jueves cuando lo pidieron el lunes, el mensaje que quedó sin leer entre otros veinte.\n\nNo lo pregunto para hacerte sentir mal. Lo pregunto porque casi siempre esa historia tiene un punto exacto donde se cortó, y ese punto se puede arreglar.",
+    "cta": "Contame la tuya."
+  },
+  {
+    "pilar": "Axioma",
+    "gancho": "El error que más cuesta es el que nadie ve",
+    "copy": "El error visible se corrige: falta un precio, se rompe un botón, alguien avisa. El silencioso es otro: el formulario que hace un mes no envía nada y vos pensás que este mes no hubo consultas.\n\nPor eso todo lo importante tiene que avisar también cuando funciona, no solo cuando falla. El silencio nunca es una buena noticia.",
+    "cta": "¿Qué cosa tuya avisa solo cuando falla?"
+  },
+  {
+    "pilar": "Detrás de escena",
+    "gancho": "Las tres preguntas de la primera llamada",
+    "copy": "Qué hacés a mano hoy, qué pasa cuando eso sale mal, y qué harías con ese tiempo si dejara de pasar. Las tres respuestas juntas me dicen si el proyecto tiene sentido.\n\nCuando la tercera se queda sin respuesta, muchas veces el problema no es de software y conviene decirlo ahí mismo, antes de sentarse a cotizar nada.",
+    "cta": "¿Cómo contestarías la tercera?"
+  },
+  {
+    "pilar": "Servicio",
+    "gancho": "Automatizaciones para lo que se repite todas las semanas",
+    "copy": "El resumen de ventas que armás los lunes, el aviso de cuotas vencidas, el mail al proveedor cuando un producto baja del mínimo, el traspaso de una planilla a otra.\n\nNada de eso necesita un sistema entero. Son piezas chicas que se enchufan a lo que ya usás y corren solas de acá en adelante, sin que nadie se acuerde de ellas.",
+    "cta": "Contame qué repetís y te digo si se automatiza."
+  },
+  {
+    "pilar": "Tip aplicable",
+    "gancho": "Ponele nombre a los archivos pensando en buscarlos",
+    "copy": "Fecha primero, después el cliente, después qué es. Presupuesto final dos no te dice absolutamente nada dentro de seis meses, y seis meses siempre llegan.\n\nLa misma lógica va para los clientes: un solo formato de nombre y un solo lugar donde vive la ficha. Buscar rápido no es prolijidad, es tiempo que dejás de gastar.",
+    "cta": "¿Cómo nombrás tus archivos hoy?"
+  },
+  {
+    "pilar": "Para el que decide",
+    "gancho": "¿A nombre de quién está tu dominio?",
+    "copy": "Si la respuesta es el que te hizo la web hace cuatro años y hoy no contesta, tenés un problema que no se resuelve escribiendo código.\n\nDominio, hosting, cuenta de cobro y accesos: todo a tu nombre, con tu mail y tu tarjeta. El que trabaja para vos entra como colaborador. Es lo primero que reviso cuando alguien me escribe.",
+    "cta": "Andá a fijarte ahora, en serio."
+  },
+  {
+    "pilar": "Mini-guía",
+    "gancho": "Qué dejar documentado antes de que entre alguien nuevo",
+    "copy": "Dónde se anota cada cosa, cómo se cobra, qué se responde a las tres preguntas más comunes y a quién se le avisa cuando algo se complica. Con cuatro páginas alcanza.\n\nSi la respuesta a todo eso sos vos, cada persona que entra te cuesta dos semanas de tu propio tiempo. Y las mismas dos semanas la próxima vez que entre otra.",
+    "cta": "¿Tenés algo escrito hoy?"
+  },
+  {
+    "pilar": "Para el que decide",
+    "gancho": "Tres señales de que ese presupuesto es humo",
+    "copy": "Después de leer unos cuantos presupuestos ajenos, hay tres patrones que se repiten casi siempre:\n\n1. No dice qué queda afuera del alcance.\n2. Promete un plazo sin haber preguntado por tus casos raros.\n3. No aclara de quién son el código y los datos al terminar.",
+    "cta": "Guardalo para la próxima cotización."
+  },
+  {
+    "pilar": "Detrás de escena",
+    "gancho": "Trabajo a distancia, pero en tu horario",
+    "copy": "Con clientes en varios países, la diferencia horaria es un detalle de organización y no un obstáculo. Las reuniones se acomodan a tu día, no al mío.\n\nLo que sí cuido es responder siempre por el mismo canal y dejar por escrito lo que hablamos. A distancia, la sensación de abandono aparece por silencio, nunca por kilómetros.",
+    "cta": "¿Trabajás con alguien de otro país? Contame."
+  },
+  {
+    "pilar": "Servicio",
+    "gancho": "Migrar de planilla a sistema, sin perder el historial",
+    "copy": "La planilla no se tira: se convierte. Se limpia lo duplicado, se ordenan las columnas que fueron creciendo de a poco y se importa todo, con tus datos adentro desde el primer día.\n\nArrancar de cero es justamente lo que hace que nadie use el sistema nuevo. Si tu historial no está ahí, vas a seguir abriendo la planilla vieja para consultar.",
+    "cta": "¿Tenés una planilla que ya no da más? Mostrámela."
+  },
+  {
+    "pilar": "Para el que decide",
+    "gancho": "Barato por mes, caro en dos años",
+    "copy": "Las suscripciones se sienten inofensivas: son quince o treinta dólares por acá y por allá. Sumá todas las que paga tu negocio y multiplicá por veinticuatro meses.\n\nA veces conviene igual y está perfecto. Lo que no conviene es no haber hecho nunca esa cuenta, sobre todo cuando parte de eso es alquilar para siempre algo que podría ser tuyo.",
+    "cta": "Hacé la suma y contame qué te dio."
+  },
+  {
+    "pilar": "Servicio",
+    "gancho": "Tres tamaños de proyecto para empezar",
+    "copy": "No todo arranca con un sistema completo. Suelo trabajar en tres escalas y en la mayoría de los casos conviene empezar por la primera:\n\n1. Una pieza suelta que resuelve un dolor puntual, en días.\n2. Un módulo que ordena un circuito entero, en semanas.\n3. Un sistema de gestión completo, por etapas y con entregas parciales.",
+    "cta": "¿Cuál te suena a tu caso?"
+  },
+  {
+    "pilar": "Axioma",
+    "gancho": "Nadie compra software: compra dejar de hacer algo",
+    "copy": "El dueño de la veterinaria no quiere un sistema. Quiere no cerrar la caja a las diez de la noche sumando papelitos arriba del mostrador.\n\nPor eso las listas de funciones no venden nada. Lo que importa es qué tarea concreta se te va de la semana y qué vas a hacer con el rato que te queda libre.",
+    "cta": "¿Qué tarea querrías dejar de hacer?"
+  },
+  {
+    "pilar": "Conversación",
+    "gancho": "Mito: mi rubro es demasiado particular para un sistema",
+    "copy": "Lo escucho seguido y casi siempre pasa lo contrario. Cuanto más particular es tu forma de trabajar, peor te va con algo enlatado y más sentido tiene algo hecho para vos.\n\nLo particular no es el impedimento: suele ser el motivo. Igual me interesa escuchar el contraejemplo, si lo tenés a mano.",
+    "cta": "¿Cuál es la parte rara de tu rubro?"
+  },
+  {
+    "pilar": "Axioma",
+    "gancho": "Un sistema que se carga aparte no se carga nunca",
+    "copy": "Si el vendedor tiene que hacer la venta y después entrar a otra pantalla a registrarla, en la semana dos deja de registrarla. No es mala voluntad: es que la tarea duplicada siempre pierde.\n\nEl registro tiene que ser parte del trabajo, no un trámite posterior. Cuando no lo es, terminás con un sistema lleno de huecos y sin saber cuáles.",
+    "cta": "Guardalo y mirá cuántos huecos tenés."
+  },
+  {
+    "pilar": "Tip aplicable",
+    "gancho": "Tres cosas que tu catálogo online tiene que mostrar",
+    "copy": "Da lo mismo si vendés repuestos, plantas o cursos de idiomas. Sin esto te preguntan por privado y ahí se cae la mitad:\n\n1. El precio, aunque sea desde cuánto.\n2. Si hay disponibilidad hoy.\n3. Cómo sigue después de comprar: envío, retiro o turno.",
+    "cta": "Abrí tu catálogo y fijate cuál falta."
+  },
+  {
+    "pilar": "Axioma",
+    "gancho": "La planilla aguanta hasta que la tocan dos personas",
+    "copy": "Sola funciona bárbaro. El día que la abren dos aparecen la copia final versión tres, la fórmula pisada sin querer y el mes que alguien ordenó alfabéticamente.\n\nNo es que la planilla sea mala. Es que no fue hecha para que varios escriban al mismo tiempo, con permisos distintos y sin romper el trabajo del otro.",
+    "cta": "¿Compartís planillas con alguien? Contame cómo te va."
+  },
+  {
+    "pilar": "Servicio",
+    "gancho": "Membresías, vencimientos y cobros que se avisan solos",
+    "copy": "En un gimnasio la plata no se pierde en la venta: se pierde en el mes que alguien no renovó y nadie se dio cuenta hasta la clase siguiente, cuando ya es incómodo cobrarle.\n\nEl sistema sabe cuándo vence cada uno, avisa antes, deja pagar desde el celular y marca quién está al día. Vos mirás una lista, no un cuaderno.",
+    "cta": "¿Cómo controlás los vencimientos hoy?"
+  },
+  {
+    "pilar": "Mini-guía",
+    "gancho": "Tres decisiones que definen tu agenda online",
+    "copy": "Antes de meterse con la parte técnica hay tres cosas que solo podés decidir vos, y de ellas depende cómo se porta la agenda todos los días:\n\n1. Cuánto dura cada tipo de atención y cuánto espacio dejás entre una y otra.\n2. Con cuánta anticipación mínima aceptás una reserva.\n3. Hasta cuándo se puede cancelar sin costo.",
+    "cta": "Guardalo y contestá las tres."
+  },
+  {
+    "pilar": "Conversación",
+    "gancho": "¿Cuántas aplicaciones distintas abrís por día?",
+    "copy": "Contá las de verdad: mensajería, planilla, banco, facturación, el panel del proveedor, las notas del celular. Casi nadie baja de cinco cuando se pone a contar.\n\nEl costo no está en cada una: está en saltar entre todas y copiar lo mismo tres veces. Me interesa tu número y cuál te resulta más molesta.",
+    "cta": "Tirá tu número abajo."
+  },
+  {
+    "pilar": "Para el que decide",
+    "gancho": "Nadie te puede dar un precio en el primer mensaje",
+    "copy": "Cuando preguntás cuánto sale un sistema, la respuesta honesta es otra pregunta: qué tiene que hacer, para cuánta gente y con qué tiene que conectarse.\n\nUn turnero simple y un sistema de gestión con stock, permisos y facturación no comparten ni el rango. Desconfiá del que te tira un número antes de escuchar el problema, sea para arriba o para abajo.",
+    "cta": "¿Te pasó que te cotizaran sin preguntar nada?"
+  },
+  {
+    "pilar": "Mini-guía",
+    "gancho": "Cómo probar un sistema antes de aprobarlo",
+    "copy": "No lo mires funcionar en una demo: usalo con lo tuyo durante un rato largo:\n\n1. Cargá tres casos reales, incluido el más raro que tengas.\n2. Hacelo desde el celular y con mala señal.\n3. Pedile a alguien del equipo que lo use sin explicarle nada.",
+    "cta": "Guardalo para el día de la entrega."
+  },
+  {
+    "pilar": "Tip aplicable",
+    "gancho": "Poné un campo que diga cómo te conocieron",
+    "copy": "Una sola pregunta en el formulario o en la ficha del cliente, con cinco opciones y ninguna más. En tres meses vas a saber qué te trae trabajo de verdad y qué solamente te hace sentir ocupado.\n\nEs lo más barato que podés instalar hoy y lo que más plata te va a ahorrar el día que decidas invertir en publicidad.",
+    "cta": "¿Sabés de dónde vino tu último cliente?"
+  },
+  {
+    "pilar": "Mini-guía",
+    "gancho": "Cómo se ve un proyecto de cuatro semanas por dentro",
+    "copy": "La primera semana es entender y escribir el alcance. La segunda ya tenés algo feo funcionando que podés tocar. La tercera es donde aparecen los casos raros de tu negocio y se ajusta. La cuarta es carga de datos, prueba y puesta en marcha.\n\nSi en la semana dos no viste nada andando, algo está yendo mal. Pedí ver, no pidas informes de avance.",
+    "cta": "Guardalo para tu próximo proyecto."
+  },
+  {
+    "pilar": "Servicio",
+    "gancho": "Conectar lo que ya usás, en vez de reemplazarlo",
+    "copy": "Si tu facturación, tu cobro y tu planilla funcionan bien, muchas veces no hace falta cambiarlos: hace falta que se hablen entre ellos.\n\nQue el pago aprobado marque el pedido, que la venta genere la factura, que el turno confirmado aparezca en tu calendario. Es el trabajo más barato que existe y el que más se nota al día siguiente.",
+    "cta": "Contame qué herramientas usás hoy."
+  },
+  {
+    "pilar": "Tip aplicable",
+    "gancho": "Tres automatizaciones que se hacen en una tarde",
+    "copy": "No todo es un proyecto largo. Estas tres se configuran una vez y quedan andando solas:\n\n1. Aviso al celular apenas llega una consulta por la web.\n2. Recordatorio automático el día antes del turno o la entrega.\n3. Alerta cuando un producto baja del mínimo que vos definiste.",
+    "cta": "¿Con cuál arrancarías?"
+  },
+  {
+    "pilar": "Para el que decide",
+    "gancho": "Un sistema no arregla un problema de precios",
+    "copy": "Si tu margen no cierra, digitalizar te va a mostrar más rápido y con mejores gráficos que no cierra. Eso ya es algo, pero no es la solución.\n\nEl software resuelve tiempo, errores y desorden. La rentabilidad se arregla con precios, costos y mezcla de servicios. Conviene tener claro cuál de los dos problemas tenés antes de poner plata.",
+    "cta": "¿Cuál de los dos es el tuyo?"
+  },
+  {
+    "pilar": "Axioma",
+    "gancho": "Un dato cargado dos veces ya está mal una vez",
+    "copy": "En la distribuidora el pedido se anota en el cuaderno del mostrador y después alguien lo pasa a la planilla. Dos cargas, dos oportunidades de equivocarse y ninguna forma de saber cuál de las dos versiones es la buena.\n\nEl dato tiene que entrar una sola vez, en el lugar donde nace, y viajar solo hasta donde haga falta. Todo lo demás es transcripción.",
+    "cta": "Contá cuántas veces se carga un pedido tuyo."
+  },
+  {
+    "pilar": "Conversación",
+    "gancho": "¿Automatizar te vuelve más frío con el cliente?",
+    "copy": "Hay quien dice que sí, que un mensaje automático se nota enseguida y aleja. Hay quien dice que la atención mejora, porque llegás a la conversación importante con tiempo y con los datos a mano.\n\nYo tengo mi opinión, pero me interesa bastante más la tuya, sobre todo si atendés cara a cara todos los días.",
+    "cta": "¿De qué lado estás?"
+  },
+  {
+    "pilar": "Tip aplicable",
+    "gancho": "Tres datos que tu formulario tiene que pedir",
+    "copy": "Cada campo de más baja la cantidad de gente que lo completa. Para una primera consulta alcanza con esto y nada más:\n\n1. Nombre y un solo medio de contacto que uses de verdad.\n2. Qué necesita, en un campo de texto libre.\n3. Cuándo le queda cómodo que lo contactes.",
+    "cta": "Contá los campos del tuyo y sacale la mitad."
+  },
+  {
+    "pilar": "Detrás de escena",
+    "gancho": "A veces la respuesta es que no lo hagas",
+    "copy": "Me pasó de terminar una llamada diciendo que con ordenar dos cosas y usar algo que ya tenían alcanzaba por un buen tiempo. No hubo proyecto y estuvo bien.\n\nVender algo que no hace falta te deja un cliente enojado tres meses después. Prefiero la charla incómoda donde el diagnóstico honesto es que todavía no es momento.",
+    "cta": "¿Alguna vez te dijeron que no lo necesitabas?"
+  },
+  {
+    "pilar": "Conversación",
+    "gancho": "¿Qué te frenó la última vez que pensaste en digitalizar?",
+    "copy": "El precio, el miedo a que quede a medias, no saber por dónde empezar, o directamente no tener tiempo para meterse en eso. Son razones válidas y bastante distintas entre sí.\n\nEscribime cuál fue la tuya. Voy a contestar de frente, incluso cuando la respuesta honesta sea que tenías razón en frenar.",
+    "cta": "Escribime abajo, contesto todas."
+  },
+  {
+    "pilar": "Mini-guía",
+    "gancho": "De la planilla al sistema en tres pasos",
+    "copy": "El orden importa bastante más que la herramienta que elijas después:\n\n1. Congelá la planilla un día y limpiá duplicados y columnas muertas.\n2. Escribí qué significa cada columna y quién la completa.\n3. Importá el historial completo antes de empezar a usar lo nuevo.",
+    "cta": "Guardalo para cuando te toque."
+  },
+  {
+    "pilar": "Axioma",
+    "gancho": "Automatizar es decidir una vez en vez de mil veces",
+    "copy": "Cuando definís que el recordatorio sale veinticuatro horas antes, tomaste esa decisión una sola vez y queda tomada para siempre. Todos los turnos futuros ya están resueltos.\n\nLo caro no es la tarea repetida en sí: es volver a decidir todos los días lo mismo, con el desgaste que eso trae. Automatizar es sacarte esa decisión de encima.",
+    "cta": "Guardalo."
+  },
+  {
+    "pilar": "Mini-guía",
+    "gancho": "Cómo elegir qué automatizar primero",
+    "copy": "Tomá cada tarea repetida y ponele dos números del uno al cinco: cuántas veces pasa y cuánto molesta cuando pasa. Multiplicá los dos. Empezá por el resultado más alto, no por lo que suene más moderno.\n\nCasi siempre gana algo aburrido: un aviso, una carga de datos, un recordatorio. Lo vistoso suele quedar bastante más abajo en esa lista.",
+    "cta": "Hacé la tabla y contame qué ganó."
+  },
+  {
+    "pilar": "Para el que decide",
+    "gancho": "Si tu equipo no lo usa, no lo compraste",
+    "copy": "El sistema mejor hecho del mundo fracasa si en la semana tres todos volvieron al cuaderno. Y casi nunca es porque sean reacios: es porque les agregó pasos sin sacarles ninguno.\n\nAntes de decidir, preguntale a la persona que va a cargar los datos todos los días qué parte de su trabajo se le hace más pesada. Esa respuesta define si funciona o no.",
+    "cta": "¿Los consultaste antes de decidir?"
+  },
+  {
+    "pilar": "Detrás de escena",
+    "gancho": "Qué miro para poner un número en un presupuesto",
+    "copy": "Cuántos casos distintos tiene el circuito, con qué otras herramientas hay que conectarse, cuántas personas lo van a usar y con qué permisos, y cuánta información vieja hay que migrar.\n\nLo que casi no pesa es la cantidad de pantallas. Lo que pesa es la cantidad de excepciones, que es justo lo que nadie cuenta en el primer mensaje.",
+    "cta": "¿Cuántas excepciones tiene tu circuito?"
+  },
+  {
+    "pilar": "Para el que decide",
+    "gancho": "Cuándo no es momento de invertir en software",
+    "copy": "Si estás por cambiar de local, si todavía no sabés qué servicio te deja plata, o si tu problema real es que no entran clientes. En esos casos un sistema es una distracción cara.\n\nPrimero se resuelve de dónde viene la demanda. Después se ordena para que esa demanda no se caiga por el camino. Ese orden casi nunca se puede invertir.",
+    "cta": "¿En cuál de las dos etapas estás?"
+  },
+  {
+    "pilar": "Axioma",
+    "gancho": "Si depende de que te acuerdes, no es un proceso",
+    "copy": "Llamar al que dejó el auto en el taller, avisar que venció la cuota, pedir la documentación que falta. Mientras eso viva en tu memoria, funciona los días tranquilos y falla justo los días complicados.\n\nUn proceso es algo que pasa igual estés cansado, de viaje o con el local lleno. Si no, es apenas una intención.",
+    "cta": "¿Cuál de tus recordatorios vive solo en tu cabeza?"
+  },
+  {
+    "pilar": "Mini-guía",
+    "gancho": "Escribí tu proceso en una hoja, así",
+    "copy": "Es la tarea más aburrida de todas y la que más plata te ahorra después:\n\n1. Desde que alguien te contacta hasta que cobrás, un paso por renglón.\n2. Al lado de cada paso, quién lo hace y dónde queda anotado.\n3. Marcá con una cruz los pasos donde el dato se vuelve a copiar.",
+    "cta": "Las cruces son tu lista de prioridades."
+  },
+  {
+    "pilar": "Detrás de escena",
+    "gancho": "Escribo el alcance antes de escribir una línea de código",
+    "copy": "Un documento corto: qué se va a hacer, qué explícitamente no, en qué orden y cómo sabemos que está terminado. Lo aprobamos los dos, en el sentido de que los dos lo leímos entero.\n\nNo es burocracia. Es la única forma de que ninguno descubra a mitad de camino que estábamos imaginando dos cosas distintas con las mismas palabras.",
+    "cta": "¿Te pasó de arrancar algo sin eso?"
+  },
+  {
+    "pilar": "Axioma",
+    "gancho": "El cuaderno no pierde datos: los esconde",
+    "copy": "Todo está anotado, es cierto. El problema aparece cuando querés saber cuántos clientes nuevos tuviste en marzo o quién todavía debe la segunda cuota: son dos horas de hojear hacia atrás.\n\nLa información que no podés consultar en segundos no está disponible, está archivada. Y una decisión que necesita dos horas de búsqueda previa no se toma nunca.",
+    "cta": "¿Cuánto tardarías en saber quién te debe?"
+  },
+  {
+    "pilar": "Tip aplicable",
+    "gancho": "Tres cosas para ordenar antes de que exista el sistema",
+    "copy": "Esto lo podés hacer vos esta semana y acorta cualquier proyecto que venga después:\n\n1. Una sola lista de clientes, sin duplicados ni tres versiones.\n2. Una lista de precios vigente, con la fecha bien visible.\n3. Los pasos de tu circuito escritos en una hoja.",
+    "cta": "Guardalo y empezá por el primero."
+  },
+  {
+    "pilar": "Servicio",
+    "gancho": "Qué hace un turnero más allá de la agenda",
+    "copy": "Muestra solo los horarios que vos querés abrir, bloquea el lugar en el mismo momento en que alguien lo toma, manda la confirmación y el recordatorio, y deja cancelar sin tener que escribirte.\n\nEn un consultorio de kinesiología eso significa que el turno pedido a las 23:04 entra solo y a la mañana ya está en la agenda, sin que nadie haya contestado nada.",
+    "cta": "¿Querés ver uno funcionando? Escribime."
+  },
+  {
+    "pilar": "Axioma",
+    "gancho": "Tener los archivos guardados no es tener un backup",
+    "copy": "Un backup es una copia que está en otro lado, que se hace sola y que alguien probó restaurar alguna vez. Si falta cualquiera de las tres cosas, lo que tenés es una ilusión.\n\nLa prueba es simple: si mañana se moja la computadora del mostrador, cuánto tiempo de trabajo perdés. Si no sabés la respuesta, ya sabés la respuesta.",
+    "cta": "Probá restaurar algo esta semana."
+  },
+  {
+    "pilar": "Conversación",
+    "gancho": "¿Cuaderno, planilla o sistema?",
+    "copy": "Sin vueltas y sin vergüenza: quiero saber con qué llevás tu negocio hoy. Los tres funcionan hasta cierto tamaño y el problema nunca es la herramienta, es haberla pasado hace rato.\n\nContame cuál usás y cuántas personas lo tocan por semana. Con esos dos datos solos ya se ve bastante.",
+    "cta": "Contame con qué llevás el negocio hoy."
+  },
+  {
+    "pilar": "Detrás de escena",
+    "gancho": "En el relevamiento pido ver la pantalla",
+    "copy": "Cuando alguien me explica cómo trabaja, me cuenta la versión ordenada. Cuando comparte la pantalla, aparecen las tres planillas abiertas, el cuaderno al costado y el chat que en realidad manda.\n\nEsa diferencia entre lo que se cuenta y lo que se hace es donde está el trabajo real. Por eso la primera reunión es mirando, no escuchando.",
+    "cta": "¿Cuántas ventanas tenés abiertas ahora mismo?"
+  },
+  {
+    "pilar": "Para el que decide",
+    "gancho": "Tres costos de hacerlo a mano que no ves",
+    "copy": "No aparecen en ninguna factura ni en ningún resumen, pero los estás pagando todos los meses igual:\n\n1. Las ventas que se caen porque contestaste tarde.\n2. Los errores de tipeo que después arreglás con un descuento.\n3. Las horas tuyas que no facturás y ya diste por normales.",
+    "cta": "¿Cuál de los tres te pesa más?"
+  },
+  {
+    "pilar": "Servicio",
+    "gancho": "Respuestas automáticas para lo que preguntan siempre",
+    "copy": "Horarios, dirección, precios de lo básico, si se atiende sin turno. En una veterinaria eso puede ser la mitad de los mensajes del día.\n\nSe resuelve con respuestas armadas que salen solas y derivan a una persona cuando la consulta es de verdad. No reemplaza a nadie: le saca de encima lo que nunca necesitó una persona.",
+    "cta": "¿Qué te preguntan diez veces por día?"
+  },
+  {
+    "pilar": "Detrás de escena",
+    "gancho": "Pruebo con los datos más feos que tenga el cliente",
+    "copy": "El cliente con dos apellidos y sin mail, el pedido de doscientos ítems, el que canceló y volvió a reservar el mismo día. Los casos lindos funcionan siempre.\n\nSi el sistema aguanta lo raro de tu negocio, el día a día lo hace con los ojos cerrados. Al revés no pasa nunca, y los problemas aparecen justo en la primera semana de uso.",
+    "cta": "¿Cuál es el caso más raro que tenés?"
+  },
+  {
+    "pilar": "Servicio",
+    "gancho": "Un tablero con lo poco que mirás todos los días",
+    "copy": "No un panel de veinte gráficos que se abre una vez y no se mira nunca más. Tres o cuatro números que contestan si el mes viene bien, qué se está por vencer y qué falta reponer.\n\nLo armo con los datos que ya genera tu operación, para que mirarlo no dependa de que alguien se siente a actualizarlo a mano.",
+    "cta": "¿Qué número te gustaría ver sin buscarlo?"
+  },
+  {
+    "pilar": "Tip aplicable",
+    "gancho": "Tres cosas para revisar en tu lista de precios",
+    "copy": "La lista de precios es el documento que más circula y el peor cuidado de casi cualquier negocio chico:\n\n1. Que tenga fecha de vigencia bien visible.\n2. Que exista una sola versión, no una por vendedor.\n3. Que se actualice por porcentaje sin retocar fila por fila.",
+    "cta": "¿Cuántas versiones tenés dando vueltas?"
+  },
+  {
+    "pilar": "Axioma",
+    "gancho": "Lo urgente entra por chat. Lo importante, por sistema",
+    "copy": "El chat es excelente para hablar con una persona y pésimo para guardar algo. Ahí adentro se pierden los pedidos, las señas y los cambios de horario, mezclados con audios y fotos de otra cosa.\n\nQue el cliente te escriba está perfecto. Lo que no puede pasar es que esa conversación sea el único lugar donde existe la información de tu negocio.",
+    "cta": "Guardalo."
+  },
+  {
+    "pilar": "Conversación",
+    "gancho": "¿Quién contesta cuando vos estás durmiendo?",
+    "copy": "Buena parte de las consultas llegan fuera de horario. A la mañana están todas ahí, mezcladas, y algunas ya compraron en otro lado mientras tanto.\n\nMe interesa saber si tenés algo que responda mientras no estás, o si abrís el celular a las siete y empezás a remar. Hay soluciones muy distintas según el caso.",
+    "cta": "Te leo."
+  },
+  {
+    "pilar": "Mini-guía",
+    "gancho": "Tres pasos para dejar de perder pedidos en el chat",
+    "copy": "El objetivo no es dejar de usar el chat, es que lo que se acuerda ahí quede en algún lado:\n\n1. Un enlace que abra un formulario corto con los datos del pedido.\n2. Ese formulario cae en una lista única que todos miran.\n3. La confirmación vuelve al cliente por el mismo chat.",
+    "cta": "Guardalo si vendés por mensaje."
+  },
+  {
+    "pilar": "Detrás de escena",
+    "gancho": "Muestro algo feo temprano a propósito",
+    "copy": "En la segunda semana suelo mostrar una versión sin diseño, con botones grises, que ya hace lo importante. A veces incomoda un poco.\n\nPero es ahí donde el cliente dice acá falta un campo o esto en realidad va al revés, y corregirlo cuesta una tarde. Si esa conversación llega al final, cuesta semanas y ya nadie tiene ganas de tenerla.",
+    "cta": "¿Preferís ver temprano o ver terminado?"
+  },
+  {
+    "pilar": "Conversación",
+    "gancho": "¿Qué tarea repetís todos los lunes sin falta?",
+    "copy": "El resumen de la semana, la carga de pedidos, el control de faltantes, la lista de los que hay que llamar. Todos tenemos una.\n\nEscribí la tuya abajo y te digo si se puede resolver, con qué y qué escala tendría. Si en tu caso no vale la pena, también te lo voy a decir sin vueltas.",
+    "cta": "Te leo abajo."
+  },
+  {
+    "pilar": "Tip aplicable",
+    "gancho": "Probá tu formulario desde el celular una vez por mes",
+    "copy": "Completalo como si fueras un cliente: con el pulgar, en la calle y con datos reales. Vas a encontrar el campo que no se ve, el botón que tapa el teclado y el mensaje que nunca llegó a destino.\n\nEn un estudio contable eso fue la diferencia entre creer que no había consultas y descubrir que hacía cinco semanas no llegaba ninguna.",
+    "cta": "Probalo hoy y contame qué encontraste."
+  },
+  {
+    "pilar": "Para el que decide",
+    "gancho": "Lo que te cuesta cada interrupción",
+    "copy": "No es el minuto que tardás en contestar quién atiende el sábado. Es que estabas haciendo otra cosa y volver a esa otra cosa te lleva bastante más que ese minuto.\n\nUn dueño de inmobiliaria que corta veinte veces por día para responder lo mismo no perdió veinte minutos: perdió la parte del día en la que podía pensar. Eso no se recupera quedándose más tarde.",
+    "cta": "¿Cuántas veces te interrumpen por algo ya escrito?"
+  },
+  {
+    "pilar": "Detrás de escena",
+    "gancho": "Cómo funciona el soporte cuando algo se rompe",
+    "copy": "Un canal directo conmigo, sin tickets ni intermediarios. Distingo entre lo que te frena la operación y lo que puede esperar al lunes, y lo digo claro cuando algo es lo segundo.\n\nLo que no hago es prometer disponibilidad total, porque no sería cierto. Prefiero un acuerdo chico que se cumple antes que uno grande que se cae la primera vez.",
+    "cta": "¿Cómo te responden hoy cuando algo falla?"
+  },
+  {
+    "pilar": "Servicio",
+    "gancho": "Tiendas online conectadas a tu stock real",
+    "copy": "El problema de las tiendas armadas rápido no es cómo se ven: es que venden cosas que ya no tenés. Después viene el mensaje incómodo, la devolución y la reseña que te queda para siempre.\n\nCuando la tienda mira el mismo stock que el mostrador, el último paquete de café se vende una sola vez y baja de cuatro a tres a la vista de todos.",
+    "cta": "Contame qué vendés y lo charlamos."
+  },
+  {
+    "pilar": "Tip aplicable",
+    "gancho": "Tres preguntas para saber si conviene automatizar",
+    "copy": "Antes de meterle plata a un proceso, contestá estas tres pensando en la semana que pasó y no en la semana ideal:\n\n1. ¿Pasa muchas veces por semana o es una excepción?\n2. ¿Se hace siempre igual o cambia según el caso?\n3. ¿Cuánto te cuesta el día que sale mal?",
+    "cta": "Si te dio mucho, igual y caro, ya sabés."
+  },
+  {
+    "pilar": "Axioma",
+    "gancho": "Cada excepción de hoy es una regla que se olvida",
+    "copy": "A este cliente le hacés diez por ciento porque es de siempre. A ese otro le cobrás el envío aparte. A aquel le facturás a fin de mes. Todo razonable de a uno.\n\nJuntas, esas excepciones son un sistema paralelo que solo entendés vos. El día que quieras delegar o digitalizar, ahí va a estar la parte más pesada del trabajo.",
+    "cta": "¿Cuántas excepciones tenés vivas?"
+  },
+  {
+    "pilar": "Conversación",
+    "gancho": "Mito: mis clientes no van a usar nada por internet",
+    "copy": "Aparece sobre todo cuando el público es grande de edad. Y después resulta que esos mismos clientes te mandan audios, pagan con transferencia y piden turno por mensaje a las once de la noche.\n\nLo que la gente no usa es lo que está mal hecho. Un botón claro y un solo paso lo usa cualquiera.",
+    "cta": "¿Cómo es tu público? Contame."
+  },
+  {
+    "pilar": "Para el que decide",
+    "gancho": "Dos presupuestos que parecen comparables y no lo son",
+    "copy": "Uno dice tienda online y sale la mitad. El otro también dice tienda online. La diferencia suele estar en si incluye la carga de productos, la conexión con el stock, el medio de pago configurado y quién responde el día que se cae.\n\nCompará por lo que queda funcionando el día después, no por el título ni por el número de la primera hoja.",
+    "cta": "¿Estás comparando dos ahora? Contame."
+  },
+  {
+    "pilar": "Axioma",
+    "gancho": "Ordenar sale más barato que contratar a alguien más",
+    "copy": "Cuando el trabajo administrativo te desborda, el primer reflejo es sumar una persona. A veces hace falta de verdad. Muchas otras, esa persona va a dedicar el día a copiar datos de un lado a otro.\n\nAntes de sumar un sueldo todos los meses, mirá cuánto de ese trabajo es algo que nadie debería estar haciendo.",
+    "cta": "Guardalo antes de publicar la búsqueda."
+  },
+  {
+    "pilar": "Mini-guía",
+    "gancho": "Tres pasos para ordenar el stock antes de cargarlo",
+    "copy": "Meter un desorden adentro de un sistema te deja el mismo desorden, pero más rápido:\n\n1. Un código único por producto, aunque lo inventes vos.\n2. Una unidad de medida por artículo, decidida y escrita.\n3. Un conteo físico real, con fecha, para arrancar desde la verdad.",
+    "cta": "Guardalo antes de comprar cualquier sistema."
+  },
+  {
+    "pilar": "Tip aplicable",
+    "gancho": "Exportá tus datos hoy, aunque no los necesites",
+    "copy": "Entrá a cada herramienta que usás y bajá tu información: clientes, ventas, turnos. Si alguna no te deja hacerlo, acabás de descubrir algo importante sobre esa herramienta.\n\nEl día que quieras cambiar de proveedor, discutir una factura o simplemente dormir tranquilo, esa carpeta vale más que cualquier funcionalidad que te hayan prometido.",
+    "cta": "Hacelo esta semana, tarda diez minutos."
+  },
+  {
+    "pilar": "Axioma",
+    "gancho": "Lo que no queda registrado no se puede reclamar",
+    "copy": "La seña que entró por transferencia y quedó en un chat, el remito firmado en un papel que ya no aparece, el presupuesto acordado por teléfono un martes.\n\nNo es desconfianza: es que la memoria de dos personas nunca coincide del todo. Registrar no es burocracia, es la única versión que después se puede mirar sin discutir.",
+    "cta": "Guardalo."
+  },
+  {
+    "pilar": "Para el que decide",
+    "gancho": "La hora del dueño es la más cara del negocio",
+    "copy": "Es la única que no se puede reemplazar y suele ser la que más se gasta en tareas que podría hacer cualquiera, o que directamente no debería hacer nadie.\n\nSi pasás seis horas por semana copiando datos y coordinando, eso es casi un mes entero al año. La pregunta no es si podés pagar un sistema: es si podés seguir pagando ese mes.",
+    "cta": "¿Cuántas horas por semana te lleva?"
+  },
+  {
+    "pilar": "Conversación",
+    "gancho": "¿Qué parte de tu trabajo no automatizarías jamás?",
+    "copy": "Yo construyo sistemas y aun así creo que hay cosas que tienen que seguir pasando entre personas: la primera charla con un cliente nuevo, un reclamo serio, una recomendación honesta.\n\nMe interesa dónde ponés vos ese límite en tu rubro, porque cambia bastante según a qué te dediques.",
+    "cta": "Contame dónde está tu límite."
+  },
+  {
+    "pilar": "Detrás de escena",
+    "gancho": "Lo último que reviso antes de entregar",
+    "copy": "Que funcione desde un celular viejo, que los avisos lleguen de verdad y no terminen en correo no deseado, que un usuario sin permisos no vea lo que no tiene que ver, y que se pueda exportar todo a un archivo.\n\nEs la parte menos vistosa del trabajo. También es la que decide si en tres meses seguís contento o me estás escribiendo enojado.",
+    "cta": "¿Qué revisarías vos antes de aprobar?"
+  },
+  {
+    "pilar": "Mini-guía",
+    "gancho": "Cambiar de proveedor sin perder nada por el camino",
+    "copy": "Primero conseguí los accesos a tu nombre: dominio, hosting, base de datos y cuentas de cobro. Después bajá una copia completa de la información. Recién ahí avisá que cortás.\n\nEl orden inverso es el que genera las historias feas. Nada de esto es desconfiar de alguien: es que tu negocio no puede depender de la buena predisposición de un tercero.",
+    "cta": "Guardalo, aunque hoy estés conforme."
+  },
+  {
+    "pilar": "Servicio",
+    "gancho": "Qué pasa después de que entrego el sistema",
+    "copy": "Queda un video corto de cómo se usa, el código y los datos en tu cuenta, y un período de acompañamiento para los ajustes que siempre aparecen cuando el uso es real.\n\nDespués, si necesitás cambios, se cotizan aparte y sabés exactamente qué estás pagando. Nada de quedar atado a una mensualidad para poder abrir lo que es tuyo.",
+    "cta": "¿Querés saber cómo trabajo? Escribime."
+  },
+  {
+    "pilar": "Para el que decide",
+    "gancho": "Qué no conviene automatizar nunca",
+    "copy": "Lo que pasa dos veces al año, lo que cambia según el cliente y todo lo que sea una conversación difícil. Un reclamo grande, una negociación, una mala noticia: eso se habla.\n\nAutomatizar tiene sentido donde hay volumen y reglas claras. Donde hace falta criterio, la máquina te hace quedar mal y encima te saca la oportunidad de arreglarlo vos.",
+    "cta": "¿Qué no delegarías nunca a un sistema?"
+  }
 ]
