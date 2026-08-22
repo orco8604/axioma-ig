@@ -14,6 +14,7 @@ import datetime as dt
 import json
 import os
 import pathlib
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -44,25 +45,37 @@ def publicaciones(uid, token, limite=60):
     return salida[:limite]
 
 
-def insights(mid, token, tipo):
-    """Las métricas de reel y de foto no son las mismas. Pido las que
-    corresponden y, si Meta rechaza alguna, devuelvo lo que haya."""
+def insights(mid, token, tipo, quejas):
+    """Las métricas de reel y de foto no son las mismas, y Meta rechaza el
+    pedido entero si una sola métrica no aplica. Por eso las pido de a una:
+    así una que falle no se lleva puestas a las demás.
+
+    Los motivos de rechazo se juntan en `quejas` y se imprimen una sola vez
+    al final, para saber qué pasó sin llenar el log de ruido."""
     if tipo == "VIDEO":
         metricas = ["reach", "saved", "shares", "views", "total_interactions"]
     else:
         metricas = ["reach", "saved", "shares", "total_interactions"]
-    while metricas:
+
+    salida = {}
+    for m in metricas:
         try:
             url = f"{API}/{mid}/insights?" + urllib.parse.urlencode(
-                {"metric": ",".join(metricas), "access_token": token})
+                {"metric": m, "access_token": token})
             d = pedir(url)
-            return {x["name"]: x["values"][0].get("value")
-                    for x in d.get("data", []) if x.get("values")}
-        except Exception:
-            # saco la última y vuelvo a intentar: alguna métrica puede no
-            # existir para ese tipo de publicación o para esta cuenta.
-            metricas.pop()
-    return {}
+            for x in d.get("data", []):
+                if x.get("values"):
+                    salida[x["name"]] = x["values"][0].get("value")
+        except urllib.error.HTTPError as e:
+            try:
+                cuerpo = json.loads(e.read().decode("utf-8"))
+                motivo = cuerpo.get("error", {}).get("message", str(e))
+            except Exception:
+                motivo = str(e)
+            quejas.setdefault(f"{tipo}/{m}", motivo)
+        except Exception as e:
+            quejas.setdefault(f"{tipo}/{m}", str(e))
+    return salida
 
 
 def main():
@@ -78,8 +91,9 @@ def main():
         raise SystemExit(0)
 
     filas = []
+    quejas = {}
     for m in medios:
-        ins = insights(m["id"], token, m.get("media_type", ""))
+        ins = insights(m["id"], token, m.get("media_type", ""), quejas)
         titulo = (m.get("caption") or "").split("\n")[0][:90]
         filas.append({
             "fecha_medicion": hoy,
@@ -108,6 +122,10 @@ def main():
         w.writerows(filas)
 
     print(f"Medidas {len(filas)} publicaciones. Historial: {HISTORIAL.name}")
+    if quejas:
+        print("\nMétricas que Meta no devolvió (y por qué):")
+        for k, v in quejas.items():
+            print(f"  · {k}: {v}")
 
 
 if __name__ == "__main__":
