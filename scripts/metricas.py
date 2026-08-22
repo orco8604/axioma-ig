@@ -114,11 +114,18 @@ def main():
     (CARPETA / f"{hoy}.json").write_text(
         json.dumps(filas, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    nuevo = not HISTORIAL.exists()
-    with open(HISTORIAL, "a", newline="", encoding="utf-8") as f:
+    # Si ya se midió hoy (por ejemplo porque alguien corrió el workflow a
+    # mano), reemplazo esas filas en vez de sumarlas: dos mediciones del
+    # mismo día contarían doble cuando después se analicen los datos.
+    previas = []
+    if HISTORIAL.exists():
+        with open(HISTORIAL, newline="", encoding="utf-8") as f:
+            previas = [r for r in csv.DictReader(f)
+                       if r.get("fecha_medicion") != hoy]
+    with open(HISTORIAL, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=COLUMNAS)
-        if nuevo:
-            w.writeheader()
+        w.writeheader()
+        w.writerows(previas)
         w.writerows(filas)
 
     print(f"Medidas {len(filas)} publicaciones. Historial: {HISTORIAL.name}")
