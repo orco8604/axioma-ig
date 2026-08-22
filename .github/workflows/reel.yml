@@ -73,7 +73,7 @@ jobs:
         run: python scripts/reel.py
 
       - name: Guardar el reel en el repo
-        if: steps.candado.outputs.saltear != 'true'
+        if: steps.candado.outputs.saltear != 'true' && steps.gen.outputs.saltar != 'true'
         run: |
           git config user.name  "axioma-bot"
           git config user.email "actions@github.com"
@@ -83,11 +83,11 @@ jobs:
           git push
 
       - name: Esperar a que el video quede accesible
-        if: steps.candado.outputs.saltear != 'true'
+        if: steps.candado.outputs.saltear != 'true' && steps.gen.outputs.saltar != 'true'
         run: sleep 30
 
       - name: Publicar en Instagram
-        if: steps.candado.outputs.saltear != 'true' && github.event.inputs.solo_generar != 'true'
+        if: steps.candado.outputs.saltear != 'true' && steps.gen.outputs.saltar != 'true' && github.event.inputs.solo_generar != 'true'
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
@@ -99,7 +99,7 @@ jobs:
         run: python scripts/publicar.py
 
       - name: Anotar que ya se publicó
-        if: steps.candado.outputs.saltear != 'true' && github.event.inputs.solo_generar != 'true' && github.event.inputs.probar != 'true'
+        if: steps.candado.outputs.saltear != 'true' && steps.gen.outputs.saltar != 'true' && github.event.inputs.solo_generar != 'true' && github.event.inputs.probar != 'true'
         run: |
           git config user.name  "axioma-bot"
           git config user.email "actions@github.com"
@@ -109,7 +109,7 @@ jobs:
           git push
 
       - name: Subir el reel como artefacto
-        if: steps.candado.outputs.saltear != 'true'
+        if: steps.candado.outputs.saltear != 'true' && steps.gen.outputs.saltar != 'true'
         uses: actions/upload-artifact@v4
         with:
           name: reel-${{ steps.gen.outputs.fecha }}
