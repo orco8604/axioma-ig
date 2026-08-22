@@ -33,28 +33,36 @@ CSS_CIERRE = r"""
 /* ---------- la cámara: cada guion elige la suya ---------- */
 .camara{position:absolute;inset:0;transform-origin:50% 46%}
 .camara.fija{}
+/* Regla: ninguna camara pasa de escala 1.06. Arriba de eso se recorta mas
+   del 6% del cuadro y lo que se muestra deja de leerse, que es justo lo
+   contrario de lo que tiene que hacer un reel. El movimiento se nota igual:
+   lo que da vida es el cambio, no la cantidad de zoom. */
 .camara.empuje{animation:camEmpuje var(--total) cubic-bezier(.35,0,.25,1) both}
-@keyframes camEmpuje{0%{transform:scale(1)}100%{transform:scale(1.10) translateY(-26px)}}
+@keyframes camEmpuje{0%{transform:scale(1)}100%{transform:scale(1.05) translateY(-14px)}}
 .camara.lateral{animation:camLateral var(--total) cubic-bezier(.4,0,.35,1) both}
-@keyframes camLateral{0%{transform:scale(1.16) translateX(140px)}
-                      100%{transform:scale(1.16) translateX(-140px)}}
+@keyframes camLateral{0%{transform:scale(1.06) translateX(30px)}
+                      100%{transform:scale(1.06) translateX(-30px)}}
 .camara.retiro{animation:camRetiro var(--total) cubic-bezier(.25,.6,.2,1) both}
-@keyframes camRetiro{0%{transform:scale(2.1) translate(-90px,180px)}
-                     46%{transform:scale(1.02)}
+@keyframes camRetiro{0%{transform:scale(1.06) translate(-14px,26px)}
+                     46%{transform:scale(1.01)}
                      100%{transform:scale(1)}}
 .camara.vaiven{animation:camVaiven var(--total) ease-in-out both}
-@keyframes camVaiven{0%{transform:scale(1.06) translateX(-40px)}
-                     50%{transform:scale(1.02) translateX(36px)}
-                     100%{transform:scale(1.09) translateX(-20px)}}
+@keyframes camVaiven{0%{transform:scale(1.03) translateX(-20px)}
+                     50%{transform:scale(1.01) translateX(18px)}
+                     100%{transform:scale(1.05) translateX(-10px)}}
 
 .prog{position:absolute;top:0;left:0;height:9px;background:#7CFFCB;width:0;
   animation:avanza var(--total) linear both;z-index:30}
 @keyframes avanza{to{width:1080px}}
-.firma{position:absolute;left:0;right:0;bottom:110px;text-align:center;
+.firma{position:absolute;left:0;right:0;bottom:450px;text-align:center;
   font-family:'Mono';font-size:34px;color:#8B99B0;z-index:9}
 .firma.oculta{display:none}
 
-/* ---------- cierres: tres placas distintas ---------- */
+/* ---------- cierres: cuatro placas distintas ----------
+   Ojo con los margenes de abajo: la interfaz de reels de Instagram
+   (nombre de cuenta, caption, audio) tapa los ultimos ~420 px. El boton
+   de CTA y el arroba tienen que quedar por encima de esa franja o no se
+   ven, que es justo lo unico que no puede pasar en la placa final. */
 .fin{position:absolute;inset:0;z-index:20;opacity:0;
   animation:apareceFin var(--fd) both}
 @keyframes apareceFin{0%{opacity:0}9%{opacity:1}100%{opacity:1}}
@@ -87,7 +95,7 @@ CSS_CIERRE = r"""
 
 /* b · placa clara, al revés: fondo menta y texto oscuro */
 .fin.claro{display:flex;flex-direction:column;justify-content:flex-end;
-  background:#7CFFCB;color:#070A11;padding:0 92px 210px}
+  background:#7CFFCB;color:#070A11;padding:0 92px 440px}
 .fin.claro .mk{width:112px;height:112px;border-radius:32px;margin-bottom:44px;
   background:#070A11;box-shadow:none}
 .fin.claro .mk i{background:#7CFFCB;width:17px;height:17px}
@@ -104,7 +112,7 @@ CSS_CIERRE = r"""
 /* c · panel que sube y deja ver la escena atrás */
 .fin.panel{display:flex;flex-direction:column;justify-content:flex-end;
   background:linear-gradient(180deg,transparent 0%,rgba(7,10,17,.62) 26%,#070A11 58%)}
-.fin.panel .caja{margin:0 64px 150px;background:rgba(12,18,32,.94);
+.fin.panel .caja{margin:0 64px 380px;background:rgba(12,18,32,.94);
   border:1px solid rgba(124,255,203,.28);border-radius:38px;padding:56px 58px;
   box-shadow:0 40px 110px rgba(0,0,0,.7);
   animation:sube-panel .9s cubic-bezier(.2,.9,.25,1) both}
@@ -122,7 +130,7 @@ CSS_CIERRE = r"""
 
 /* d · franja diagonal: mitad menta, mitad oscuro */
 .fin.franja{display:flex;flex-direction:column;justify-content:flex-start;
-  background:#070A11;padding:300px 78px 230px;overflow:hidden}
+  background:#070A11;padding:250px 78px 460px;overflow:hidden}
 .fin.franja::before{content:'';position:absolute;inset:-20% -30%;background:#7CFFCB;
   transform:rotate(-13deg) translateY(58%);transform-origin:50% 50%}
 .fin.franja>*{position:relative;z-index:2}
