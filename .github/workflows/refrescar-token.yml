@@ -32,6 +32,14 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
+          # Sin el PAT no hay forma de escribir el secret. Avisamos y salimos
+          # bien: el token viejo sigue andando hasta que se venza.
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::Falta el secret GH_PAT: el token nuevo no se pudo guardar."
+            echo "::warning::Creá un token fine-grained de GitHub con permiso 'Secrets: Read and write' sobre este repo y guardalo como GH_PAT."
+            echo "::warning::Mientras tanto el token viejo sigue sirviendo, pero hay que renovarlo a mano antes de que venza."
+            exit 0
+          fi
           gh secret set IG_ACCESS_TOKEN --repo "${{ github.repository }}" \
             --body "${{ steps.refresh.outputs.token }}"
           echo "Token actualizado."
