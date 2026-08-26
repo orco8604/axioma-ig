@@ -1,0 +1,11 @@
+1. Link de pago en el mismo mensaje de confirmación.
+2. Queda reservado recién cuando se paga.
+3. Aviso automático a vos cuando entra.
+
+Las cancelaciones bajan solas cuando hay algo puesto de por medio.
+
+¿Cobrás por adelantado hoy? Contame cómo.
+
+·  ·  ·
+
+#desarrolloweb #sistemas #turnos #pymes
