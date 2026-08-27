@@ -33,12 +33,35 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Candado: evita publicar dos veces el mismo reel.
-      - name: ¿El reel de hoy ya salió?
+      # Que fecha toca. GitHub puede atrasar una corrida programada varias
+      # horas; si ese atraso cruza la medianoche, la fecha del runner ya no es
+      # la del reel que tocaba y el reel del dia se pierde. Por eso no uso
+      # "hoy" a secas: busco el reel programado mas viejo de la ultima semana
+      # que todavia no salio. Asi un atraso, o una corrida que fallo, se
+      # recuperan solos en la corrida siguiente.
+      - name: ¿Que reel toca?
         id: candado
         run: |
           FECHA="${{ github.event.inputs.fecha }}"
-          [ -z "$FECHA" ] && FECHA=$(date -u +%F)
+          if [ -z "$FECHA" ]; then
+            HOY=$(TZ=America/Argentina/Cordoba date +%F)
+            for i in 7 6 5 4 3 2 1 0; do
+              D=$(date -d "$HOY -$i day" +%F)
+              case "$(date -d "$D" +%u)" in
+                1|3|5)
+                  if ! grep -qx "$D" reels/publicados.txt 2>/dev/null; then
+                    FECHA="$D"; break
+                  fi ;;
+              esac
+            done
+          fi
+          if [ -z "$FECHA" ]; then
+            echo "No quedo ningun reel pendiente en la ultima semana. No hago nada."
+            echo "saltear=true" >> "$GITHUB_OUTPUT"
+            echo "fecha=" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "Reel que toca: $FECHA"
           echo "fecha=$FECHA" >> "$GITHUB_OUTPUT"
           if [ "${{ github.event.inputs.forzar }}" = "true" ]; then
             echo "Forzado: publico igual."

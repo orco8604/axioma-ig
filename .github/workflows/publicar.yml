@@ -31,13 +31,30 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Candado: evita publicar dos veces el mismo día.
-      # El registro vive en posts/publicados.txt, una fecha por línea.
-      - name: ¿El post de hoy ya salió?
+      # Que post toca. Mismo criterio que en los reels: si GitHub atrasa la
+      # corrida y el atraso cruza la medianoche, "hoy" ya no es el dia que
+      # tocaba. Busco el post mas viejo de la ultima semana que no salio, para
+      # que un atraso o una falla se recuperen solos.
+      - name: ¿Que post toca?
         id: candado
         run: |
           FECHA="${{ github.event.inputs.fecha }}"
-          [ -z "$FECHA" ] && FECHA=$(date -u +%F)
+          if [ -z "$FECHA" ]; then
+            HOY=$(TZ=America/Argentina/Cordoba date +%F)
+            for i in 7 6 5 4 3 2 1 0; do
+              D=$(date -d "$HOY -$i day" +%F)
+              if ! grep -qx "$D" posts/publicados.txt 2>/dev/null; then
+                FECHA="$D"; break
+              fi
+            done
+          fi
+          if [ -z "$FECHA" ]; then
+            echo "No quedo ningun post pendiente en la ultima semana. No hago nada."
+            echo "saltear=true" >> "$GITHUB_OUTPUT"
+            echo "fecha=" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "Post que toca: $FECHA"
           echo "fecha=$FECHA" >> "$GITHUB_OUTPUT"
           if [ "${{ github.event.inputs.forzar }}" = "true" ]; then
             echo "Forzado: publico igual."
