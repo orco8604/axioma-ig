@@ -145,17 +145,29 @@ CSS_CIERRE = r"""
 
 # ---------------------------------------------------------------- contenido
 
+def _sin_contenido(motivo):
+    """Quedarse sin contenido, o que la fecha no sea de reel, es un final
+    esperado — no un error. Aviso y salgo con exito, para que el workflow
+    no mande un mail de falla por algo que no esta roto."""
+    print(f"::warning::{motivo}")
+    if (gh := os.environ.get("GITHUB_OUTPUT")):
+        with open(gh, "a") as f:
+            f.write("saltar=true\n")
+    raise SystemExit(0)
+
+
 def reel_de_hoy(hoy):
     datos = json.loads((RAIZ / "contenido" / "reels.json").read_text(encoding="utf-8"))
     if hoy.weekday() not in DIAS_REEL:
-        raise SystemExit(f"El {hoy} no toca reel (solo lunes, miércoles y viernes).")
+        return _sin_contenido(
+            f"El {hoy} no toca reel (solo lunes, miércoles y viernes).")
     dias = (hoy - INICIO).days
     if dias < 0:
-        raise SystemExit("El ciclo todavía no arrancó.")
+        return _sin_contenido("El ciclo todavía no arrancó.")
     idx = sum(1 for d in range(dias)
               if (INICIO + dt.timedelta(days=d)).weekday() in DIAS_REEL)
     if idx >= len(datos):
-        raise SystemExit(
+        return _sin_contenido(
             f"Se acabaron los reels ({len(datos)} guionados). Pedile a Claude el "
             f"próximo lote y actualizá contenido/reels.json.")
     ficha = datos[idx]
