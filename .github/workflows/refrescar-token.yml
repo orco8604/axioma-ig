@@ -25,7 +25,9 @@ jobs:
             --data-urlencode "grant_type=ig_refresh_token" \
             --data-urlencode "access_token=${{ secrets.IG_ACCESS_TOKEN }}")
           echo "$RESP" | grep -q access_token || { echo "Falló el refresco: $RESP"; exit 1; }
-          echo "token=$(echo "$RESP" | python3 -c 'import sys,json;print(json.load(sys.stdin)["access_token"])')" >> "$GITHUB_OUTPUT"
+          TOKEN=$(echo "$RESP" | python3 -c 'import sys,json;print(json.load(sys.stdin)["access_token"])')
+          echo "::add-mask::$TOKEN"
+          echo "token=$TOKEN" >> "$GITHUB_OUTPUT"
           echo "Vence en $(echo "$RESP" | python3 -c 'import sys,json;print(json.load(sys.stdin)["expires_in"]//86400)') días"
 
       - name: Guardar el token nuevo
