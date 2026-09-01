@@ -1,0 +1,9 @@
+Un tablero lleno de números que no cambian ninguna decisión no es un tablero, es decoración.
+
+Con tres alcanza: cuánto entró, cuánto se cayó, y de dónde llegó cada cliente nuevo.
+
+Guardalo.
+
+·  ·  ·
+
+#desarrolloweb #sistemas #turnos #pymes
