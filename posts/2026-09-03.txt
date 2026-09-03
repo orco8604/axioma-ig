@@ -1,0 +1,11 @@
+Sirve igual para tu sistema, para tu web y hasta para esa planilla que sostiene todo:
+
+1. Una copia automática diaria, sin que nadie tenga que acordarse.
+2. Guardada en un lugar distinto del original.
+3. Una prueba de restauración cada tanto, para saber que sirve.
+
+Guardalo y agendá la prueba.
+
+·  ·  ·
+
+#automatizacion #software #gestion #emprendedores
