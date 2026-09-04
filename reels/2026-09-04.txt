@@ -1,0 +1,9 @@
+En una distribuidora, la mitad de los mensajes del día son la misma pregunta: dónde está el pedido.
+
+Esa respuesta ya existe en el sistema de envíos. Conectarla al chat es cuestión de horas. Después el cliente pregunta, recibe el seguimiento real al instante, y a vos te llega solo lo que de verdad necesita una persona.
+
+¿Cuántos mensajes por día son la misma pregunta?
+
+·  ·  ·
+
+#desarrolloweb #sistemas #turnos #pymes
