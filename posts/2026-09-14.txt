@@ -1,0 +1,11 @@
+Los veo en casi todas las migraciones y son bastante fáciles de evitar desde hoy mismo:
+
+1. Mezclar texto y números en la misma columna.
+2. Usar el color de la celda como si fuera un dato.
+3. Escribir las fechas a mano, cada una con su formato.
+
+¿Cuál de los tres tenés en la tuya?
+
+·  ·  ·
+
+#softwareamedida #automatizacion #ecommerce #productividad
