@@ -1,0 +1,9 @@
+Cada unidad que entra tiene un estado: recibida, diagnosticada, presupuestada, aprobada, lista para retirar. El cliente ve en qué anda sin llamar y el mostrador deja de ser una central telefónica.
+
+Sirve igual para un taller mecánico, un servicio técnico de celulares o un laboratorio dental. Lo que cambia son los nombres de los estados, no la idea.
+
+¿Cómo seguís hoy los trabajos abiertos?
+
+·  ·  ·
+
+#automatizacion #software #gestion #emprendedores
