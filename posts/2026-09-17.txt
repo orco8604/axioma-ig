@@ -1,0 +1,9 @@
+Una fila por cliente, una columna por dato y ningún dato escondido adentro de un comentario. Los teléfonos en un solo formato, las fechas en otro, y una columna que diga si ese registro sigue vigente.
+
+Dos horas tuyas ordenando eso valen más que dos días míos adivinando. Y te evitan el clásico cliente cargado tres veces con el nombre mal escrito.
+
+Guardalo para antes de migrar.
+
+·  ·  ·
+
+#softwareamedida #automatizacion #ecommerce #productividad
