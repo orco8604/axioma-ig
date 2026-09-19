@@ -1,0 +1,9 @@
+El error visible se corrige: falta un precio, se rompe un botón, alguien avisa. El silencioso es otro: el formulario que hace un mes no envía nada y vos pensás que este mes no hubo consultas.
+
+Por eso todo lo importante tiene que avisar también cuando funciona, no solo cuando falla. El silencio nunca es una buena noticia.
+
+¿Qué cosa tuya avisa solo cuando falla?
+
+·  ·  ·
+
+#desarrolloweb #sistemas #turnos #pymes
