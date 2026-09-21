@@ -1,0 +1,9 @@
+El resumen de ventas que armás los lunes, el aviso de cuotas vencidas, el mail al proveedor cuando un producto baja del mínimo, el traspaso de una planilla a otra.
+
+Nada de eso necesita un sistema entero. Son piezas chicas que se enchufan a lo que ya usás y corren solas de acá en adelante, sin que nadie se acuerde de ellas.
+
+Contame qué repetís y te digo si se automatiza.
+
+·  ·  ·
+
+#automatizacion #software #gestion #emprendedores
