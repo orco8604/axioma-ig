@@ -1,0 +1,9 @@
+El que tiene el perro decaído a las ocho y media de la noche no quiere dejar un mensaje. Quiere saber si mañana hay lugar.
+
+El sistema conoce la agenda real y la ficha del animal. Muestra el hueco, lo toma, y te deja el turno anotado con el nombre, la raza y la edad ya cargados.
+
+¿Cuántas consultas te entran fuera de horario?
+
+·  ·  ·
+
+#automatizacion #software #gestion #emprendedores
