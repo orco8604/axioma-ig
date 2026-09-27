@@ -1,0 +1,9 @@
+La planilla no se tira: se convierte. Se limpia lo duplicado, se ordenan las columnas que fueron creciendo de a poco y se importa todo, con tus datos adentro desde el primer día.
+
+Arrancar de cero es justamente lo que hace que nadie use el sistema nuevo. Si tu historial no está ahí, vas a seguir abriendo la planilla vieja para consultar.
+
+¿Tenés una planilla que ya no da más? Mostrámela.
+
+·  ·  ·
+
+#automatizacion #software #gestion #emprendedores
