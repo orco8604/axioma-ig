@@ -1,0 +1,9 @@
+Cobrar cuotas a mano es un trabajo entero: mandar, anotar quién pagó, chequear el banco, activar el acceso, perseguir a los que faltan.
+
+Todo eso es proceso, y el proceso se automatiza. Sale el link, entra el pago, se registra, se activa. Vos mirás una lista al final del mes.
+
+¿Cuánto tiempo te lleva cobrar el mes?
+
+·  ·  ·
+
+#automatizacion #software #gestion #emprendedores
