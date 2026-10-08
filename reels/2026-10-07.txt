@@ -1,0 +1,9 @@
+En un gimnasio la grilla cambia todas las semanas, y cada cambio genera cincuenta mensajes iguales.
+
+Si el chat lee la grilla real, la respuesta siempre está al día, incluso a las seis de la mañana. Y cuando movés una clase, no tenés que avisarle a nadie: ya está avisado.
+
+¿Cuántas veces por día te preguntan el horario?
+
+·  ·  ·
+
+#automatizacion #software #gestion #emprendedores
