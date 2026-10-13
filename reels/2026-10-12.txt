@@ -1,0 +1,9 @@
+En indumentaria el stock no es un número: son cinco números por producto, uno por talle. Ahí es donde las planillas se rompen.
+
+Una tienda que maneja variantes de verdad descuenta del talle que se vendió y deja el resto intacto. Nadie compra un talle que no está, y vos sabés qué reponer.
+
+¿Cómo llevás hoy el stock por talle?
+
+·  ·  ·
+
+#softwareamedida #automatizacion #ecommerce #productividad
