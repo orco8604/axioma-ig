@@ -1,0 +1,11 @@
+No todo es un proyecto largo. Estas tres se configuran una vez y quedan andando solas:
+
+1. Aviso al celular apenas llega una consulta por la web.
+2. Recordatorio automático el día antes del turno o la entrega.
+3. Alerta cuando un producto baja del mínimo que vos definiste.
+
+¿Con cuál arrancarías?
+
+·  ·  ·
+
+#desarrolloweb #sistemas #turnos #pymes
