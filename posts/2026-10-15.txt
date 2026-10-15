@@ -1,0 +1,9 @@
+En la distribuidora el pedido se anota en el cuaderno del mostrador y después alguien lo pasa a la planilla. Dos cargas, dos oportunidades de equivocarse y ninguna forma de saber cuál de las dos versiones es la buena.
+
+El dato tiene que entrar una sola vez, en el lugar donde nace, y viajar solo hasta donde haga falta. Todo lo demás es transcripción.
+
+Contá cuántas veces se carga un pedido tuyo.
+
+·  ·  ·
+
+#automatizacion #software #gestion #emprendedores
