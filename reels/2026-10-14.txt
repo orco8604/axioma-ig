@@ -1,0 +1,9 @@
+Una cotización mal cargada se rehace entera. Y se carga mal cuando el dato pasa por tres manos: el cliente lo dice, vos lo anotás, alguien lo tipea.
+
+Si el cliente lo escribe una vez y eso entra directo al sistema, el error desaparece. No es velocidad: es que el dato no se toca.
+
+¿Cuántas veces se retipea un dato en tu proceso?
+
+·  ·  ·
+
+#automatizacion #software #gestion #emprendedores
