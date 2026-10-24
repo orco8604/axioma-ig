@@ -1,0 +1,9 @@
+Cuántos casos distintos tiene el circuito, con qué otras herramientas hay que conectarse, cuántas personas lo van a usar y con qué permisos, y cuánta información vieja hay que migrar.
+
+Lo que casi no pesa es la cantidad de pantallas. Lo que pesa es la cantidad de excepciones, que es justo lo que nadie cuenta en el primer mensaje.
+
+¿Cuántas excepciones tiene tu circuito?
+
+·  ·  ·
+
+#automatizacion #software #gestion #emprendedores
