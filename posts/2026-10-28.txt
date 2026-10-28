@@ -1,0 +1,9 @@
+Un documento corto: qué se va a hacer, qué explícitamente no, en qué orden y cómo sabemos que está terminado. Lo aprobamos los dos, en el sentido de que los dos lo leímos entero.
+
+No es burocracia. Es la única forma de que ninguno descubra a mitad de camino que estábamos imaginando dos cosas distintas con las mismas palabras.
+
+¿Te pasó de arrancar algo sin eso?
+
+·  ·  ·
+
+#desarrolloweb #sistemas #turnos #pymes
