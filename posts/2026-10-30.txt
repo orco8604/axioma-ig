@@ -1,0 +1,11 @@
+Esto lo podés hacer vos esta semana y acorta cualquier proyecto que venga después:
+
+1. Una sola lista de clientes, sin duplicados ni tres versiones.
+2. Una lista de precios vigente, con la fecha bien visible.
+3. Los pasos de tu circuito escritos en una hoja.
+
+Guardalo y empezá por el primero.
+
+·  ·  ·
+
+#automatizacion #software #gestion #emprendedores
