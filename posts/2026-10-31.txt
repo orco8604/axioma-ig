@@ -1,0 +1,9 @@
+Muestra solo los horarios que vos querés abrir, bloquea el lugar en el mismo momento en que alguien lo toma, manda la confirmación y el recordatorio, y deja cancelar sin tener que escribirte.
+
+En un consultorio de kinesiología eso significa que el turno pedido a las 23:04 entra solo y a la mañana ya está en la agenda, sin que nadie haya contestado nada.
+
+¿Querés ver uno funcionando? Escribime.
+
+·  ·  ·
+
+#desarrolloweb #sistemas #turnos #pymes
