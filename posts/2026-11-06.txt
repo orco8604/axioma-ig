@@ -1,0 +1,9 @@
+El cliente con dos apellidos y sin mail, el pedido de doscientos ítems, el que canceló y volvió a reservar el mismo día. Los casos lindos funcionan siempre.
+
+Si el sistema aguanta lo raro de tu negocio, el día a día lo hace con los ojos cerrados. Al revés no pasa nunca, y los problemas aparecen justo en la primera semana de uso.
+
+¿Cuál es el caso más raro que tenés?
+
+·  ·  ·
+
+#desarrolloweb #sistemas #turnos #pymes
