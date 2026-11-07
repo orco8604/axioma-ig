@@ -1,0 +1,9 @@
+No un panel de veinte gráficos que se abre una vez y no se mira nunca más. Tres o cuatro números que contestan si el mes viene bien, qué se está por vencer y qué falta reponer.
+
+Lo armo con los datos que ya genera tu operación, para que mirarlo no dependa de que alguien se siente a actualizarlo a mano.
+
+¿Qué número te gustaría ver sin buscarlo?
+
+·  ·  ·
+
+#softwareamedida #automatizacion #ecommerce #productividad
