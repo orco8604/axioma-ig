@@ -1,0 +1,9 @@
+Habilitaciones, seguros, VTV, matrículas. Ninguno de esos vencimientos avisa, y todos generan un problema caro cuando se pasan.
+
+Es de lo más simple que se puede automatizar: una fecha cargada una vez y un aviso con anticipación. Cuesta muy poco y evita el día que no podés operar.
+
+¿Cuál es el próximo vencimiento que tenés? ¿Lo sabés de memoria?
+
+·  ·  ·
+
+#desarrolloweb #sistemas #turnos #pymes
